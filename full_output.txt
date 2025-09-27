@@ -1,0 +1,2560 @@
+🧪 TEST PACKDETECTORV7 AVEC DONNÉES RÉELLES
+============================================================
+📁 Source: /mnt/d/SAMPLES 3/#RAWSTYLE/.audio-organizer/structure-detection.json
+📖 Chargement du snapshot JSON...
+✅ Snapshot chargé avec succès
+
+📊 ANALYSE GLOBALE DU SNAPSHOT:
+   Nom racine: #RAWSTYLE
+   Chemin: D:\SAMPLES 3\#RAWSTYLE
+   Audio files totaux: 23084
+   Taille totale: 31.93 GB
+   Enfants directs: 35
+
+🔍 DÉBUT DÉTECTION PACKDETECTORV7:
+============================================================
+🔍 Tentative chargement taxonomie: /mnt/c/dev_project/Samples Organizer Pro/Audio-organizer-V6/src/main/services/pipeline/shared/taxonomies/pack-detection-v6.yaml
+🔍 Fichier existe: true
+✅ Taxonomie chargée: 20 bundle keywords, 249 categories
+🔍 Bundle keywords: BUNDLE, COLLECTION, SUITE, COMPILATION, ALL IN ONE...
+🔍 Quelques catégories: kicks, kick, kick drums, kickdrums, bd, bass drums, bassdrums, kick_samples, rawstyle kicks, hard kicks...
+🔍 PHASE 1: Recherche des BUNDLES au niveau racine...
+🔍 [Big EDM - Hardstyle Mania (WAV)] 8 sous-dossiers: [BuildUps, Drums, Drums Loops...]
+🎯 [Big EDM - Hardstyle Mania (WAV)] MATCH TAXONOMIE: "Drums" -> "drums"
+🎯 [Big EDM - Hardstyle Mania (WAV)] MATCH TAXONOMIE: "FX" -> "fx"
+🎯 [Big EDM - Hardstyle Mania (WAV)] MATCH TAXONOMIE: "Synth" -> "synth"
+🎯 [Big EDM - Hardstyle Mania (WAV)] MATCH TAXONOMIE: "Vocals" -> "vocals"
+✅ [Big EDM - Hardstyle Mania (WAV)] PACK détecté (4 catégories): Drums, FX, Synth, Vocals
+🎹 [FMT_XTRA_CRISPY_SERUM] Détecté comme PACK PRESET
+🔍 [Fragment Audio - Screech XL (WAV)] 4 sous-dossiers: [Drums, Fx, Kickdrums...]
+🎯 [Fragment Audio - Screech XL (WAV)] MATCH TAXONOMIE: "Drums" -> "drums"
+🎯 [Fragment Audio - Screech XL (WAV)] MATCH TAXONOMIE: "Fx" -> "fx"
+🎯 [Fragment Audio - Screech XL (WAV)] MATCH TAXONOMIE: "Kickdrums" -> "kickdrums"
+✅ [Fragment Audio - Screech XL (WAV)] PACK détecté (3 catégories): Drums, Fx, Kickdrums
+🔍 [Fyloh - HUGE HARD DANCE KICKS PACK] 3 sous-dossiers: [KICK PUNCHS, MISC, VARIOUS KICKS]
+🔍 [Industrial Strenght - Raw Intensity by General Guyble (WAV)] 6 sous-dossiers: [Contains, ISR_License, RI_Audio_Samples...]
+🔍 [Industrial Strenght - Rawstyle (WAV)] 6 sous-dossiers: [RS_NI Battery 4, RS_Rawstyle Audio, RS_Rawstyle Audio_2...]
+🔍 [Industrial Strenght - Rawstyle Evolution by General Guyble (WAV)] 8 sous-dossiers: [Contains, ISR_License, RSE_Content_Information...]
+🔍 [Kloenk and PVC Kick Expansion (Vol. 1)] 5 sous-dossiers: [FL Studio Mixers, FL Studio Plugin, FL Studio Templates...]
+🔍 [NS Audio All In One Hardstyle Collection] 11 sous-dossiers: [AUDIO KICKS, FX, MIDI FILES...]
+🎯 [NS Audio All In One Hardstyle Collection] MATCH TAXONOMIE: "FX" -> "fx"
+🎯 [NS Audio All In One Hardstyle Collection] MATCH TAXONOMIE: "PERCUSSION" -> "percussion"
+🎯 [NS Audio All In One Hardstyle Collection] MATCH TAXONOMIE: "PRESETS" -> "presets"
+✅ [NS Audio All In One Hardstyle Collection] PACK détecté (3 catégories): FX, PERCUSSION, PRESETS
+🔍 [Official Thyron Sample Pack] 16 sous-dossiers: [Atmosphere Loops, Build Loops, Demo Track Stems...]
+🎯 [Official Thyron Sample Pack] MATCH TAXONOMIE: "Drum Loops" -> "drum loops"
+🎯 [Official Thyron Sample Pack] MATCH TAXONOMIE: "FX" -> "fx"
+🎯 [Official Thyron Sample Pack] MATCH TAXONOMIE: "Kicks" -> "kicks"
+🎯 [Official Thyron Sample Pack] MATCH TAXONOMIE: "Vocals" -> "vocals"
+✅ [Official Thyron Sample Pack] PACK détecté (4 catégories): Drum Loops, FX, Kicks, Vocals
+🔍 [On Point Samples  Futuristic Kick Expansion (Vol. 1)] 5 sous-dossiers: [FL Studio Templates, Kick Builder, Kicks...]
+🎯 [On Point Samples  Futuristic Kick Expansion (Vol. 1)] MATCH TAXONOMIE: "Kicks" -> "kicks"
+🔍 [On Point Samples Color Kick Expansion (Vol. 1)] 5 sous-dossiers: [Color Kicks (Raw), Color Kicks (Rumble), FL Studio Mixers...]
+🔍 [On Point Samples Hardstyle Production Suite Wav] 31 sous-dossiers: [OPS - Climax Kick Expansion (Vol. 2), OPS - Euphoric Hardstyle Melody Pack (Vol. 3), OPS - Fractal Hardstyle FX (Vol. 2)...]
+📝 [OPS - BONUS - Kick Build Templates (FL Studio)] Détecté comme PACK TEMPLATE
+🎹 [OPS - BONUS - Rawstyle Kick Mixer Presets (FL Studio)] Détecté comme PACK PRESET
+🎹 [OPS - BONUS - Rawstyle Mixer Presets (FL Studio)] Détecté comme PACK PRESET
+🔍 [OPS - Criminal Rawstyle Kicks Vol. 1] 6 sous-dossiers: [Kick Parts Folder, Mid-Intro Kicks, Misc...]
+🎯 [OPS - Criminal Rawstyle Kicks Vol. 1] MATCH TAXONOMIE: "Rawstyle Kicks" -> "rawstyle kicks"
+🎯 [OPS - Criminal Rawstyle Kicks Vol. 1] MATCH TAXONOMIE: "Vocals" -> "vocals"
+✅ [OPS - Criminal Rawstyle Kicks Vol. 1] PACK détecté (2 catégories): Rawstyle Kicks, Vocals
+🔍 [OPS - Fractal Hardstyle FX] 9 sous-dossiers: [Bass Shots, Crashes, Distorted Snares...]
+🎯 [OPS - Fractal Hardstyle FX] MATCH TAXONOMIE: "Crashes" -> "crashes"
+🎯 [OPS - Fractal Hardstyle FX] MATCH TAXONOMIE: "Impacts" -> "impacts"
+✅ [OPS - Fractal Hardstyle FX] PACK détecté (2 catégories): Crashes, Impacts
+🔍 [OPS - Harder-Style Vocal Suite] 13 sous-dossiers: [OPS - Harder-Style AI Vocals (Vol. 1), OPS - Harder-Style Cinematic Vocals (Vol. 1), OPS - Harder-Style Ethereal Vocals (Vol. 1)...]
+🔍 [OPS - Rawphoric Essentials Vol. 1] 7 sous-dossiers: [Drums, FX, Kick Fundamentals...]
+🎯 [OPS - Rawphoric Essentials Vol. 1] MATCH TAXONOMIE: "Drums" -> "drums"
+🎯 [OPS - Rawphoric Essentials Vol. 1] MATCH TAXONOMIE: "FX" -> "fx"
+🎯 [OPS - Rawphoric Essentials Vol. 1] MATCH TAXONOMIE: "Kicks" -> "kicks"
+🎯 [OPS - Rawphoric Essentials Vol. 1] MATCH TAXONOMIE: "Melodies" -> "melodies"
+🎯 [OPS - Rawphoric Essentials Vol. 1] MATCH TAXONOMIE: "Presets" -> "presets"
+🎯 [OPS - Rawphoric Essentials Vol. 1] MATCH TAXONOMIE: "Vocals" -> "vocals"
+✅ [OPS - Rawphoric Essentials Vol. 1] PACK détecté (6 catégories): Drums, FX, Kicks, Melodies, Presets, Vocals
+🔍 [OPS - Rawstyle Production Suite] 24 sous-dossiers: [OPS - Harder-Style Kickroll MIDI (Vol. 1), OPS - Hardstyle Predrop Fills (Vol. 3), OPS - Melodic Mystery [Aurora]...]
+🔍 [OPS - The Ultimate Harder-Style Production Bundle] 37 sous-dossiers: [OPS - Acid Hardstyle Expansion (Vol. 1), OPS - Anticlimax Kick Expansion (Vol. 1), OPS - Climax Kick Expansion (Vol. 1)...]
+🔍 [OPS Raging Rawstyle Vocals Vol. 1] 7 sous-dossiers: [150 BPM VOX, 180 BPM VOX, Build Ups...]
+🎯 [OPS Raging Rawstyle Vocals Vol. 1] MATCH TAXONOMIE: "Drum Loops" -> "drum loops"
+🔍 [Screech House - Hardstyle Sample Pack (WAV)] 9 sous-dossiers: [BASSES, CLAPS, EFFECTS...]
+🎯 [Screech House - Hardstyle Sample Pack (WAV)] MATCH TAXONOMIE: "CLAPS" -> "claps"
+🎯 [Screech House - Hardstyle Sample Pack (WAV)] MATCH TAXONOMIE: "EFFECTS" -> "effects"
+🎯 [Screech House - Hardstyle Sample Pack (WAV)] MATCH TAXONOMIE: "KICKS" -> "kicks"
+🎯 [Screech House - Hardstyle Sample Pack (WAV)] MATCH TAXONOMIE: "LEADS" -> "leads"
+🎯 [Screech House - Hardstyle Sample Pack (WAV)] MATCH TAXONOMIE: "MELODIES" -> "melodies"
+🎯 [Screech House - Hardstyle Sample Pack (WAV)] MATCH TAXONOMIE: "SNARES" -> "snares"
+✅ [Screech House - Hardstyle Sample Pack (WAV)] PACK détecté (6 catégories): CLAPS, EFFECTS, KICKS, LEADS, MELODIES, SNARES
+🔍 [Singomakers - PSYSTYLE (WAV)] 9 sous-dossiers: [SPST_Bass_Loops, SPST_Drum_Loops, SPST_Fills_&_Buid-Ups...]
+🔍 [Singomakers - Rawstyle - Massacre (WAV)] 10 sous-dossiers: [SRR_Fills_&_Rolls, SRR_Filtered_Kick_Loops, SRR_Kick_Loops...]
+🔍 [Singomakers - Rawstyle Destructor (WAV)] 14 sous-dossiers: [! Promo & Discount, SRDR_Drum_Loops, SRDR_Kick_Rolls...]
+🔍 [Singomakers - Rawstyle Joker (WAV)] 11 sous-dossiers: [SRTJ_Drum_Loops, SRTJ_Kick_Rolls, SRTJ_Melody_Loops...]
+🔍 [Singomakers - Rawstyle Till The End (WAV)] 11 sous-dossiers: [SRTE_Drum_Loops, SRTE_Kick_Rolls, SRTE_Melody_Loops...]
+🔍 [Singomakers - Rawstyle Weapons (WAV)] 13 sous-dossiers: [SRW_Drum_Fills, SRW_Drum_Loops, SRW_Fx_&_Synth_Fills...]
+🔍 [Sunhiausa Kicks VOL 2] 4 sous-dossiers: [Creation of Self, Danger is Lurking, End Of Human Era...]
+🎯 Phase 1: 4 bundles trouvés
+🔍 PHASE 2: Extraction des PACKS de chaque bundle...
+  🔍 Scan dans bundle: "On Point Samples Hardstyle Production Suite Wav"
+    🔍 DEBUG: Bundle "On Point Samples Hardstyle Production Suite Wav" a 31 enfants
+      ❓ Test: "OPS - Climax Kick Expansion (Vol. 2)"
+🔍 [OPS - Climax Kick Expansion (Vol. 2)] 21 sous-dossiers: [Climax Kick 1, Climax Kick 10, Climax Kick 11...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Euphoric Hardstyle Melody Pack (Vol. 3)"
+🔍 [OPS - Euphoric Hardstyle Melody Pack (Vol. 3)] 21 sous-dossiers: [Melody 1 - Skyburst, Melody 10 - Celestial Drift, Melody 11 - Nebulight...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Fractal Hardstyle FX (Vol. 2)"
+🔍 [OPS - Fractal Hardstyle FX (Vol. 2)] 11 sous-dossiers: [Buildups, Clap FX, Dark Atmosphere...]
+🎯 [OPS - Fractal Hardstyle FX (Vol. 2)] MATCH TAXONOMIE: "Impacts" -> "impacts"
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Frenchcore Melody Pack (Vol. 3)"
+🔍 [OPS - Frenchcore Melody Pack (Vol. 3)] 20 sous-dossiers: [Melody 1 - Cyberfreak, Melody 10 - Thunderstrike, Melody 11 - Fracture Zone...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Galactic Hardstyle Vocals (Vol. 2)"
+🔍 [OPS - Galactic Hardstyle Vocals (Vol. 2)] 3 sous-dossiers: [Dry Vocals, Raw Vocals, _Matching Melodies]
+        Score: 85 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Handsup Hardstyle Melody Pack (Vol. 2)"
+🔍 [OPS - Handsup Hardstyle Melody Pack (Vol. 2)] 21 sous-dossiers: [Melody 1 - Astral Pulse, Melody 10 - Elevation, Melody 11 - Nova Beat...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Harder-Style Kickroll MIDI (Vol. 2)"
+🎵 [OPS - Harder-Style Kickroll MIDI (Vol. 2)] Détecté comme PACK MIDI
+        Score: 80 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle Ambiences (Vol. 3)"
+🔍 [OPS - Hardstyle Ambiences (Vol. 3)] 5 sous-dossiers: [Pads, Pianos, Plucks...]
+🎯 [OPS - Hardstyle Ambiences (Vol. 3)] MATCH TAXONOMIE: "Pads" -> "pads"
+🎯 [OPS - Hardstyle Ambiences (Vol. 3)] MATCH TAXONOMIE: "Pianos" -> "pianos"
+🎯 [OPS - Hardstyle Ambiences (Vol. 3)] MATCH TAXONOMIE: "Plucks" -> "plucks"
+✅ [OPS - Hardstyle Ambiences (Vol. 3)] PACK détecté (3 catégories): Pads, Pianos, Plucks
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle Break Templates (Vol. 1)"
+📝 [OPS - Hardstyle Break Templates (Vol. 1)] Détecté comme PACK TEMPLATE
+        Score: 80 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle Buildups (Vol. 2)"
+🔍 [OPS - Hardstyle Buildups (Vol. 2)] 15 sous-dossiers: [Long Buildup 1, Long Buildup 2, Long Buildup 3...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle Drum Loops (Vol. 2)"
+🔍 [OPS - Hardstyle Drum Loops (Vol. 2)] 6 sous-dossiers: [Clap Loops, Clap Loops (Offbeat), Cymbal Loops...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle FL Studio Template [Exodus]"
+📝 [OPS - Hardstyle FL Studio Template [Exodus]] Détecté comme PACK TEMPLATE
+        Score: 80 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle FL Studio Template [Kryptonite]"
+📝 [OPS - Hardstyle FL Studio Template [Kryptonite]] Détecté comme PACK TEMPLATE
+        Score: 80 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle Melody Suite"
+🔍 [OPS - Hardstyle Melody Suite] 10 sous-dossiers: [Acid Loops, Atmospheres & Ambiences, Buildups...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle Predrop Fills (Vol. 4)"
+🔍 [OPS - Hardstyle Predrop Fills (Vol. 4)] 3 sous-dossiers: [Percussive Fills, Tonal Fills, _FILL STEMS]
+        Score: 85 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle Preset Collection (Vol. 1)"
+🎹 [OPS - Hardstyle Preset Collection (Vol. 1)] Détecté comme PACK PRESET
+        Score: 75 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle Screech Loops (Vol. 2)"
+🔍 [OPS - Hardstyle Screech Loops (Vol. 2)] 3 sous-dossiers: [Dry, MIDI, _Serum Presets]
+🎯 [OPS - Hardstyle Screech Loops (Vol. 2)] MATCH TAXONOMIE: "Dry" -> "dry"
+🎯 [OPS - Hardstyle Screech Loops (Vol. 2)] MATCH TAXONOMIE: "MIDI" -> "midi"
+✅ [OPS - Hardstyle Screech Loops (Vol. 2)] PACK détecté (2 catégories): Dry, MIDI
+        Score: 85 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle Vocal Expansion (Vol. 1)"
+🔍 [OPS - Hardstyle Vocal Expansion (Vol. 1)] 8 sous-dossiers: [AI Vocals, Climax Vocals, Deep Vocals...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Melodic Mystery [Introitus]"
+🔍 [OPS - Melodic Mystery [Introitus]] 1 sous-dossiers: [MIDIS]
+        Score: 60 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Melodic Mystery [Savanna]"
+🔍 [OPS - Melodic Mystery [Savanna]] 3 sous-dossiers: [Dry, MIDI (Bass + Chords), MIDI (Full)]
+🎯 [OPS - Melodic Mystery [Savanna]] MATCH TAXONOMIE: "Dry" -> "dry"
+        Score: 85 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Melodic Mystery [Solitude]"
+🔍 [OPS - Melodic Mystery [Solitude]] 1 sous-dossiers: [Dry]
+🎯 [OPS - Melodic Mystery [Solitude]] MATCH TAXONOMIE: "Dry" -> "dry"
+        Score: 60 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Modern Hardstyle Kicks (Vol. 1)"
+🔍 [OPS - Modern Hardstyle Kicks (Vol. 1)] 11 sous-dossiers: [Anticlimax Kicks, Climax Kicks, Climax Kicks (Softer)...]
+🎯 [OPS - Modern Hardstyle Kicks (Vol. 1)] MATCH TAXONOMIE: "Rawstyle Kicks" -> "rawstyle kicks"
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Modern Hardstyle Kicks Builder (Vol. 1)"
+🔍 [OPS - Modern Hardstyle Kicks Builder (Vol. 1)] 20 sous-dossiers: [Crunches - Anticlimax & Rawstyle, Crunches - Gated, Crunches - Midintro...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Oldschool Screech Loops (Vol. 2)"
+🔍 [OPS - Oldschool Screech Loops (Vol. 2)] 2 sous-dossiers: [Dry, MIDI]
+🎯 [OPS - Oldschool Screech Loops (Vol. 2)] MATCH TAXONOMIE: "Dry" -> "dry"
+🎯 [OPS - Oldschool Screech Loops (Vol. 2)] MATCH TAXONOMIE: "MIDI" -> "midi"
+✅ [OPS - Oldschool Screech Loops (Vol. 2)] PACK détecté (2 catégories): Dry, MIDI
+        Score: 60 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rave Melody Pack (Vol. 1)"
+🔍 [OPS - Rave Melody Pack (Vol. 1)] 4 sous-dossiers: [Acid Loops, Screech Loops, Synth Loops...]
+        Score: 85 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawphoric Melody Pack (Vol. 4)"
+🔍 [OPS - Rawphoric Melody Pack (Vol. 4)] 21 sous-dossiers: [Melody 1 - Horizon Shockwave, Melody 10 - Unbidden Rage, Melody 11 - Nightfire...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawstyle Melody Pack (Vol. 5)"
+🔍 [OPS - Rawstyle Melody Pack (Vol. 5)] 21 sous-dossiers: [Melody 1 - Nightfall Chaos, Melody 10 - Intergalactic Imperium, Melody 11 - Venomcore...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Trance Hardstyle Melody Pack (Vol. 2)"
+🔍 [OPS - Trance Hardstyle Melody Pack (Vol. 2)] 21 sous-dossiers: [Melody 1 - Dust Bloom, Melody 10 - Ascensionist, Melody 11 - Let There Be Dark...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Viper Hardstyle Presets (Vol. 1)"
+🎹 [OPS - Viper Hardstyle Presets (Vol. 1)] Détecté comme PACK PRESET
+        Score: 75 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Zaag Kick Expansion (Vol. 2)"
+        Score: FAIL | isRealPack: true
+        ❌ REJECTÉ: score < 50
+      ❓ Test: "_ALL PRESETS COMPILED"
+🎹 [_ALL PRESETS COMPILED] Détecté comme PACK PRESET
+        Score: 75 | isRealPack: true
+        ✅ ACCEPTÉ
+    → 30 packs extraits
+  🔍 Scan dans bundle: "OPS - Harder-Style Vocal Suite"
+    🔍 DEBUG: Bundle "OPS - Harder-Style Vocal Suite" a 13 enfants
+      ❓ Test: "OPS - Harder-Style AI Vocals (Vol. 1)"
+🔍 [OPS - Harder-Style AI Vocals (Vol. 1)] 7 sous-dossiers: [Dark AI, Funny AI, Predrop Vocals...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Harder-Style Cinematic Vocals (Vol. 1)"
+🔍 [OPS - Harder-Style Cinematic Vocals (Vol. 1)] 4 sous-dossiers: [Cinematic Vocals, Creative Elements, Scary Atmospheres...]
+        Score: 85 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Harder-Style Ethereal Vocals (Vol. 1)"
+🔍 [OPS - Harder-Style Ethereal Vocals (Vol. 1)] 8 sous-dossiers: [African Vocals, Long Vocals, Psy Vocals...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Harder-Style Lead Vocals (Vol. 1)"
+🔍 [OPS - Harder-Style Lead Vocals (Vol. 1)] 8 sous-dossiers: [Atmospheres (Vocals), Female Full Songs, Female Hooks...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Harder-Style MC Vocals (Vol. 1)"
+🔍 [OPS - Harder-Style MC Vocals (Vol. 1)] 9 sous-dossiers: [Build Ups, Hype MC Vocals 1, Hype MC Vocals 2...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Harder-Style Melody Suite"
+🔍 [OPS - Harder-Style Melody Suite] 9 sous-dossiers: [Arpeggios, Atmospheres & Ambience, Drop Rave Synths...]
+🎯 [OPS - Harder-Style Melody Suite] MATCH TAXONOMIE: "Arpeggios" -> "arpeggios"
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Harder-Style Predrop Vocals (Vol. 1)"
+🔍 [OPS - Harder-Style Predrop Vocals (Vol. 1)] 8 sous-dossiers: [90s Hype Rap, Jamaican Vocals 1, Jamaican Vocals 2...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Harder-Style Rap Vocals (Vol. 1)"
+🔍 [OPS - Harder-Style Rap Vocals (Vol. 1)] 10 sous-dossiers: [Drum Loops, Melodic Elements (Rawstyle), Predrop Vocals...]
+🎯 [OPS - Harder-Style Rap Vocals (Vol. 1)] MATCH TAXONOMIE: "Drum Loops" -> "drum loops"
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Harder-Style Scream Vocals (Vol. 1)"
+🔍 [OPS - Harder-Style Scream Vocals (Vol. 1)] 6 sous-dossiers: [Songstarters (Rawstyle), Vocalist 1, Vocalist 2...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Harder-Style Serum Layer Presets"
+🎹 [OPS - Harder-Style Serum Layer Presets] Détecté comme PACK PRESET
+        Score: 75 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle Ambiences (Vol. 2)"
+🔍 [OPS - Hardstyle Ambiences (Vol. 2)] 6 sous-dossiers: [Atmospheres & Ambiences, Pads, Pianos...]
+🎯 [OPS - Hardstyle Ambiences (Vol. 2)] MATCH TAXONOMIE: "Pads" -> "pads"
+🎯 [OPS - Hardstyle Ambiences (Vol. 2)] MATCH TAXONOMIE: "Pianos" -> "pianos"
+🎯 [OPS - Hardstyle Ambiences (Vol. 2)] MATCH TAXONOMIE: "Plucks" -> "plucks"
+✅ [OPS - Hardstyle Ambiences (Vol. 2)] PACK détecté (3 catégories): Pads, Pianos, Plucks
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle Predrop Fills (Vol. 2)"
+🔍 [OPS - Hardstyle Predrop Fills (Vol. 2)] 5 sous-dossiers: [Build Ups, Fills (Long), Snare Fills...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "_BONUS - Vocal Mixer Presets (FL Studio)"
+🎹 [_BONUS - Vocal Mixer Presets (FL Studio)] Détecté comme PACK PRESET
+        Score: 75 | isRealPack: true
+        ✅ ACCEPTÉ
+    → 13 packs extraits
+  🔍 Scan dans bundle: "OPS - Rawstyle Production Suite"
+    🔍 DEBUG: Bundle "OPS - Rawstyle Production Suite" a 24 enfants
+      ❓ Test: "OPS - Harder-Style Kickroll MIDI (Vol. 1)"
+🎵 [OPS - Harder-Style Kickroll MIDI (Vol. 1)] Détecté comme PACK MIDI
+        Score: 80 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle Predrop Fills (Vol. 3)"
+🔍 [OPS - Hardstyle Predrop Fills (Vol. 3)] 3 sous-dossiers: [KICK FILLS, PERCUSSIVE FILLS, _BONUS FX FILLS]
+        Score: 85 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Melodic Mystery [Aurora]"
+🔍 [OPS - Melodic Mystery [Aurora]] 9 sous-dossiers: [Atmospheres, Drones, Granular...]
+🎯 [OPS - Melodic Mystery [Aurora]] MATCH TAXONOMIE: "Atmospheres" -> "atmospheres"
+🎯 [OPS - Melodic Mystery [Aurora]] MATCH TAXONOMIE: "Drones" -> "drones"
+✅ [OPS - Melodic Mystery [Aurora]] PACK détecté (2 catégories): Atmospheres, Drones
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Melodic Mystery [Eclipse]"
+🔍 [OPS - Melodic Mystery [Eclipse]] 1 sous-dossiers: [MIDI]
+🎯 [OPS - Melodic Mystery [Eclipse]] MATCH TAXONOMIE: "MIDI" -> "midi"
+        Score: 60 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Melodic Mystery [Solar]"
+🔍 [OPS - Melodic Mystery [Solar]] 1 sous-dossiers: [MIDIS]
+        Score: 60 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Modern Rawstyle Kick Builder (Vol. 1)"
+🔍 [OPS - Modern Rawstyle Kick Builder (Vol. 1)] 22 sous-dossiers: [Crunch Enhance - Begin, Crunch Enhance - End, Crunches (Anticlimax)...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Modern Rawstyle Kicks (Vol. 1)"
+🔍 [OPS - Modern Rawstyle Kicks (Vol. 1)] 6 sous-dossiers: [Anticlimax Kicks, Climax Kicks, Gated Kicks...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Oldschool Rawstyle Kick Builder (Vol. 1)"
+🔍 [OPS - Oldschool Rawstyle Kick Builder (Vol. 1)] 9 sous-dossiers: [Crunches (Clear), Crunches (Gated), Crunches (Rawstyle)...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Oldschool Rawstyle Kick Expansion (Vol. 1)"
+🔍 [OPS - Oldschool Rawstyle Kick Expansion (Vol. 1)] 3 sous-dossiers: [Gated Character, Muffled Character, Tonal Character]
+        Score: 70 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Oldschool Screech Loops (Vol. 1)"
+🔍 [OPS - Oldschool Screech Loops (Vol. 1)] 2 sous-dossiers: [MIDI, Screech Loops (Dry)]
+🎯 [OPS - Oldschool Screech Loops (Vol. 1)] MATCH TAXONOMIE: "MIDI" -> "midi"
+        Score: 60 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Oldschool Serum Presets (Vol. 1)"
+🎹 [OPS - Oldschool Serum Presets (Vol. 1)] Détecté comme PACK PRESET
+        Score: 75 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawstyle Buildups (Vol. 1)"
+🔍 [OPS - Rawstyle Buildups (Vol. 1)] 3 sous-dossiers: [Buildups (Long), Buildups (Medium), Buildups (Short)]
+        Score: 85 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawstyle Drums (Vol. 1)"
+🔍 [OPS - Rawstyle Drums (Vol. 1)] 5 sous-dossiers: [Clap Loop, Hat Loop, Off Beat Clap Loops...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawstyle FX Expansion (Vol. 1)"
+🔍 [OPS - Rawstyle FX Expansion (Vol. 1)] 12 sous-dossiers: [Build Ups, Crashes, Distorted FX...]
+🎯 [OPS - Rawstyle FX Expansion (Vol. 1)] MATCH TAXONOMIE: "Crashes" -> "crashes"
+🎯 [OPS - Rawstyle FX Expansion (Vol. 1)] MATCH TAXONOMIE: "Impacts" -> "impacts"
+✅ [OPS - Rawstyle FX Expansion (Vol. 1)] PACK détecté (2 catégories): Crashes, Impacts
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawstyle Kick Vault"
+🔍 [OPS - Rawstyle Kick Vault] 6 sous-dossiers: [Anticlimax Kick Types, Anticlimax Kicks, Climax Kicks...]
+🎯 [OPS - Rawstyle Kick Vault] MATCH TAXONOMIE: "Rawstyle Kicks" -> "rawstyle kicks"
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawstyle Layer Presets"
+🎹 [OPS - Rawstyle Layer Presets] Détecté comme PACK PRESET
+        Score: 75 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawstyle Melody Pack (Vol. 3)"
+🔍 [OPS - Rawstyle Melody Pack (Vol. 3)] 27 sous-dossiers: [Melody 1, Melody 10, Melody 11...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawstyle Melody Pack (Vol. 4)"
+🔍 [OPS - Rawstyle Melody Pack (Vol. 4)] 27 sous-dossiers: [Melody 01, Melody 02, Melody 03...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawstyle Melody Suite"
+🔍 [OPS - Rawstyle Melody Suite] 8 sous-dossiers: [Ambience, Apreggios, Drop Synth Rave...]
+🎯 [OPS - Rawstyle Melody Suite] MATCH TAXONOMIE: "Melodies" -> "melodies"
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawstyle Screech Loops (Vol. 1)"
+🔍 [OPS - Rawstyle Screech Loops (Vol. 1)] 3 sous-dossiers: [Additional presets, Dry, MIDI]
+🎯 [OPS - Rawstyle Screech Loops (Vol. 1)] MATCH TAXONOMIE: "Dry" -> "dry"
+🎯 [OPS - Rawstyle Screech Loops (Vol. 1)] MATCH TAXONOMIE: "MIDI" -> "midi"
+✅ [OPS - Rawstyle Screech Loops (Vol. 1)] PACK détecté (2 catégories): Dry, MIDI
+        Score: 85 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawstyle Screech Loops (Vol. 2)"
+🔍 [OPS - Rawstyle Screech Loops (Vol. 2)] 2 sous-dossiers: [Dry, MIDI]
+🎯 [OPS - Rawstyle Screech Loops (Vol. 2)] MATCH TAXONOMIE: "Dry" -> "dry"
+🎯 [OPS - Rawstyle Screech Loops (Vol. 2)] MATCH TAXONOMIE: "MIDI" -> "midi"
+✅ [OPS - Rawstyle Screech Loops (Vol. 2)] PACK détecté (2 catégories): Dry, MIDI
+        Score: 60 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawstyle Vocal Expansion (Vol. 1)"
+🔍 [OPS - Rawstyle Vocal Expansion (Vol. 1)] 4 sous-dossiers: [AI - Predrop Vocals, AI - Stories, AI - Words...]
+        Score: 85 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Serum Anticlimax Patches (Vol. 1)"
+🎹 [OPS - Serum Anticlimax Patches (Vol. 1)] Détecté comme PACK PRESET
+        Score: 75 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Vital Screech Presets (Vol. 1)"
+🎹 [OPS - Vital Screech Presets (Vol. 1)] Détecté comme PACK PRESET
+        Score: 75 | isRealPack: true
+        ✅ ACCEPTÉ
+    → 24 packs extraits
+  🔍 Scan dans bundle: "OPS - The Ultimate Harder-Style Production Bundle"
+    🔍 DEBUG: Bundle "OPS - The Ultimate Harder-Style Production Bundle" a 37 enfants
+      ❓ Test: "OPS - Acid Hardstyle Expansion (Vol. 1)"
+🔍 [OPS - Acid Hardstyle Expansion (Vol. 1)] 6 sous-dossiers: [Acid Fills, Acid Loops, Acid MIDI...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Anticlimax Kick Expansion (Vol. 1)"
+🔍 [OPS - Anticlimax Kick Expansion (Vol. 1)] 5 sous-dossiers: [Attack Transients, Crunches, Punch Reverbs...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Climax Kick Expansion (Vol. 1)"
+🔍 [OPS - Climax Kick Expansion (Vol. 1)] 25 sous-dossiers: [Climax Kick 01, Climax Kick 02, Climax Kick 03...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Euphoric Hardstyle Kick Expansion (Vol. 1)"
+🔍 [OPS - Euphoric Hardstyle Kick Expansion (Vol. 1)] 4 sous-dossiers: [BONUS - Psy Kicks, Classic & Euphoric Kicks, Kick Build Folder...]
+        Score: 70 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Euphoric Hardstyle Melody Pack (Vol. 1)"
+🔍 [OPS - Euphoric Hardstyle Melody Pack (Vol. 1)] 23 sous-dossiers: [Euphoric Melody 01, Euphoric Melody 02, Euphoric Melody 03...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Euphoric Hardstyle Melody Pack (Vol. 2)"
+🔍 [OPS - Euphoric Hardstyle Melody Pack (Vol. 2)] 23 sous-dossiers: [Euphoric Melody 01, Euphoric Melody 02, Euphoric Melody 03...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Frenchcore Melody Pack (Vol. 1)"
+🔍 [OPS - Frenchcore Melody Pack (Vol. 1)] 23 sous-dossiers: [Frenchcore Melody 1, Frenchcore Melody 10, Frenchcore Melody 11...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Frenchcore Melody Pack (Vol. 2)"
+🔍 [OPS - Frenchcore Melody Pack (Vol. 2)] 23 sous-dossiers: [Frenchcore Melody 01, Frenchcore Melody 02, Frenchcore Melody 03...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Gabber Essentials Vol. 1"
+🔍 [OPS - Gabber Essentials Vol. 1] 7 sous-dossiers: [Drum Loops, FX, Kicks...]
+🎯 [OPS - Gabber Essentials Vol. 1] MATCH TAXONOMIE: "Drum Loops" -> "drum loops"
+🎯 [OPS - Gabber Essentials Vol. 1] MATCH TAXONOMIE: "FX" -> "fx"
+🎯 [OPS - Gabber Essentials Vol. 1] MATCH TAXONOMIE: "Kicks" -> "kicks"
+🎯 [OPS - Gabber Essentials Vol. 1] MATCH TAXONOMIE: "MIDI" -> "midi"
+✅ [OPS - Gabber Essentials Vol. 1] PACK détecté (4 catégories): Drum Loops, FX, Kicks, MIDI
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Gated Kick Expansion (Vol. 1)"
+🔍 [OPS - Gated Kick Expansion (Vol. 1)] 5 sous-dossiers: [Attack Transients, Crunches, Punch Reverbs...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hands-up Hardstyle Melody Pack (Vol. 1)"
+🔍 [OPS - Hands-up Hardstyle Melody Pack (Vol. 1)] 23 sous-dossiers: [Hands-up Melody 01, Hands-up Melody 02, Hands-up Melody 03...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardcore Serum Presets (Vol. 1)"
+🎹 [OPS - Hardcore Serum Presets (Vol. 1)] Détecté comme PACK PRESET
+        Score: 75 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle Ambiences (Vol. 1)"
+🔍 [OPS - Hardstyle Ambiences (Vol. 1)] 7 sous-dossiers: [MIDI Files, Pad Ambiences, Piano Ambiences...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle Buildups (Vol. 1)"
+🔍 [OPS - Hardstyle Buildups (Vol. 1)] 21 sous-dossiers: [Build Up 01, Build Up 02, Build Up 03...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle Drum Loops (Vol. 1)"
+🔍 [OPS - Hardstyle Drum Loops (Vol. 1)] 9 sous-dossiers: [Cinematic Loops, Clap Loops, Cymbal Loops...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle Predrop Fills (Vol. 1)"
+🔍 [OPS - Hardstyle Predrop Fills (Vol. 1)] 5 sous-dossiers: [Acid Fills, Fills (1 bar), Fills (2 bars)...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Hardstyle Screech Loops (Vol. 1)"
+🔍 [OPS - Hardstyle Screech Loops (Vol. 1)] 6 sous-dossiers: [MIDI, MIDI (Triplet), Screech Loops (variation 1)...]
+🎯 [OPS - Hardstyle Screech Loops (Vol. 1)] MATCH TAXONOMIE: "MIDI" -> "midi"
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Industrial XTRA Raw Kick Expansion (Vol. 1)"
+🔍 [OPS - Industrial XTRA Raw Kick Expansion (Vol. 1)] 7 sous-dossiers: [Gated Kicks, Industrial Kicks, Laser Kicks...]
+🎯 [OPS - Industrial XTRA Raw Kick Expansion (Vol. 1)] MATCH TAXONOMIE: "Rawstyle Kicks" -> "rawstyle kicks"
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Kick Builder (CR1)"
+🔍 [OPS - Kick Builder (CR1)] 7 sous-dossiers: [Attack Transients, Crunches, Lazer Kicks...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Kick Builder (HE3)"
+🔍 [OPS - Kick Builder (HE3)] 25 sous-dossiers: [Attacks (Clicks), Attacks (Lasers), Attacks (Punch Resonators)...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Kick Builder (REV1)"
+🔍 [OPS - Kick Builder (REV1)] 6 sous-dossiers: [1. Kicks, 2. Punch & Attack, 3. Crunches...]
+🎯 [OPS - Kick Builder (REV1)] MATCH TAXONOMIE: "Subs" -> "subs"
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Kick Builder (UHE1)"
+🔍 [OPS - Kick Builder (UHE1)] 9 sous-dossiers: [Attack Transients, Crunches, Kick Attacks...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Midintro Kick Expansion (Vol. 1)"
+🎵 [OPS - Midintro Kick Expansion (Vol. 1)] Détecté comme PACK MIDI
+        Score: 80 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawphoric Melody Pack (Vol. 1)"
+🔍 [OPS - Rawphoric Melody Pack (Vol. 1)] 23 sous-dossiers: [Rawphoric Melody 01, Rawphoric Melody 02, Rawphoric Melody 03...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawphoric Melody Pack (Vol. 2)"
+🔍 [OPS - Rawphoric Melody Pack (Vol. 2)] 23 sous-dossiers: [Rawphoric Melody 01, Rawphoric Melody 02, Rawphoric Melody 03...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawphoric Melody Pack (Vol. 3)"
+🔍 [OPS - Rawphoric Melody Pack (Vol. 3)] 23 sous-dossiers: [Rawphoric Melody 01, Rawphoric Melody 02, Rawphoric Melody 03...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawstyle Kick Expansion (Vol. 1)"
+🔍 [OPS - Rawstyle Kick Expansion (Vol. 1)] 5 sous-dossiers: [Attack Transients, Crunches, Punch Reverbs...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawstyle Kick FX (Vol. 1)"
+🔍 [OPS - Rawstyle Kick FX (Vol. 1)] 5 sous-dossiers: [Kick FX, Kick FX Fills, Kick Impacts...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawstyle Melody Pack (Vol. 1)"
+🔍 [OPS - Rawstyle Melody Pack (Vol. 1)] 23 sous-dossiers: [Rawstyle Melody 01, Rawstyle Melody 02, Rawstyle Melody 03...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Rawstyle Melody Pack (Vol. 2)"
+🔍 [OPS - Rawstyle Melody Pack (Vol. 2)] 23 sous-dossiers: [Rawstyle Melody 01, Rawstyle Melody 02, Rawstyle Melody 03...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Serum Hardstyle Kick Presets (Vol. 1)"
+🎹 [OPS - Serum Hardstyle Kick Presets (Vol. 1)] Détecté comme PACK PRESET
+        Score: 75 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Serum Screech Presets (Vol. 1)"
+🎹 [OPS - Serum Screech Presets (Vol. 1)] Détecté comme PACK PRESET
+        Score: 75 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Spire Hardstyle Screech Presets (Vol. 1)"
+🎹 [OPS - Spire Hardstyle Screech Presets (Vol. 1)] Détecté comme PACK PRESET
+        Score: 75 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Sylenth1 Hardstyle Arpeggios"
+🎹 [OPS - Sylenth1 Hardstyle Arpeggios] Détecté comme PACK PRESET
+        Score: 75 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Trance Hardstyle Melody Pack (Vol. 1)"
+🔍 [OPS - Trance Hardstyle Melody Pack (Vol. 1)] 23 sous-dossiers: [Trance Hardstyle Melody 01, Trance Hardstyle Melody 02, Trance Hardstyle Melody 03...]
+        Score: 100 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Vital Hardstyle Kick Presets (Vol. 1)"
+🎹 [OPS - Vital Hardstyle Kick Presets (Vol. 1)] Détecté comme PACK PRESET
+        Score: 75 | isRealPack: true
+        ✅ ACCEPTÉ
+      ❓ Test: "OPS - Zaag Kick Expansion (Vol. 1)"
+🔍 [OPS - Zaag Kick Expansion (Vol. 1)] 4 sous-dossiers: [Crunches, Mixer Presets (FL), Punches...]
+        Score: 70 | isRealPack: true
+        ✅ ACCEPTÉ
+    → 37 packs extraits
+🔍 PHASE 3: Recherche des PACKS normaux (hors bundles)...
+🔍 [Big EDM - Hardstyle Mania (WAV)] 8 sous-dossiers: [BuildUps, Drums, Drums Loops...]
+🎯 [Big EDM - Hardstyle Mania (WAV)] MATCH TAXONOMIE: "Drums" -> "drums"
+🎯 [Big EDM - Hardstyle Mania (WAV)] MATCH TAXONOMIE: "FX" -> "fx"
+🎯 [Big EDM - Hardstyle Mania (WAV)] MATCH TAXONOMIE: "Synth" -> "synth"
+🎯 [Big EDM - Hardstyle Mania (WAV)] MATCH TAXONOMIE: "Vocals" -> "vocals"
+✅ [Big EDM - Hardstyle Mania (WAV)] PACK détecté (4 catégories): Drums, FX, Synth, Vocals
+🔍 [Drums] 5 sous-dossiers: [Claps, Cymbals, Kicks...]
+🎯 [Drums] MATCH TAXONOMIE: "Claps" -> "claps"
+🎯 [Drums] MATCH TAXONOMIE: "Cymbals" -> "cymbals"
+🎯 [Drums] MATCH TAXONOMIE: "Kicks" -> "kicks"
+🎯 [Drums] MATCH TAXONOMIE: "Percussion" -> "percussion"
+🎯 [Drums] MATCH TAXONOMIE: "Snares" -> "snares"
+✅ [Drums] PACK détecté (5 catégories): Claps, Cymbals, Kicks, Percussion, Snares
+🔍 [FX] 4 sous-dossiers: [Impacts, Risers, Sweeps_Down...]
+🎯 [FX] MATCH TAXONOMIE: "Impacts" -> "impacts"
+🔍 [Synth] 3 sous-dossiers: [Bass_Shots, Lead_Shots, Pluck_Shots]
+🎯 [Synth] MATCH TAXONOMIE: "Bass_Shots" -> "bass_shots"
+🎹 [FMT_XTRA_CRISPY_SERUM] Détecté comme PACK PRESET
+🎹 [SERUM PRESETS] Détecté comme PACK PRESET
+🔍 [Fragment Audio - Screech XL (WAV)] 4 sous-dossiers: [Drums, Fx, Kickdrums...]
+🎯 [Fragment Audio - Screech XL (WAV)] MATCH TAXONOMIE: "Drums" -> "drums"
+🎯 [Fragment Audio - Screech XL (WAV)] MATCH TAXONOMIE: "Fx" -> "fx"
+🎯 [Fragment Audio - Screech XL (WAV)] MATCH TAXONOMIE: "Kickdrums" -> "kickdrums"
+✅ [Fragment Audio - Screech XL (WAV)] PACK détecté (3 catégories): Drums, Fx, Kickdrums
+🔍 [Drums] 6 sous-dossiers: [Claps, Closed HH, Crashes...]
+🎯 [Drums] MATCH TAXONOMIE: "Claps" -> "claps"
+🎯 [Drums] MATCH TAXONOMIE: "Crashes" -> "crashes"
+🎯 [Drums] MATCH TAXONOMIE: "Rides" -> "rides"
+🎯 [Drums] MATCH TAXONOMIE: "Snares" -> "snares"
+✅ [Drums] PACK détecté (4 catégories): Claps, Crashes, Rides, Snares
+🔍 [Fx] 3 sous-dossiers: [Fallers, FX Kickdrums, Risers]
+🔍 [Fyloh - HUGE HARD DANCE KICKS PACK] 3 sous-dossiers: [KICK PUNCHS, MISC, VARIOUS KICKS]
+🔍 [VARIOUS KICKS] 11 sous-dossiers: [FRENCHCORE KICKS (200 BPM), GROWL KICK (175 BPM), KICK MADE WITH MY MOUTH...]
+🔍 [Industrial Strenght - Raw Intensity by General Guyble (WAV)] 6 sous-dossiers: [Contains, ISR_License, RI_Audio_Samples...]
+🔍 [RI_Audio_Samples] 5 sous-dossiers: [RI_Drum_Loops_155_BPM, RI_Drum_One_Shots, RI_FX...]
+🔍 [Industrial Strenght - Rawstyle (WAV)] 6 sous-dossiers: [RS_NI Battery 4, RS_Rawstyle Audio, RS_Rawstyle Audio_2...]
+🎹 [RS_Rawstyle Cubase Track Presets] Détecté comme PACK PRESET
+🎹 [RS_Rawstyle Patch Presets] Détecté comme PACK PRESET
+🔍 [Industrial Strenght - Rawstyle Evolution by General Guyble (WAV)] 8 sous-dossiers: [Contains, ISR_License, RSE_Content_Information...]
+🔍 [RSE_Drum_One_Shots] 5 sous-dossiers: [RSE_Clap, RSE_Cymbals, RSE_Kick...]
+🔍 [RSE_FX] 4 sous-dossiers: [RSE_Downfilter, RSE_Impact, RSE_Riser_155bpm_F...]
+🎹 [RSE_Sylenth_Soundbank] Détecté comme PACK PRESET
+🔍 [Kloenk and PVC Kick Expansion (Vol. 1)] 5 sous-dossiers: [FL Studio Mixers, FL Studio Plugin, FL Studio Templates...]
+🎹 [FL Studio Mixers] Détecté comme PACK PRESET
+📝 [FL Studio Templates] Détecté comme PACK TEMPLATE
+🔍 [Kick Builder] 5 sous-dossiers: [Attack Transients, Crunches, Misc Punch Samples...]
+🔍 [NS Audio All In One Hardstyle Collection] 11 sous-dossiers: [AUDIO KICKS, FX, MIDI FILES...]
+🎯 [NS Audio All In One Hardstyle Collection] MATCH TAXONOMIE: "FX" -> "fx"
+🎯 [NS Audio All In One Hardstyle Collection] MATCH TAXONOMIE: "PERCUSSION" -> "percussion"
+🎯 [NS Audio All In One Hardstyle Collection] MATCH TAXONOMIE: "PRESETS" -> "presets"
+✅ [NS Audio All In One Hardstyle Collection] PACK détecté (3 catégories): FX, PERCUSSION, PRESETS
+🔍 [AUDIO KICKS] 7 sous-dossiers: [EXTRA, SERUM KICK RENDERS, GATED KICKS, MELODY KICKS...]
+🎵 [MIDI FILES] Détecté comme PACK MIDI
+🎹 [MIXER CHAIN FL (For serum kicks 2.0)] Détecté comme PACK PRESET
+🎹 [MIXER CHAIN LOGIC PRO (For serum kicks 2.0)] Détecté comme PACK PRESET
+🔍 [PERCUSSION] 3 sous-dossiers: [CLAPS, LOOPS, SNARES]
+🎯 [PERCUSSION] MATCH TAXONOMIE: "CLAPS" -> "claps"
+🎯 [PERCUSSION] MATCH TAXONOMIE: "LOOPS" -> "loops"
+🎯 [PERCUSSION] MATCH TAXONOMIE: "SNARES" -> "snares"
+✅ [PERCUSSION] PACK détecté (3 catégories): CLAPS, LOOPS, SNARES
+🎹 [PRESETS] Détecté comme PACK PRESET
+🔍 [Official Thyron Sample Pack] 16 sous-dossiers: [Atmosphere Loops, Build Loops, Demo Track Stems...]
+🎯 [Official Thyron Sample Pack] MATCH TAXONOMIE: "Drum Loops" -> "drum loops"
+🎯 [Official Thyron Sample Pack] MATCH TAXONOMIE: "FX" -> "fx"
+🎯 [Official Thyron Sample Pack] MATCH TAXONOMIE: "Kicks" -> "kicks"
+🎯 [Official Thyron Sample Pack] MATCH TAXONOMIE: "Vocals" -> "vocals"
+✅ [Official Thyron Sample Pack] PACK détecté (4 catégories): Drum Loops, FX, Kicks, Vocals
+🔍 [Drum Oneshots] 5 sous-dossiers: [Claps, Crashes, Hats...]
+🎯 [Drum Oneshots] MATCH TAXONOMIE: "Claps" -> "claps"
+🎯 [Drum Oneshots] MATCH TAXONOMIE: "Crashes" -> "crashes"
+🎯 [Drum Oneshots] MATCH TAXONOMIE: "Kicks" -> "kicks"
+🎯 [Drum Oneshots] MATCH TAXONOMIE: "Snares" -> "snares"
+✅ [Drum Oneshots] PACK détecté (4 catégories): Claps, Crashes, Kicks, Snares
+🔍 [Kick Builder] 6 sous-dossiers: [Punch Reverbs, Punches, Sub Punches...]
+🔍 [Kicks] 6 sous-dossiers: [Climax Kicks, Distorted Kicks, Gated Kicks...]
+🎹 [Serum Presets] Détecté comme PACK PRESET
+🔍 [Vocals] 5 sous-dossiers: [Deep Male Vocals, Female Vocals, Hype Vocals...]
+🔍 [On Point Samples  Futuristic Kick Expansion (Vol. 1)] 5 sous-dossiers: [FL Studio Templates, Kick Builder, Kicks...]
+🎯 [On Point Samples  Futuristic Kick Expansion (Vol. 1)] MATCH TAXONOMIE: "Kicks" -> "kicks"
+📝 [FL Studio Templates] Détecté comme PACK TEMPLATE
+🔍 [Kick Builder] 7 sous-dossiers: [Crunches (Clean Rumbles), Crunches (Kick Renders), Punches (Kick Renders)...]
+🔍 [Kicks] 5 sous-dossiers: [Kicks (Futuristic), Kicks (Laser), Kicks (Pixel)...]
+🎹 [Mixer Files] Détecté comme PACK PRESET
+🎹 [Serum Presets] Détecté comme PACK PRESET
+🔍 [On Point Samples Color Kick Expansion (Vol. 1)] 5 sous-dossiers: [Color Kicks (Raw), Color Kicks (Rumble), FL Studio Mixers...]
+🎹 [FL Studio Mixers] Détecté comme PACK PRESET
+📝 [FL Studio Templates] Détecté comme PACK TEMPLATE
+🔍 [Kick Parts] 9 sous-dossiers: [Chord MIDI, Chord Stabs, Crunches (Raw)...]
+📝 [OPS - BONUS - Kick Build Templates (FL Studio)] Détecté comme PACK TEMPLATE
+📝 [OPS - Gated Kick Template 1] Détecté comme PACK TEMPLATE
+🎵 [OPS - Midintro Kick Template 1] Détecté comme PACK MIDI
+🎵 [OPS - Midintro Kick Template 2] Détecté comme PACK MIDI
+📝 [OPS - Psy Kick Template 1] Détecté comme PACK TEMPLATE
+📝 [OPS - Psy Kick Template 2] Détecté comme PACK TEMPLATE
+📝 [OPS - Rawstyle Kick Template 1] Détecté comme PACK TEMPLATE
+📝 [OPS - Rawstyle Kick Template 2] Détecté comme PACK TEMPLATE
+🎹 [OPS - BONUS - Rawstyle Kick Mixer Presets (FL Studio)] Détecté comme PACK PRESET
+🎹 [OPS - BONUS - Rawstyle Mixer Presets (FL Studio)] Détecté comme PACK PRESET
+🔍 [OPS - Criminal Rawstyle Kicks Vol. 1] 6 sous-dossiers: [Kick Parts Folder, Mid-Intro Kicks, Misc...]
+🎯 [OPS - Criminal Rawstyle Kicks Vol. 1] MATCH TAXONOMIE: "Rawstyle Kicks" -> "rawstyle kicks"
+🎯 [OPS - Criminal Rawstyle Kicks Vol. 1] MATCH TAXONOMIE: "Vocals" -> "vocals"
+✅ [OPS - Criminal Rawstyle Kicks Vol. 1] PACK détecté (2 catégories): Rawstyle Kicks, Vocals
+🔍 [Kick Parts Folder] 7 sous-dossiers: [Attack Transients, Crunches, Lazer Kicks...]
+🔍 [Mid-Intro Kicks] 4 sous-dossiers: [Crunches, Squashed Kicks, Top Kicks...]
+🔍 [Misc] 3 sous-dossiers: [Kick Renders, Misc Kick Sound, Random Sounds]
+🎹 [OPS - Criminal Rawstyle Kicks Vol. 1 (Serum presets)] Détecté comme PACK PRESET
+🔍 [Rawstyle Kicks] 1 sous-dossiers: [Projects]
+🔍 [Vocals] 4 sous-dossiers: [Empty Phrases, Phrases, Shouts...]
+🎯 [Vocals] MATCH TAXONOMIE: "Phrases" -> "phrases"
+🔍 [OPS - Fractal Hardstyle FX] 9 sous-dossiers: [Bass Shots, Crashes, Distorted Snares...]
+🎯 [OPS - Fractal Hardstyle FX] MATCH TAXONOMIE: "Crashes" -> "crashes"
+🎯 [OPS - Fractal Hardstyle FX] MATCH TAXONOMIE: "Impacts" -> "impacts"
+✅ [OPS - Fractal Hardstyle FX] PACK détecté (2 catégories): Crashes, Impacts
+🔍 [Sweeps & Risers 150 BPM] 3 sous-dossiers: [Downsweeps, Risers, Sweep Up]
+🔍 [OPS - Rawphoric Essentials Vol. 1] 7 sous-dossiers: [Drums, FX, Kick Fundamentals...]
+🎯 [OPS - Rawphoric Essentials Vol. 1] MATCH TAXONOMIE: "Drums" -> "drums"
+🎯 [OPS - Rawphoric Essentials Vol. 1] MATCH TAXONOMIE: "FX" -> "fx"
+🎯 [OPS - Rawphoric Essentials Vol. 1] MATCH TAXONOMIE: "Kicks" -> "kicks"
+🎯 [OPS - Rawphoric Essentials Vol. 1] MATCH TAXONOMIE: "Melodies" -> "melodies"
+🎯 [OPS - Rawphoric Essentials Vol. 1] MATCH TAXONOMIE: "Presets" -> "presets"
+🎯 [OPS - Rawphoric Essentials Vol. 1] MATCH TAXONOMIE: "Vocals" -> "vocals"
+✅ [OPS - Rawphoric Essentials Vol. 1] PACK détecté (6 catégories): Drums, FX, Kicks, Melodies, Presets, Vocals
+🔍 [Drums] 6 sous-dossiers: [Claps, Drum Loops, Hats...]
+🎯 [Drums] MATCH TAXONOMIE: "Claps" -> "claps"
+🎯 [Drums] MATCH TAXONOMIE: "Drum Loops" -> "drum loops"
+🎯 [Drums] MATCH TAXONOMIE: "Kicks" -> "kicks"
+🎯 [Drums] MATCH TAXONOMIE: "Percussion" -> "percussion"
+🎯 [Drums] MATCH TAXONOMIE: "Snares" -> "snares"
+✅ [Drums] PACK détecté (5 catégories): Claps, Drum Loops, Kicks, Percussion, Snares
+🔍 [FX] 5 sous-dossiers: [Distorted Snares, Fills, Impacts...]
+🎯 [FX] MATCH TAXONOMIE: "Impacts" -> "impacts"
+🔍 [Kick Fundamentals] 6 sous-dossiers: [1. Kicks, 2. Punch & Attack, 3. Crunches...]
+🎯 [Kick Fundamentals] MATCH TAXONOMIE: "Subs" -> "subs"
+🔍 [Kicks] 5 sous-dossiers: [Gated Kicks, Mid-Intro Kicks, Rawphoric Kicks...]
+🎯 [Kicks] MATCH TAXONOMIE: "Rawstyle Kicks" -> "rawstyle kicks"
+🔍 [Melodies] 5 sous-dossiers: [Acid Lines, Ambience, Arpeggios...]
+🎯 [Melodies] MATCH TAXONOMIE: "Arpeggios" -> "arpeggios"
+🎹 [Presets] Détecté comme PACK PRESET
+🔍 [OPS Raging Rawstyle Vocals Vol. 1] 7 sous-dossiers: [150 BPM VOX, 180 BPM VOX, Build Ups...]
+🎯 [OPS Raging Rawstyle Vocals Vol. 1] MATCH TAXONOMIE: "Drum Loops" -> "drum loops"
+🔍 [150 BPM VOX] 4 sous-dossiers: [Long Phrases, Medium Phrases, Short Phrases...]
+🔍 [180 BPM VOX] 4 sous-dossiers: [Long Phrases 180 BPM, Medium Phrases 180 BPM, Short Phrases 180 BPM...]
+🔍 [Build Ups] 11 sous-dossiers: [Build 1 - 150 D#, Build 10 - 150 F# 16 BAR, Build 2  - 150 G...]
+🎯 [Build Ups] MATCH TAXONOMIE: "MIDI" -> "midi"
+🔍 [Drum Loops] 11 sous-dossiers: [Drum Loop 1 - 150, Drum Loop 10 - 150, Drum Loop 2 - 150...]
+🎯 [Drum Loops] MATCH TAXONOMIE: "MIDI" -> "midi"
+🎹 [Vocal Mixer Chains] Détecté comme PACK PRESET
+🔍 [Screech House - Hardstyle Sample Pack (WAV)] 9 sous-dossiers: [BASSES, CLAPS, EFFECTS...]
+🎯 [Screech House - Hardstyle Sample Pack (WAV)] MATCH TAXONOMIE: "CLAPS" -> "claps"
+🎯 [Screech House - Hardstyle Sample Pack (WAV)] MATCH TAXONOMIE: "EFFECTS" -> "effects"
+🎯 [Screech House - Hardstyle Sample Pack (WAV)] MATCH TAXONOMIE: "KICKS" -> "kicks"
+🎯 [Screech House - Hardstyle Sample Pack (WAV)] MATCH TAXONOMIE: "LEADS" -> "leads"
+🎯 [Screech House - Hardstyle Sample Pack (WAV)] MATCH TAXONOMIE: "MELODIES" -> "melodies"
+🎯 [Screech House - Hardstyle Sample Pack (WAV)] MATCH TAXONOMIE: "SNARES" -> "snares"
+✅ [Screech House - Hardstyle Sample Pack (WAV)] PACK détecté (6 catégories): CLAPS, EFFECTS, KICKS, LEADS, MELODIES, SNARES
+🔍 [EXTRAS] 3 sous-dossiers: [INTROS SCREECH HOUSE, RHYTHMS, SCREECHES]
+🔍 [Singomakers - PSYSTYLE (WAV)] 9 sous-dossiers: [SPST_Bass_Loops, SPST_Drum_Loops, SPST_Fills_&_Buid-Ups...]
+🎵 [SPST_Midi_Files] Détecté comme PACK MIDI
+🔍 [SPST_One_Shots] 9 sous-dossiers: [SPST_Big_Snares, SPST_Crashes, SPST_Hall_Kicks...]
+🔍 [SPST_SFX] 5 sous-dossiers: [SPST_Downlifters, SPST_Impacts, SPST_Misc_Fx...]
+🔍 [Singomakers - Rawstyle - Massacre (WAV)] 10 sous-dossiers: [SRR_Fills_&_Rolls, SRR_Filtered_Kick_Loops, SRR_Kick_Loops...]
+🔍 [SRR_Fills_&_Rolls] 3 sous-dossiers: [SRR_FX_Fills, SRR_Kick_Rolls, SRR_Synth_Fills]
+🎵 [SRR_Midi_Files] Détecté comme PACK MIDI
+🔍 [SRR_One_Shots] 10 sous-dossiers: [SRR_Claps, SRR_Crashes, SRR_Hats...]
+🔍 [SRR_SFX] 6 sous-dossiers: [SRR_Cinematic_Fx, SRR_Downlifters, SRR_Falling_Basses...]
+🎹 [SRR_VST_Synth_Patches] Détecté comme PACK PRESET
+🔍 [Singomakers - Rawstyle Destructor (WAV)] 14 sous-dossiers: [! Promo & Discount, SRDR_Drum_Loops, SRDR_Kick_Rolls...]
+🎵 [SRDR_Melody_Loops_(MIDI)] Détecté comme PACK MIDI
+🔍 [SRDR_One_Shots] 8 sous-dossiers: [SRDR_Claps, SRDR_Crashes_Rides, SRDR_Hell_Kicks...]
+🎹 [SRDR_Sampler_Patches] Détecté comme PACK PRESET
+🔍 [SRDR_SFX] 5 sous-dossiers: [SRDR_Downlifters, SRDR_Falling_Bass, SRDR_Impacts...]
+🎹 [SRDR_VST_Synth_Presets] Détecté comme PACK PRESET
+🔍 [Singomakers - Rawstyle Joker (WAV)] 11 sous-dossiers: [SRTJ_Drum_Loops, SRTJ_Kick_Rolls, SRTJ_Melody_Loops...]
+🎵 [SRTJ_Melody_Loops_MIDI] Détecté comme PACK MIDI
+🔍 [SRTJ_One_Shots] 9 sous-dossiers: [SRTJ_Claps, SRTJ_Crashes_Rides, SRTJ_FX_Kicks...]
+🔍 [SRTJ_SFX] 5 sous-dossiers: [SRTJ_Downlifters, SRTJ_Falling_Bass, SRTJ_Impacts...]
+🎹 [SRTJ_VST_Synth_Patches] Détecté comme PACK PRESET
+🔍 [Singomakers - Rawstyle Till The End (WAV)] 11 sous-dossiers: [SRTE_Drum_Loops, SRTE_Kick_Rolls, SRTE_Melody_Loops...]
+🎵 [SRTE_Midi_Files] Détecté comme PACK MIDI
+🔍 [SRTE_One_Shots] 10 sous-dossiers: [SRTE_Claps, SRTE_Crashes, SRTE_Hell_Kicks...]
+🔍 [SRTE_SFX] 5 sous-dossiers: [SRTE_Downlifters, SRTE_Falling_Basses, SRTE_Impacts...]
+🎹 [SRTE_VST_Synth_Patches] Détecté comme PACK PRESET
+🔍 [Singomakers - Rawstyle Weapons (WAV)] 13 sous-dossiers: [SRW_Drum_Fills, SRW_Drum_Loops, SRW_Fx_&_Synth_Fills...]
+🔍 [SRW_Kick_Constructor] 4 sous-dossiers: [SRW_Preshifters, SRW_Sub_Tails, SRW_Tails...]
+🎵 [SRW_Midi_Files] Détecté comme PACK MIDI
+🔍 [SRW_One_Shots] 7 sous-dossiers: [SRW_Claps, SRW_Crashes_Rides, SRW_Hats...]
+🎹 [SRW_Sampler_Patches] Détecté comme PACK PRESET
+🔍 [SRW_SFX] 7 sous-dossiers: [SRW_Downlifters, SRW_Falling_Basses, SRW_Hall_Kicks...]
+🎹 [SRW_VST_Synth_Patches] Détecté comme PACK PRESET
+🔍 [Sunhiausa Kicks VOL 2] 4 sous-dossiers: [Creation of Self, Danger is Lurking, End Of Human Era...]
+🎯 Phase 3: 115 packs normaux trouvés
+📊 RÉCAPITULATIF: 4 bundles + 104 packs de bundles + 115 packs normaux = 223 total
+
+🎯 RÉSULTATS DÉTAILLÉS:
+✅ PACK DÉTECTÉ: On Point Samples Hardstyle Production Suite Wav
+   Type: bundle
+   Score: 90/100
+   Audio: 3112 | Taille: 6.05 GB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 10pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Harder-Style Vocal Suite
+   Type: bundle
+   Score: 100/100
+   Audio: 1286 | Taille: 3.81 GB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle Production Suite
+   Type: bundle
+   Score: 100/100
+   Audio: 3369 | Taille: 3.97 GB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - The Ultimate Harder-Style Production Bundle
+   Type: bundle
+   Score: 100/100
+   Audio: 5697 | Taille: 3.13 GB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Climax Kick Expansion (Vol. 2)
+   Type: pack
+   Score: 100/100
+   Audio: 285 | Taille: 70.26 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Euphoric Hardstyle Melody Pack (Vol. 3)
+   Type: pack
+   Score: 100/100
+   Audio: 45 | Taille: 105.67 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Fractal Hardstyle FX (Vol. 2)
+   Type: pack
+   Score: 100/100
+   Audio: 70 | Taille: 175.75 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Frenchcore Melody Pack (Vol. 3)
+   Type: pack
+   Score: 100/100
+   Audio: 20 | Taille: 82.69 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Galactic Hardstyle Vocals (Vol. 2)
+   Type: pack
+   Score: 85/100
+   Audio: 49 | Taille: 697.71 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Handsup Hardstyle Melody Pack (Vol. 2)
+   Type: pack
+   Score: 100/100
+   Audio: 45 | Taille: 108.53 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Harder-Style Kickroll MIDI (Vol. 2)
+   Type: pack
+   Score: 80/100
+   Audio: 50 | Taille: 41.3 MB
+   Raisons: Pack midi détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle Ambiences (Vol. 3)
+   Type: pack
+   Score: 100/100
+   Audio: 51 | Taille: 302.02 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle Break Templates (Vol. 1)
+   Type: pack
+   Score: 80/100
+   Audio: 0 | Taille: 0 B
+   Raisons: Pack template détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle Buildups (Vol. 2)
+   Type: pack
+   Score: 100/100
+   Audio: 64 | Taille: 246.13 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle Drum Loops (Vol. 2)
+   Type: pack
+   Score: 100/100
+   Audio: 105 | Taille: 359.59 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle FL Studio Template [Exodus]
+   Type: pack
+   Score: 80/100
+   Audio: 46 | Taille: 108.93 MB
+   Raisons: Pack template détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle FL Studio Template [Kryptonite]
+   Type: pack
+   Score: 80/100
+   Audio: 45 | Taille: 110.1 MB
+   Raisons: Pack template détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle Melody Suite
+   Type: pack
+   Score: 100/100
+   Audio: 130 | Taille: 602.03 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle Predrop Fills (Vol. 4)
+   Type: pack
+   Score: 85/100
+   Audio: 112 | Taille: 107.75 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle Preset Collection (Vol. 1)
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 7.67 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle Screech Loops (Vol. 2)
+   Type: pack
+   Score: 85/100
+   Audio: 60 | Taille: 341.85 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle Vocal Expansion (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 246 | Taille: 303.55 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Melodic Mystery [Introitus]
+   Type: pack
+   Score: 60/100
+   Audio: 20 | Taille: 218.31 MB
+   Raisons: Structure: 0pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Melodic Mystery [Savanna]
+   Type: pack
+   Score: 85/100
+   Audio: 40 | Taille: 406.81 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Melodic Mystery [Solitude]
+   Type: pack
+   Score: 60/100
+   Audio: 50 | Taille: 217.54 MB
+   Raisons: Structure: 0pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Modern Hardstyle Kicks (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 260 | Taille: 55.2 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Modern Hardstyle Kicks Builder (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 788 | Taille: 108.94 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Oldschool Screech Loops (Vol. 2)
+   Type: pack
+   Score: 60/100
+   Audio: 48 | Taille: 208.66 MB
+   Raisons: Structure: 0pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rave Melody Pack (Vol. 1)
+   Type: pack
+   Score: 85/100
+   Audio: 99 | Taille: 686.33 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawphoric Melody Pack (Vol. 4)
+   Type: pack
+   Score: 100/100
+   Audio: 44 | Taille: 103.78 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle Melody Pack (Vol. 5)
+   Type: pack
+   Score: 100/100
+   Audio: 45 | Taille: 102.56 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Trance Hardstyle Melody Pack (Vol. 2)
+   Type: pack
+   Score: 100/100
+   Audio: 45 | Taille: 107.04 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Viper Hardstyle Presets (Vol. 1)
+   Type: pack
+   Score: 75/100
+   Audio: 100 | Taille: 186.99 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: _ALL PRESETS COMPILED
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 8.07 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Harder-Style AI Vocals (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 156 | Taille: 228.38 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Harder-Style Cinematic Vocals (Vol. 1)
+   Type: pack
+   Score: 85/100
+   Audio: 60 | Taille: 286.15 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Harder-Style Ethereal Vocals (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 151 | Taille: 545.58 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Harder-Style Lead Vocals (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 40 | Taille: 127.13 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Harder-Style MC Vocals (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 87 | Taille: 277.18 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Harder-Style Melody Suite
+   Type: pack
+   Score: 100/100
+   Audio: 174 | Taille: 1.1 GB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Harder-Style Predrop Vocals (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 163 | Taille: 109.11 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Harder-Style Rap Vocals (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 59 | Taille: 147.75 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Harder-Style Scream Vocals (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 226 | Taille: 377.87 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Harder-Style Serum Layer Presets
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 0 B
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle Ambiences (Vol. 2)
+   Type: pack
+   Score: 100/100
+   Audio: 60 | Taille: 574.05 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle Predrop Fills (Vol. 2)
+   Type: pack
+   Score: 100/100
+   Audio: 110 | Taille: 103.43 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: _BONUS - Vocal Mixer Presets (FL Studio)
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 467.21 KB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Harder-Style Kickroll MIDI (Vol. 1)
+   Type: pack
+   Score: 80/100
+   Audio: 0 | Taille: 7.72 KB
+   Raisons: Pack midi détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle Predrop Fills (Vol. 3)
+   Type: pack
+   Score: 85/100
+   Audio: 76 | Taille: 79.09 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Melodic Mystery [Aurora]
+   Type: pack
+   Score: 100/100
+   Audio: 90 | Taille: 410.23 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Melodic Mystery [Eclipse]
+   Type: pack
+   Score: 60/100
+   Audio: 40 | Taille: 200.3 MB
+   Raisons: Structure: 0pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Melodic Mystery [Solar]
+   Type: pack
+   Score: 60/100
+   Audio: 40 | Taille: 212.74 MB
+   Raisons: Structure: 0pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Modern Rawstyle Kick Builder (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 861 | Taille: 116.07 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Modern Rawstyle Kicks (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 167 | Taille: 27.48 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Oldschool Rawstyle Kick Builder (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 343 | Taille: 46.31 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Oldschool Rawstyle Kick Expansion (Vol. 1)
+   Type: pack
+   Score: 70/100
+   Audio: 112 | Taille: 18.05 MB
+   Raisons: Structure: 25pts | Contenu: 15pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Oldschool Screech Loops (Vol. 1)
+   Type: pack
+   Score: 60/100
+   Audio: 50 | Taille: 197.48 MB
+   Raisons: Structure: 0pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Oldschool Serum Presets (Vol. 1)
+   Type: pack
+   Score: 75/100
+   Audio: 67 | Taille: 135.28 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle Buildups (Vol. 1)
+   Type: pack
+   Score: 85/100
+   Audio: 20 | Taille: 73.42 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle Drums (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 90 | Taille: 294.94 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle FX Expansion (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 208 | Taille: 346.04 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle Kick Vault
+   Type: pack
+   Score: 100/100
+   Audio: 550 | Taille: 111.72 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle Layer Presets
+   Type: pack
+   Score: 75/100
+   Audio: 123 | Taille: 208.85 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle Melody Pack (Vol. 3)
+   Type: pack
+   Score: 100/100
+   Audio: 37 | Taille: 157.68 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle Melody Pack (Vol. 4)
+   Type: pack
+   Score: 100/100
+   Audio: 37 | Taille: 153.61 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle Melody Suite
+   Type: pack
+   Score: 100/100
+   Audio: 98 | Taille: 394.88 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle Screech Loops (Vol. 1)
+   Type: pack
+   Score: 85/100
+   Audio: 70 | Taille: 121.93 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle Screech Loops (Vol. 2)
+   Type: pack
+   Score: 60/100
+   Audio: 70 | Taille: 154.15 MB
+   Raisons: Structure: 0pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle Vocal Expansion (Vol. 1)
+   Type: pack
+   Score: 85/100
+   Audio: 60 | Taille: 250.39 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Serum Anticlimax Patches (Vol. 1)
+   Type: pack
+   Score: 75/100
+   Audio: 110 | Taille: 222.11 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Vital Screech Presets (Vol. 1)
+   Type: pack
+   Score: 75/100
+   Audio: 50 | Taille: 129.07 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Acid Hardstyle Expansion (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 85 | Taille: 206.6 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Anticlimax Kick Expansion (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 311 | Taille: 49.01 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Climax Kick Expansion (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 430 | Taille: 71.22 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Euphoric Hardstyle Kick Expansion (Vol. 1)
+   Type: pack
+   Score: 70/100
+   Audio: 47 | Taille: 8.4 MB
+   Raisons: Structure: 25pts | Contenu: 15pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Euphoric Hardstyle Melody Pack (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 44 | Taille: 60.85 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Euphoric Hardstyle Melody Pack (Vol. 2)
+   Type: pack
+   Score: 100/100
+   Audio: 44 | Taille: 57.24 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Frenchcore Melody Pack (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 33 | Taille: 49.95 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Frenchcore Melody Pack (Vol. 2)
+   Type: pack
+   Score: 100/100
+   Audio: 33 | Taille: 43.3 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Gabber Essentials Vol. 1
+   Type: pack
+   Score: 100/100
+   Audio: 60 | Taille: 51.66 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Gated Kick Expansion (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 250 | Taille: 46.67 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hands-up Hardstyle Melody Pack (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 44 | Taille: 57.18 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardcore Serum Presets (Vol. 1)
+   Type: pack
+   Score: 75/100
+   Audio: 75 | Taille: 38.47 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle Ambiences (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 50 | Taille: 201.24 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle Buildups (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 151 | Taille: 330.59 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle Drum Loops (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 140 | Taille: 233.59 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle Predrop Fills (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 118 | Taille: 53.91 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Hardstyle Screech Loops (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 100 | Taille: 169.14 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Industrial XTRA Raw Kick Expansion (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 171 | Taille: 31.37 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Kick Builder (CR1)
+   Type: pack
+   Score: 100/100
+   Audio: 166 | Taille: 26.63 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Kick Builder (HE3)
+   Type: pack
+   Score: 100/100
+   Audio: 1145 | Taille: 202.51 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Kick Builder (REV1)
+   Type: pack
+   Score: 100/100
+   Audio: 88 | Taille: 44.84 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Kick Builder (UHE1)
+   Type: pack
+   Score: 100/100
+   Audio: 385 | Taille: 70.22 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Midintro Kick Expansion (Vol. 1)
+   Type: pack
+   Score: 80/100
+   Audio: 337 | Taille: 50.42 MB
+   Raisons: Pack midi détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawphoric Melody Pack (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 44 | Taille: 57.12 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawphoric Melody Pack (Vol. 2)
+   Type: pack
+   Score: 100/100
+   Audio: 44 | Taille: 57.29 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawphoric Melody Pack (Vol. 3)
+   Type: pack
+   Score: 100/100
+   Audio: 44 | Taille: 57.22 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle Kick Expansion (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 374 | Taille: 60.12 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle Kick FX (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 114 | Taille: 52.18 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle Melody Pack (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 44 | Taille: 56.19 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle Melody Pack (Vol. 2)
+   Type: pack
+   Score: 100/100
+   Audio: 44 | Taille: 58.54 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Serum Hardstyle Kick Presets (Vol. 1)
+   Type: pack
+   Score: 75/100
+   Audio: 47 | Taille: 12.13 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Serum Screech Presets (Vol. 1)
+   Type: pack
+   Score: 75/100
+   Audio: 68 | Taille: 54.02 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Spire Hardstyle Screech Presets (Vol. 1)
+   Type: pack
+   Score: 75/100
+   Audio: 67 | Taille: 39.59 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Sylenth1 Hardstyle Arpeggios
+   Type: pack
+   Score: 75/100
+   Audio: 256 | Taille: 394.79 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Trance Hardstyle Melody Pack (Vol. 1)
+   Type: pack
+   Score: 100/100
+   Audio: 44 | Taille: 58.67 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Vital Hardstyle Kick Presets (Vol. 1)
+   Type: pack
+   Score: 75/100
+   Audio: 50 | Taille: 70.97 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Zaag Kick Expansion (Vol. 1)
+   Type: pack
+   Score: 70/100
+   Audio: 150 | Taille: 19.43 MB
+   Raisons: Structure: 25pts | Contenu: 15pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Big EDM - Hardstyle Mania (WAV)
+   Type: pack
+   Score: 100/100
+   Audio: 303 | Taille: 487.56 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Drums
+   Type: pack
+   Score: 65/100
+   Audio: 67 | Taille: 9.15 MB
+   Raisons: Structure: 40pts | Contenu: 15pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: FX
+   Type: pack
+   Score: 65/100
+   Audio: 55 | Taille: 137.67 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Synth
+   Type: pack
+   Score: 50/100
+   Audio: 54 | Taille: 18.77 MB
+   Raisons: Structure: 25pts | Contenu: 15pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: FMT_XTRA_CRISPY_SERUM
+   Type: pack
+   Score: 75/100
+   Audio: 111 | Taille: 38.76 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SERUM PRESETS
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 3.86 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Fragment Audio - Screech XL (WAV)
+   Type: pack
+   Score: 85/100
+   Audio: 119 | Taille: 61.39 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Drums
+   Type: pack
+   Score: 65/100
+   Audio: 30 | Taille: 6.75 MB
+   Raisons: Structure: 40pts | Contenu: 15pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Fx
+   Type: pack
+   Score: 65/100
+   Audio: 43 | Taille: 35.67 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Fyloh - HUGE HARD DANCE KICKS PACK
+   Type: pack
+   Score: 85/100
+   Audio: 138 | Taille: 100.81 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: VARIOUS KICKS
+   Type: pack
+   Score: 80/100
+   Audio: 123 | Taille: 89.44 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Industrial Strenght - Raw Intensity by General Guyble (WAV)
+   Type: pack
+   Score: 100/100
+   Audio: 125 | Taille: 831.16 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: RI_Audio_Samples
+   Type: pack
+   Score: 80/100
+   Audio: 120 | Taille: 237.15 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Industrial Strenght - Rawstyle (WAV)
+   Type: pack
+   Score: 60/100
+   Audio: 0 | Taille: 526.76 MB
+   Raisons: Structure: 40pts | Contenu: 0pts | Commercial: 20pts | Isolation: 0pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: RS_Rawstyle Cubase Track Presets
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 178.33 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: RS_Rawstyle Patch Presets
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 168.71 KB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Industrial Strenght - Rawstyle Evolution by General Guyble (WAV)
+   Type: pack
+   Score: 100/100
+   Audio: 171 | Taille: 270.03 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: RSE_Drum_One_Shots
+   Type: pack
+   Score: 65/100
+   Audio: 65 | Taille: 10.37 MB
+   Raisons: Structure: 40pts | Contenu: 15pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: RSE_FX
+   Type: pack
+   Score: 65/100
+   Audio: 44 | Taille: 110.28 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: RSE_Sylenth_Soundbank
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 504.18 KB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Kloenk and PVC Kick Expansion (Vol. 1)
+   Type: pack
+   Score: 85/100
+   Audio: 250 | Taille: 115.25 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 5pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: FL Studio Mixers
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 52.67 KB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: FL Studio Templates
+   Type: pack
+   Score: 80/100
+   Audio: 17 | Taille: 8.7 MB
+   Raisons: Pack template détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Kick Builder
+   Type: pack
+   Score: 80/100
+   Audio: 183 | Taille: 79.32 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: NS Audio All In One Hardstyle Collection
+   Type: pack
+   Score: 85/100
+   Audio: 181 | Taille: 432.55 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 5pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: AUDIO KICKS
+   Type: pack
+   Score: 65/100
+   Audio: 44 | Taille: 18.74 MB
+   Raisons: Structure: 40pts | Contenu: 15pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: MIDI FILES
+   Type: pack
+   Score: 80/100
+   Audio: 0 | Taille: 5.06 KB
+   Raisons: Pack midi détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: MIXER CHAIN FL (For serum kicks 2.0)
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 31.89 KB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: MIXER CHAIN LOGIC PRO (For serum kicks 2.0)
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 90.05 KB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: PERCUSSION
+   Type: pack
+   Score: 50/100
+   Audio: 66 | Taille: 17.56 MB
+   Raisons: Structure: 25pts | Contenu: 15pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: PRESETS
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 0 B
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Official Thyron Sample Pack
+   Type: pack
+   Score: 85/100
+   Audio: 680 | Taille: 1.48 GB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 5pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Drum Oneshots
+   Type: pack
+   Score: 65/100
+   Audio: 37 | Taille: 7.06 MB
+   Raisons: Structure: 40pts | Contenu: 15pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Kick Builder
+   Type: pack
+   Score: 80/100
+   Audio: 192 | Taille: 49.22 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Kicks
+   Type: pack
+   Score: 80/100
+   Audio: 93 | Taille: 20.47 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Serum Presets
+   Type: pack
+   Score: 75/100
+   Audio: 58 | Taille: 59.27 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Vocals
+   Type: pack
+   Score: 65/100
+   Audio: 36 | Taille: 11.82 MB
+   Raisons: Structure: 40pts | Contenu: 15pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: On Point Samples  Futuristic Kick Expansion (Vol. 1)
+   Type: pack
+   Score: 85/100
+   Audio: 398 | Taille: 153.13 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 5pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: FL Studio Templates
+   Type: pack
+   Score: 80/100
+   Audio: 24 | Taille: 8.11 MB
+   Raisons: Pack template détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Kick Builder
+   Type: pack
+   Score: 80/100
+   Audio: 228 | Taille: 86.99 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Kicks
+   Type: pack
+   Score: 80/100
+   Audio: 51 | Taille: 26.83 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Mixer Files
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 21.98 KB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Serum Presets
+   Type: pack
+   Score: 75/100
+   Audio: 95 | Taille: 31.18 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: On Point Samples Color Kick Expansion (Vol. 1)
+   Type: pack
+   Score: 85/100
+   Audio: 305 | Taille: 156.07 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 5pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: FL Studio Mixers
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 1.18 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: FL Studio Templates
+   Type: pack
+   Score: 80/100
+   Audio: 40 | Taille: 18.68 MB
+   Raisons: Pack template détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Kick Parts
+   Type: pack
+   Score: 80/100
+   Audio: 215 | Taille: 102.06 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - BONUS - Kick Build Templates (FL Studio)
+   Type: pack
+   Score: 80/100
+   Audio: 23 | Taille: 6.12 MB
+   Raisons: Pack template détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Gated Kick Template 1
+   Type: pack
+   Score: 80/100
+   Audio: 4 | Taille: 1.6 MB
+   Raisons: Pack template détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Midintro Kick Template 1
+   Type: pack
+   Score: 80/100
+   Audio: 3 | Taille: 927.45 KB
+   Raisons: Pack midi détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Midintro Kick Template 2
+   Type: pack
+   Score: 80/100
+   Audio: 3 | Taille: 1011.84 KB
+   Raisons: Pack midi détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Psy Kick Template 1
+   Type: pack
+   Score: 80/100
+   Audio: 4 | Taille: 948.45 KB
+   Raisons: Pack template détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Psy Kick Template 2
+   Type: pack
+   Score: 80/100
+   Audio: 3 | Taille: 511.89 KB
+   Raisons: Pack template détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle Kick Template 1
+   Type: pack
+   Score: 80/100
+   Audio: 3 | Taille: 914.18 KB
+   Raisons: Pack template détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawstyle Kick Template 2
+   Type: pack
+   Score: 80/100
+   Audio: 3 | Taille: 317.88 KB
+   Raisons: Pack template détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - BONUS - Rawstyle Kick Mixer Presets (FL Studio)
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 103.06 KB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - BONUS - Rawstyle Mixer Presets (FL Studio)
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 87.76 KB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Criminal Rawstyle Kicks Vol. 1
+   Type: pack
+   Score: 100/100
+   Audio: 444 | Taille: 568.32 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Kick Parts Folder
+   Type: pack
+   Score: 80/100
+   Audio: 166 | Taille: 180.5 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Mid-Intro Kicks
+   Type: pack
+   Score: 65/100
+   Audio: 50 | Taille: 70.43 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Misc
+   Type: pack
+   Score: 65/100
+   Audio: 107 | Taille: 140.54 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Criminal Rawstyle Kicks Vol. 1 (Serum presets)
+   Type: pack
+   Score: 75/100
+   Audio: 25 | Taille: 37.28 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Rawstyle Kicks
+   Type: pack
+   Score: 50/100
+   Audio: 27 | Taille: 31.34 MB
+   Raisons: Structure: 0pts | Contenu: 30pts | Commercial: 10pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Vocals
+   Type: pack
+   Score: 65/100
+   Audio: 69 | Taille: 108.24 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Fractal Hardstyle FX
+   Type: pack
+   Score: 100/100
+   Audio: 353 | Taille: 326.03 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Sweeps & Risers 150 BPM
+   Type: pack
+   Score: 50/100
+   Audio: 11 | Taille: 18.95 MB
+   Raisons: Structure: 25pts | Contenu: 15pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS - Rawphoric Essentials Vol. 1
+   Type: pack
+   Score: 100/100
+   Audio: 422 | Taille: 390.16 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Drums
+   Type: pack
+   Score: 65/100
+   Audio: 70 | Taille: 16.34 MB
+   Raisons: Structure: 40pts | Contenu: 15pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: FX
+   Type: pack
+   Score: 80/100
+   Audio: 104 | Taille: 70.33 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Kick Fundamentals
+   Type: pack
+   Score: 80/100
+   Audio: 89 | Taille: 41.56 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Kicks
+   Type: pack
+   Score: 65/100
+   Audio: 98 | Taille: 16.31 MB
+   Raisons: Structure: 40pts | Contenu: 15pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Melodies
+   Type: pack
+   Score: 80/100
+   Audio: 61 | Taille: 240.95 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Presets
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 4.49 MB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: OPS Raging Rawstyle Vocals Vol. 1
+   Type: pack
+   Score: 85/100
+   Audio: 306 | Taille: 619.48 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 5pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: 150 BPM VOX
+   Type: pack
+   Score: 65/100
+   Audio: 65 | Taille: 148.44 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: 180 BPM VOX
+   Type: pack
+   Score: 65/100
+   Audio: 60 | Taille: 109.64 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Build Ups
+   Type: pack
+   Score: 80/100
+   Audio: 57 | Taille: 182.43 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Drum Loops
+   Type: pack
+   Score: 80/100
+   Audio: 44 | Taille: 107.06 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Vocal Mixer Chains
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 102.91 KB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Screech House - Hardstyle Sample Pack (WAV)
+   Type: pack
+   Score: 100/100
+   Audio: 97 | Taille: 68.54 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: EXTRAS
+   Type: pack
+   Score: 50/100
+   Audio: 8 | Taille: 18.54 MB
+   Raisons: Structure: 25pts | Contenu: 15pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Singomakers - PSYSTYLE (WAV)
+   Type: pack
+   Score: 100/100
+   Audio: 617 | Taille: 1.18 GB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SPST_Midi_Files
+   Type: pack
+   Score: 80/100
+   Audio: 0 | Taille: 30.63 KB
+   Raisons: Pack midi détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SPST_One_Shots
+   Type: pack
+   Score: 80/100
+   Audio: 240 | Taille: 176.33 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SPST_SFX
+   Type: pack
+   Score: 80/100
+   Audio: 80 | Taille: 171.89 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Singomakers - Rawstyle - Massacre (WAV)
+   Type: pack
+   Score: 100/100
+   Audio: 1028 | Taille: 1.35 GB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRR_Fills_&_Rolls
+   Type: pack
+   Score: 65/100
+   Audio: 149 | Taille: 95.77 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRR_Midi_Files
+   Type: pack
+   Score: 80/100
+   Audio: 0 | Taille: 45.53 KB
+   Raisons: Pack midi détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRR_One_Shots
+   Type: pack
+   Score: 80/100
+   Audio: 444 | Taille: 128.95 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRR_SFX
+   Type: pack
+   Score: 80/100
+   Audio: 101 | Taille: 228.39 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRR_VST_Synth_Patches
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 512.61 KB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Singomakers - Rawstyle Destructor (WAV)
+   Type: pack
+   Score: 100/100
+   Audio: 849 | Taille: 1.89 GB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRDR_Melody_Loops_(MIDI)
+   Type: pack
+   Score: 80/100
+   Audio: 0 | Taille: 64.04 KB
+   Raisons: Pack midi détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRDR_One_Shots
+   Type: pack
+   Score: 80/100
+   Audio: 261 | Taille: 121.71 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRDR_Sampler_Patches
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 0 B
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRDR_SFX
+   Type: pack
+   Score: 80/100
+   Audio: 66 | Taille: 156.68 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRDR_VST_Synth_Presets
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 79.51 KB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Singomakers - Rawstyle Joker (WAV)
+   Type: pack
+   Score: 100/100
+   Audio: 778 | Taille: 1.26 GB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRTJ_Melody_Loops_MIDI
+   Type: pack
+   Score: 80/100
+   Audio: 0 | Taille: 46.18 KB
+   Raisons: Pack midi détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRTJ_One_Shots
+   Type: pack
+   Score: 80/100
+   Audio: 262 | Taille: 111.7 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRTJ_SFX
+   Type: pack
+   Score: 80/100
+   Audio: 69 | Taille: 186.4 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRTJ_VST_Synth_Patches
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 149.63 KB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Singomakers - Rawstyle Till The End (WAV)
+   Type: pack
+   Score: 100/100
+   Audio: 777 | Taille: 1.31 GB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRTE_Midi_Files
+   Type: pack
+   Score: 80/100
+   Audio: 0 | Taille: 68.79 KB
+   Raisons: Pack midi détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRTE_One_Shots
+   Type: pack
+   Score: 80/100
+   Audio: 296 | Taille: 155.09 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRTE_SFX
+   Type: pack
+   Score: 80/100
+   Audio: 64 | Taille: 146.81 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRTE_VST_Synth_Patches
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 109.03 KB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Singomakers - Rawstyle Weapons (WAV)
+   Type: pack
+   Score: 100/100
+   Audio: 895 | Taille: 1.36 GB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 20pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRW_Kick_Constructor
+   Type: pack
+   Score: 65/100
+   Audio: 162 | Taille: 24.84 MB
+   Raisons: Structure: 25pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRW_Midi_Files
+   Type: pack
+   Score: 80/100
+   Audio: 0 | Taille: 98.85 KB
+   Raisons: Pack midi détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRW_One_Shots
+   Type: pack
+   Score: 80/100
+   Audio: 262 | Taille: 61.97 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRW_Sampler_Patches
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 811.32 KB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRW_SFX
+   Type: pack
+   Score: 80/100
+   Audio: 103 | Taille: 182.4 MB
+   Raisons: Structure: 40pts | Contenu: 30pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: SRW_VST_Synth_Patches
+   Type: pack
+   Score: 75/100
+   Audio: 0 | Taille: 551.4 KB
+   Raisons: Pack preset détecté
+   --------------------------------------------------
+✅ PACK DÉTECTÉ: Sunhiausa Kicks VOL 2
+   Type: pack
+   Score: 50/100
+   Audio: 32 | Taille: 16.47 MB
+   Raisons: Structure: 25pts | Contenu: 15pts | Commercial: 0pts | Isolation: 10pts
+   --------------------------------------------------
+
+🎯 RÉSULTATS FINAUX:
+============================================================
+📦 Packs détectés: 223
+📁 Bundles trouvés: 4
+🔍 Dossiers scannés: 223
+⏱️  Durée d'analyse: 110ms
+⚡ Vitesse: 2027.3 dossiers/sec
+
+📋 LISTE DES PACKS DÉTECTÉS:
+1. On Point Samples Hardstyle Production Suite Wav
+   Score: 90 | Type: bundle | Audio: 3112 | 6.05 GB
+2. OPS - Harder-Style Vocal Suite
+   Score: 100 | Type: bundle | Audio: 1286 | 3.81 GB
+3. OPS - Rawstyle Production Suite
+   Score: 100 | Type: bundle | Audio: 3369 | 3.97 GB
+4. OPS - The Ultimate Harder-Style Production Bundle
+   Score: 100 | Type: bundle | Audio: 5697 | 3.13 GB
+5. OPS - Climax Kick Expansion (Vol. 2)
+   Score: 100 | Type: pack | Audio: 285 | 70.26 MB
+6. OPS - Euphoric Hardstyle Melody Pack (Vol. 3)
+   Score: 100 | Type: pack | Audio: 45 | 105.67 MB
+7. OPS - Fractal Hardstyle FX (Vol. 2)
+   Score: 100 | Type: pack | Audio: 70 | 175.75 MB
+8. OPS - Frenchcore Melody Pack (Vol. 3)
+   Score: 100 | Type: pack | Audio: 20 | 82.69 MB
+9. OPS - Galactic Hardstyle Vocals (Vol. 2)
+   Score: 85 | Type: pack | Audio: 49 | 697.71 MB
+10. OPS - Handsup Hardstyle Melody Pack (Vol. 2)
+   Score: 100 | Type: pack | Audio: 45 | 108.53 MB
+11. OPS - Harder-Style Kickroll MIDI (Vol. 2)
+   Score: 80 | Type: pack | Audio: 50 | 41.3 MB
+12. OPS - Hardstyle Ambiences (Vol. 3)
+   Score: 100 | Type: pack | Audio: 51 | 302.02 MB
+13. OPS - Hardstyle Break Templates (Vol. 1)
+   Score: 80 | Type: pack | Audio: 0 | 0 B
+14. OPS - Hardstyle Buildups (Vol. 2)
+   Score: 100 | Type: pack | Audio: 64 | 246.13 MB
+15. OPS - Hardstyle Drum Loops (Vol. 2)
+   Score: 100 | Type: pack | Audio: 105 | 359.59 MB
+16. OPS - Hardstyle FL Studio Template [Exodus]
+   Score: 80 | Type: pack | Audio: 46 | 108.93 MB
+17. OPS - Hardstyle FL Studio Template [Kryptonite]
+   Score: 80 | Type: pack | Audio: 45 | 110.1 MB
+18. OPS - Hardstyle Melody Suite
+   Score: 100 | Type: pack | Audio: 130 | 602.03 MB
+19. OPS - Hardstyle Predrop Fills (Vol. 4)
+   Score: 85 | Type: pack | Audio: 112 | 107.75 MB
+20. OPS - Hardstyle Preset Collection (Vol. 1)
+   Score: 75 | Type: pack | Audio: 0 | 7.67 MB
+21. OPS - Hardstyle Screech Loops (Vol. 2)
+   Score: 85 | Type: pack | Audio: 60 | 341.85 MB
+22. OPS - Hardstyle Vocal Expansion (Vol. 1)
+   Score: 100 | Type: pack | Audio: 246 | 303.55 MB
+23. OPS - Melodic Mystery [Introitus]
+   Score: 60 | Type: pack | Audio: 20 | 218.31 MB
+24. OPS - Melodic Mystery [Savanna]
+   Score: 85 | Type: pack | Audio: 40 | 406.81 MB
+25. OPS - Melodic Mystery [Solitude]
+   Score: 60 | Type: pack | Audio: 50 | 217.54 MB
+26. OPS - Modern Hardstyle Kicks (Vol. 1)
+   Score: 100 | Type: pack | Audio: 260 | 55.2 MB
+27. OPS - Modern Hardstyle Kicks Builder (Vol. 1)
+   Score: 100 | Type: pack | Audio: 788 | 108.94 MB
+28. OPS - Oldschool Screech Loops (Vol. 2)
+   Score: 60 | Type: pack | Audio: 48 | 208.66 MB
+29. OPS - Rave Melody Pack (Vol. 1)
+   Score: 85 | Type: pack | Audio: 99 | 686.33 MB
+30. OPS - Rawphoric Melody Pack (Vol. 4)
+   Score: 100 | Type: pack | Audio: 44 | 103.78 MB
+31. OPS - Rawstyle Melody Pack (Vol. 5)
+   Score: 100 | Type: pack | Audio: 45 | 102.56 MB
+32. OPS - Trance Hardstyle Melody Pack (Vol. 2)
+   Score: 100 | Type: pack | Audio: 45 | 107.04 MB
+33. OPS - Viper Hardstyle Presets (Vol. 1)
+   Score: 75 | Type: pack | Audio: 100 | 186.99 MB
+34. _ALL PRESETS COMPILED
+   Score: 75 | Type: pack | Audio: 0 | 8.07 MB
+35. OPS - Harder-Style AI Vocals (Vol. 1)
+   Score: 100 | Type: pack | Audio: 156 | 228.38 MB
+36. OPS - Harder-Style Cinematic Vocals (Vol. 1)
+   Score: 85 | Type: pack | Audio: 60 | 286.15 MB
+37. OPS - Harder-Style Ethereal Vocals (Vol. 1)
+   Score: 100 | Type: pack | Audio: 151 | 545.58 MB
+38. OPS - Harder-Style Lead Vocals (Vol. 1)
+   Score: 100 | Type: pack | Audio: 40 | 127.13 MB
+39. OPS - Harder-Style MC Vocals (Vol. 1)
+   Score: 100 | Type: pack | Audio: 87 | 277.18 MB
+40. OPS - Harder-Style Melody Suite
+   Score: 100 | Type: pack | Audio: 174 | 1.1 GB
+41. OPS - Harder-Style Predrop Vocals (Vol. 1)
+   Score: 100 | Type: pack | Audio: 163 | 109.11 MB
+42. OPS - Harder-Style Rap Vocals (Vol. 1)
+   Score: 100 | Type: pack | Audio: 59 | 147.75 MB
+43. OPS - Harder-Style Scream Vocals (Vol. 1)
+   Score: 100 | Type: pack | Audio: 226 | 377.87 MB
+44. OPS - Harder-Style Serum Layer Presets
+   Score: 75 | Type: pack | Audio: 0 | 0 B
+45. OPS - Hardstyle Ambiences (Vol. 2)
+   Score: 100 | Type: pack | Audio: 60 | 574.05 MB
+46. OPS - Hardstyle Predrop Fills (Vol. 2)
+   Score: 100 | Type: pack | Audio: 110 | 103.43 MB
+47. _BONUS - Vocal Mixer Presets (FL Studio)
+   Score: 75 | Type: pack | Audio: 0 | 467.21 KB
+48. OPS - Harder-Style Kickroll MIDI (Vol. 1)
+   Score: 80 | Type: pack | Audio: 0 | 7.72 KB
+49. OPS - Hardstyle Predrop Fills (Vol. 3)
+   Score: 85 | Type: pack | Audio: 76 | 79.09 MB
+50. OPS - Melodic Mystery [Aurora]
+   Score: 100 | Type: pack | Audio: 90 | 410.23 MB
+51. OPS - Melodic Mystery [Eclipse]
+   Score: 60 | Type: pack | Audio: 40 | 200.3 MB
+52. OPS - Melodic Mystery [Solar]
+   Score: 60 | Type: pack | Audio: 40 | 212.74 MB
+53. OPS - Modern Rawstyle Kick Builder (Vol. 1)
+   Score: 100 | Type: pack | Audio: 861 | 116.07 MB
+54. OPS - Modern Rawstyle Kicks (Vol. 1)
+   Score: 100 | Type: pack | Audio: 167 | 27.48 MB
+55. OPS - Oldschool Rawstyle Kick Builder (Vol. 1)
+   Score: 100 | Type: pack | Audio: 343 | 46.31 MB
+56. OPS - Oldschool Rawstyle Kick Expansion (Vol. 1)
+   Score: 70 | Type: pack | Audio: 112 | 18.05 MB
+57. OPS - Oldschool Screech Loops (Vol. 1)
+   Score: 60 | Type: pack | Audio: 50 | 197.48 MB
+58. OPS - Oldschool Serum Presets (Vol. 1)
+   Score: 75 | Type: pack | Audio: 67 | 135.28 MB
+59. OPS - Rawstyle Buildups (Vol. 1)
+   Score: 85 | Type: pack | Audio: 20 | 73.42 MB
+60. OPS - Rawstyle Drums (Vol. 1)
+   Score: 100 | Type: pack | Audio: 90 | 294.94 MB
+61. OPS - Rawstyle FX Expansion (Vol. 1)
+   Score: 100 | Type: pack | Audio: 208 | 346.04 MB
+62. OPS - Rawstyle Kick Vault
+   Score: 100 | Type: pack | Audio: 550 | 111.72 MB
+63. OPS - Rawstyle Layer Presets
+   Score: 75 | Type: pack | Audio: 123 | 208.85 MB
+64. OPS - Rawstyle Melody Pack (Vol. 3)
+   Score: 100 | Type: pack | Audio: 37 | 157.68 MB
+65. OPS - Rawstyle Melody Pack (Vol. 4)
+   Score: 100 | Type: pack | Audio: 37 | 153.61 MB
+66. OPS - Rawstyle Melody Suite
+   Score: 100 | Type: pack | Audio: 98 | 394.88 MB
+67. OPS - Rawstyle Screech Loops (Vol. 1)
+   Score: 85 | Type: pack | Audio: 70 | 121.93 MB
+68. OPS - Rawstyle Screech Loops (Vol. 2)
+   Score: 60 | Type: pack | Audio: 70 | 154.15 MB
+69. OPS - Rawstyle Vocal Expansion (Vol. 1)
+   Score: 85 | Type: pack | Audio: 60 | 250.39 MB
+70. OPS - Serum Anticlimax Patches (Vol. 1)
+   Score: 75 | Type: pack | Audio: 110 | 222.11 MB
+71. OPS - Vital Screech Presets (Vol. 1)
+   Score: 75 | Type: pack | Audio: 50 | 129.07 MB
+72. OPS - Acid Hardstyle Expansion (Vol. 1)
+   Score: 100 | Type: pack | Audio: 85 | 206.6 MB
+73. OPS - Anticlimax Kick Expansion (Vol. 1)
+   Score: 100 | Type: pack | Audio: 311 | 49.01 MB
+74. OPS - Climax Kick Expansion (Vol. 1)
+   Score: 100 | Type: pack | Audio: 430 | 71.22 MB
+75. OPS - Euphoric Hardstyle Kick Expansion (Vol. 1)
+   Score: 70 | Type: pack | Audio: 47 | 8.4 MB
+76. OPS - Euphoric Hardstyle Melody Pack (Vol. 1)
+   Score: 100 | Type: pack | Audio: 44 | 60.85 MB
+77. OPS - Euphoric Hardstyle Melody Pack (Vol. 2)
+   Score: 100 | Type: pack | Audio: 44 | 57.24 MB
+78. OPS - Frenchcore Melody Pack (Vol. 1)
+   Score: 100 | Type: pack | Audio: 33 | 49.95 MB
+79. OPS - Frenchcore Melody Pack (Vol. 2)
+   Score: 100 | Type: pack | Audio: 33 | 43.3 MB
+80. OPS - Gabber Essentials Vol. 1
+   Score: 100 | Type: pack | Audio: 60 | 51.66 MB
+81. OPS - Gated Kick Expansion (Vol. 1)
+   Score: 100 | Type: pack | Audio: 250 | 46.67 MB
+82. OPS - Hands-up Hardstyle Melody Pack (Vol. 1)
+   Score: 100 | Type: pack | Audio: 44 | 57.18 MB
+83. OPS - Hardcore Serum Presets (Vol. 1)
+   Score: 75 | Type: pack | Audio: 75 | 38.47 MB
+84. OPS - Hardstyle Ambiences (Vol. 1)
+   Score: 100 | Type: pack | Audio: 50 | 201.24 MB
+85. OPS - Hardstyle Buildups (Vol. 1)
+   Score: 100 | Type: pack | Audio: 151 | 330.59 MB
+86. OPS - Hardstyle Drum Loops (Vol. 1)
+   Score: 100 | Type: pack | Audio: 140 | 233.59 MB
+87. OPS - Hardstyle Predrop Fills (Vol. 1)
+   Score: 100 | Type: pack | Audio: 118 | 53.91 MB
+88. OPS - Hardstyle Screech Loops (Vol. 1)
+   Score: 100 | Type: pack | Audio: 100 | 169.14 MB
+89. OPS - Industrial XTRA Raw Kick Expansion (Vol. 1)
+   Score: 100 | Type: pack | Audio: 171 | 31.37 MB
+90. OPS - Kick Builder (CR1)
+   Score: 100 | Type: pack | Audio: 166 | 26.63 MB
+91. OPS - Kick Builder (HE3)
+   Score: 100 | Type: pack | Audio: 1145 | 202.51 MB
+92. OPS - Kick Builder (REV1)
+   Score: 100 | Type: pack | Audio: 88 | 44.84 MB
+93. OPS - Kick Builder (UHE1)
+   Score: 100 | Type: pack | Audio: 385 | 70.22 MB
+94. OPS - Midintro Kick Expansion (Vol. 1)
+   Score: 80 | Type: pack | Audio: 337 | 50.42 MB
+95. OPS - Rawphoric Melody Pack (Vol. 1)
+   Score: 100 | Type: pack | Audio: 44 | 57.12 MB
+96. OPS - Rawphoric Melody Pack (Vol. 2)
+   Score: 100 | Type: pack | Audio: 44 | 57.29 MB
+97. OPS - Rawphoric Melody Pack (Vol. 3)
+   Score: 100 | Type: pack | Audio: 44 | 57.22 MB
+98. OPS - Rawstyle Kick Expansion (Vol. 1)
+   Score: 100 | Type: pack | Audio: 374 | 60.12 MB
+99. OPS - Rawstyle Kick FX (Vol. 1)
+   Score: 100 | Type: pack | Audio: 114 | 52.18 MB
+100. OPS - Rawstyle Melody Pack (Vol. 1)
+   Score: 100 | Type: pack | Audio: 44 | 56.19 MB
+101. OPS - Rawstyle Melody Pack (Vol. 2)
+   Score: 100 | Type: pack | Audio: 44 | 58.54 MB
+102. OPS - Serum Hardstyle Kick Presets (Vol. 1)
+   Score: 75 | Type: pack | Audio: 47 | 12.13 MB
+103. OPS - Serum Screech Presets (Vol. 1)
+   Score: 75 | Type: pack | Audio: 68 | 54.02 MB
+104. OPS - Spire Hardstyle Screech Presets (Vol. 1)
+   Score: 75 | Type: pack | Audio: 67 | 39.59 MB
+105. OPS - Sylenth1 Hardstyle Arpeggios
+   Score: 75 | Type: pack | Audio: 256 | 394.79 MB
+106. OPS - Trance Hardstyle Melody Pack (Vol. 1)
+   Score: 100 | Type: pack | Audio: 44 | 58.67 MB
+107. OPS - Vital Hardstyle Kick Presets (Vol. 1)
+   Score: 75 | Type: pack | Audio: 50 | 70.97 MB
+108. OPS - Zaag Kick Expansion (Vol. 1)
+   Score: 70 | Type: pack | Audio: 150 | 19.43 MB
+109. Big EDM - Hardstyle Mania (WAV)
+   Score: 100 | Type: pack | Audio: 303 | 487.56 MB
+110. Drums
+   Score: 65 | Type: pack | Audio: 67 | 9.15 MB
+111. FX
+   Score: 65 | Type: pack | Audio: 55 | 137.67 MB
+112. Synth
+   Score: 50 | Type: pack | Audio: 54 | 18.77 MB
+113. FMT_XTRA_CRISPY_SERUM
+   Score: 75 | Type: pack | Audio: 111 | 38.76 MB
+114. SERUM PRESETS
+   Score: 75 | Type: pack | Audio: 0 | 3.86 MB
+115. Fragment Audio - Screech XL (WAV)
+   Score: 85 | Type: pack | Audio: 119 | 61.39 MB
+116. Drums
+   Score: 65 | Type: pack | Audio: 30 | 6.75 MB
+117. Fx
+   Score: 65 | Type: pack | Audio: 43 | 35.67 MB
+118. Fyloh - HUGE HARD DANCE KICKS PACK
+   Score: 85 | Type: pack | Audio: 138 | 100.81 MB
+119. VARIOUS KICKS
+   Score: 80 | Type: pack | Audio: 123 | 89.44 MB
+120. Industrial Strenght - Raw Intensity by General Guyble (WAV)
+   Score: 100 | Type: pack | Audio: 125 | 831.16 MB
+121. RI_Audio_Samples
+   Score: 80 | Type: pack | Audio: 120 | 237.15 MB
+122. Industrial Strenght - Rawstyle (WAV)
+   Score: 60 | Type: pack | Audio: 0 | 526.76 MB
+123. RS_Rawstyle Cubase Track Presets
+   Score: 75 | Type: pack | Audio: 0 | 178.33 MB
+124. RS_Rawstyle Patch Presets
+   Score: 75 | Type: pack | Audio: 0 | 168.71 KB
+125. Industrial Strenght - Rawstyle Evolution by General Guyble (WAV)
+   Score: 100 | Type: pack | Audio: 171 | 270.03 MB
+126. RSE_Drum_One_Shots
+   Score: 65 | Type: pack | Audio: 65 | 10.37 MB
+127. RSE_FX
+   Score: 65 | Type: pack | Audio: 44 | 110.28 MB
+128. RSE_Sylenth_Soundbank
+   Score: 75 | Type: pack | Audio: 0 | 504.18 KB
+129. Kloenk and PVC Kick Expansion (Vol. 1)
+   Score: 85 | Type: pack | Audio: 250 | 115.25 MB
+130. FL Studio Mixers
+   Score: 75 | Type: pack | Audio: 0 | 52.67 KB
+131. FL Studio Templates
+   Score: 80 | Type: pack | Audio: 17 | 8.7 MB
+132. Kick Builder
+   Score: 80 | Type: pack | Audio: 183 | 79.32 MB
+133. NS Audio All In One Hardstyle Collection
+   Score: 85 | Type: pack | Audio: 181 | 432.55 MB
+134. AUDIO KICKS
+   Score: 65 | Type: pack | Audio: 44 | 18.74 MB
+135. MIDI FILES
+   Score: 80 | Type: pack | Audio: 0 | 5.06 KB
+136. MIXER CHAIN FL (For serum kicks 2.0)
+   Score: 75 | Type: pack | Audio: 0 | 31.89 KB
+137. MIXER CHAIN LOGIC PRO (For serum kicks 2.0)
+   Score: 75 | Type: pack | Audio: 0 | 90.05 KB
+138. PERCUSSION
+   Score: 50 | Type: pack | Audio: 66 | 17.56 MB
+139. PRESETS
+   Score: 75 | Type: pack | Audio: 0 | 0 B
+140. Official Thyron Sample Pack
+   Score: 85 | Type: pack | Audio: 680 | 1.48 GB
+141. Drum Oneshots
+   Score: 65 | Type: pack | Audio: 37 | 7.06 MB
+142. Kick Builder
+   Score: 80 | Type: pack | Audio: 192 | 49.22 MB
+143. Kicks
+   Score: 80 | Type: pack | Audio: 93 | 20.47 MB
+144. Serum Presets
+   Score: 75 | Type: pack | Audio: 58 | 59.27 MB
+145. Vocals
+   Score: 65 | Type: pack | Audio: 36 | 11.82 MB
+146. On Point Samples  Futuristic Kick Expansion (Vol. 1)
+   Score: 85 | Type: pack | Audio: 398 | 153.13 MB
+147. FL Studio Templates
+   Score: 80 | Type: pack | Audio: 24 | 8.11 MB
+148. Kick Builder
+   Score: 80 | Type: pack | Audio: 228 | 86.99 MB
+149. Kicks
+   Score: 80 | Type: pack | Audio: 51 | 26.83 MB
+150. Mixer Files
+   Score: 75 | Type: pack | Audio: 0 | 21.98 KB
+151. Serum Presets
+   Score: 75 | Type: pack | Audio: 95 | 31.18 MB
+152. On Point Samples Color Kick Expansion (Vol. 1)
+   Score: 85 | Type: pack | Audio: 305 | 156.07 MB
+153. FL Studio Mixers
+   Score: 75 | Type: pack | Audio: 0 | 1.18 MB
+154. FL Studio Templates
+   Score: 80 | Type: pack | Audio: 40 | 18.68 MB
+155. Kick Parts
+   Score: 80 | Type: pack | Audio: 215 | 102.06 MB
+156. OPS - BONUS - Kick Build Templates (FL Studio)
+   Score: 80 | Type: pack | Audio: 23 | 6.12 MB
+157. OPS - Gated Kick Template 1
+   Score: 80 | Type: pack | Audio: 4 | 1.6 MB
+158. OPS - Midintro Kick Template 1
+   Score: 80 | Type: pack | Audio: 3 | 927.45 KB
+159. OPS - Midintro Kick Template 2
+   Score: 80 | Type: pack | Audio: 3 | 1011.84 KB
+160. OPS - Psy Kick Template 1
+   Score: 80 | Type: pack | Audio: 4 | 948.45 KB
+161. OPS - Psy Kick Template 2
+   Score: 80 | Type: pack | Audio: 3 | 511.89 KB
+162. OPS - Rawstyle Kick Template 1
+   Score: 80 | Type: pack | Audio: 3 | 914.18 KB
+163. OPS - Rawstyle Kick Template 2
+   Score: 80 | Type: pack | Audio: 3 | 317.88 KB
+164. OPS - BONUS - Rawstyle Kick Mixer Presets (FL Studio)
+   Score: 75 | Type: pack | Audio: 0 | 103.06 KB
+165. OPS - BONUS - Rawstyle Mixer Presets (FL Studio)
+   Score: 75 | Type: pack | Audio: 0 | 87.76 KB
+166. OPS - Criminal Rawstyle Kicks Vol. 1
+   Score: 100 | Type: pack | Audio: 444 | 568.32 MB
+167. Kick Parts Folder
+   Score: 80 | Type: pack | Audio: 166 | 180.5 MB
+168. Mid-Intro Kicks
+   Score: 65 | Type: pack | Audio: 50 | 70.43 MB
+169. Misc
+   Score: 65 | Type: pack | Audio: 107 | 140.54 MB
+170. OPS - Criminal Rawstyle Kicks Vol. 1 (Serum presets)
+   Score: 75 | Type: pack | Audio: 25 | 37.28 MB
+171. Rawstyle Kicks
+   Score: 50 | Type: pack | Audio: 27 | 31.34 MB
+172. Vocals
+   Score: 65 | Type: pack | Audio: 69 | 108.24 MB
+173. OPS - Fractal Hardstyle FX
+   Score: 100 | Type: pack | Audio: 353 | 326.03 MB
+174. Sweeps & Risers 150 BPM
+   Score: 50 | Type: pack | Audio: 11 | 18.95 MB
+175. OPS - Rawphoric Essentials Vol. 1
+   Score: 100 | Type: pack | Audio: 422 | 390.16 MB
+176. Drums
+   Score: 65 | Type: pack | Audio: 70 | 16.34 MB
+177. FX
+   Score: 80 | Type: pack | Audio: 104 | 70.33 MB
+178. Kick Fundamentals
+   Score: 80 | Type: pack | Audio: 89 | 41.56 MB
+179. Kicks
+   Score: 65 | Type: pack | Audio: 98 | 16.31 MB
+180. Melodies
+   Score: 80 | Type: pack | Audio: 61 | 240.95 MB
+181. Presets
+   Score: 75 | Type: pack | Audio: 0 | 4.49 MB
+182. OPS Raging Rawstyle Vocals Vol. 1
+   Score: 85 | Type: pack | Audio: 306 | 619.48 MB
+183. 150 BPM VOX
+   Score: 65 | Type: pack | Audio: 65 | 148.44 MB
+184. 180 BPM VOX
+   Score: 65 | Type: pack | Audio: 60 | 109.64 MB
+185. Build Ups
+   Score: 80 | Type: pack | Audio: 57 | 182.43 MB
+186. Drum Loops
+   Score: 80 | Type: pack | Audio: 44 | 107.06 MB
+187. Vocal Mixer Chains
+   Score: 75 | Type: pack | Audio: 0 | 102.91 KB
+188. Screech House - Hardstyle Sample Pack (WAV)
+   Score: 100 | Type: pack | Audio: 97 | 68.54 MB
+189. EXTRAS
+   Score: 50 | Type: pack | Audio: 8 | 18.54 MB
+190. Singomakers - PSYSTYLE (WAV)
+   Score: 100 | Type: pack | Audio: 617 | 1.18 GB
+191. SPST_Midi_Files
+   Score: 80 | Type: pack | Audio: 0 | 30.63 KB
+192. SPST_One_Shots
+   Score: 80 | Type: pack | Audio: 240 | 176.33 MB
+193. SPST_SFX
+   Score: 80 | Type: pack | Audio: 80 | 171.89 MB
+194. Singomakers - Rawstyle - Massacre (WAV)
+   Score: 100 | Type: pack | Audio: 1028 | 1.35 GB
+195. SRR_Fills_&_Rolls
+   Score: 65 | Type: pack | Audio: 149 | 95.77 MB
+196. SRR_Midi_Files
+   Score: 80 | Type: pack | Audio: 0 | 45.53 KB
+197. SRR_One_Shots
+   Score: 80 | Type: pack | Audio: 444 | 128.95 MB
+198. SRR_SFX
+   Score: 80 | Type: pack | Audio: 101 | 228.39 MB
+199. SRR_VST_Synth_Patches
+   Score: 75 | Type: pack | Audio: 0 | 512.61 KB
+200. Singomakers - Rawstyle Destructor (WAV)
+   Score: 100 | Type: pack | Audio: 849 | 1.89 GB
+201. SRDR_Melody_Loops_(MIDI)
+   Score: 80 | Type: pack | Audio: 0 | 64.04 KB
+202. SRDR_One_Shots
+   Score: 80 | Type: pack | Audio: 261 | 121.71 MB
+203. SRDR_Sampler_Patches
+   Score: 75 | Type: pack | Audio: 0 | 0 B
+204. SRDR_SFX
+   Score: 80 | Type: pack | Audio: 66 | 156.68 MB
+205. SRDR_VST_Synth_Presets
+   Score: 75 | Type: pack | Audio: 0 | 79.51 KB
+206. Singomakers - Rawstyle Joker (WAV)
+   Score: 100 | Type: pack | Audio: 778 | 1.26 GB
+207. SRTJ_Melody_Loops_MIDI
+   Score: 80 | Type: pack | Audio: 0 | 46.18 KB
+208. SRTJ_One_Shots
+   Score: 80 | Type: pack | Audio: 262 | 111.7 MB
+209. SRTJ_SFX
+   Score: 80 | Type: pack | Audio: 69 | 186.4 MB
+210. SRTJ_VST_Synth_Patches
+   Score: 75 | Type: pack | Audio: 0 | 149.63 KB
+211. Singomakers - Rawstyle Till The End (WAV)
+   Score: 100 | Type: pack | Audio: 777 | 1.31 GB
+212. SRTE_Midi_Files
+   Score: 80 | Type: pack | Audio: 0 | 68.79 KB
+213. SRTE_One_Shots
+   Score: 80 | Type: pack | Audio: 296 | 155.09 MB
+214. SRTE_SFX
+   Score: 80 | Type: pack | Audio: 64 | 146.81 MB
+215. SRTE_VST_Synth_Patches
+   Score: 75 | Type: pack | Audio: 0 | 109.03 KB
+216. Singomakers - Rawstyle Weapons (WAV)
+   Score: 100 | Type: pack | Audio: 895 | 1.36 GB
+217. SRW_Kick_Constructor
+   Score: 65 | Type: pack | Audio: 162 | 24.84 MB
+218. SRW_Midi_Files
+   Score: 80 | Type: pack | Audio: 0 | 98.85 KB
+219. SRW_One_Shots
+   Score: 80 | Type: pack | Audio: 262 | 61.97 MB
+220. SRW_Sampler_Patches
+   Score: 75 | Type: pack | Audio: 0 | 811.32 KB
+221. SRW_SFX
+   Score: 80 | Type: pack | Audio: 103 | 182.4 MB
+222. SRW_VST_Synth_Patches
+   Score: 75 | Type: pack | Audio: 0 | 551.4 KB
+223. Sunhiausa Kicks VOL 2
+   Score: 50 | Type: pack | Audio: 32 | 16.47 MB
+
+✅ Test terminé !

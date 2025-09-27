@@ -1,0 +1,882 @@
+# ==================================================================================
+# TAXONOMY CONFIGURATION - FAMILY PIPELINE V6
+# ==================================================================================
+# This file defines the complete taxonomy for sample organization including
+# families, styles, types, formats, and all configurable options.
+version: "6.0"
+
+# ==================================================================================
+# FAMILIES - Top-level groupings (~15 covering everything)
+# ==================================================================================
+families:
+  - name: "Bass Music"
+    id: "bass_music"
+    styles: 
+      - "Dubstep"
+      - "Future_Bass"
+      - "UK_Garage"
+      - "Grime"
+      - "Trap_Bass"
+      - "Riddim"
+      - "Wave"
+      - "Future_Garage"
+      - "Melodic_Dubstep"
+      - "Chillstep"
+    color: "#9b59b6"  # Purple
+    keywords:
+      - "bass music"
+      - "dubstep"
+      - "future bass"
+      - "riddim"
+      - "melodic dubstep"
+      - "trap bass"
+      - "wave"
+    
+  - name: "Drum & Bass"
+    id: "drum_bass"
+    styles:
+      - "Drum&Bass"
+      - "Neurofunk"
+      - "Liquid"
+      - "Jump_Up"
+      - "Jungle"
+      - "Darkstep"
+      - "Halftime"
+      - "Rollers"
+      - "Minimal_DnB"
+    color: "#e74c3c"  # Red
+    
+  - name: "Hard Dance"
+    id: "hard_dance"
+    styles:
+      - "Hardcore"
+      - "Frenchcore"
+      - "Rawstyle"
+      - "Hardstyle"
+      - "Uptempo"
+      - "Terror"
+      - "Industrial_Hardcore"
+      - "Gabber"
+      - "Euphoric_Hardstyle"
+      - "Happy_Hardcore"
+      - "UK_Hardcore"
+      - "Speedcore"
+    color: "#c0392b"  # Dark red
+    keywords:
+      - "hard dance"
+      - "hardstyle"
+      - "rawstyle"
+      - "euphoric hardstyle"
+      - "uptempo"
+      - "hardcore"
+      - "hard kicks"
+      - "gabber"
+    
+  - name: "House"
+    id: "house"
+    styles:
+      - "House"
+      - "Deep_House"
+      - "Tech_House"
+      - "Progressive_House"
+      - "Future_House"
+      - "Electro_House"
+      - "Big_Room"
+      - "Afro_House"
+      - "Bass_House"
+      - "G_House"
+      - "Disco_House"
+      - "Jackin_House"
+      - "Lo_Fi_House"
+      - "French_House"
+    color: "#3498db"  # Blue
+    
+  - name: "Techno"
+    id: "techno"
+    styles:
+      - "Techno"
+      - "Minimal_Techno"
+      - "Detroit_Techno"
+      - "Acid_Techno"
+      - "Hard_Techno"
+      - "Melodic_Techno"
+      - "Dub_Techno"
+      - "Industrial_Techno"
+      - "Driving_Techno"
+      - "Peak_Time_Techno"
+      - "Hypnotic_Techno"
+    color: "#2c3e50"  # Dark blue
+    
+  - name: "Trance / Psy"
+    id: "trance_psy"
+    styles:
+      - "Trance"
+      - "Psytrance"
+      - "Goa"
+      - "Progressive_Trance"
+      - "Uplifting_Trance"
+      - "Hard_Trance"
+      - "Full_On"
+      - "Tech_Trance"
+      - "Dark_Psy"
+      - "Progressive_Psy"
+      - "Vocal_Trance"
+    color: "#16a085"  # Teal
+    
+  - name: "Hip-Hop / Trap / R&B"
+    id: "hip_hop_trap"
+    styles:
+      - "Hip_Hop"
+      - "Trap"
+      - "Boom_Bap"
+      - "Lo_Fi_Hip_Hop"
+      - "R&B"
+      - "Drill"
+      - "Cloud_Rap"
+      - "Phonk"
+      - "UK_Drill"
+      - "Memphis"
+      - "Jersey_Club"
+      - "West_Coast"
+      - "PluggnB"
+    color: "#f39c12"  # Orange
+    
+  - name: "Pop / Mainstage / Dance"
+    id: "pop_dance"
+    styles:
+      - "Pop"
+      - "EDM"
+      - "Electro_House"
+      - "Mainstage"
+      - "Commercial"
+      - "Dance_Pop"
+      - "Future_Pop"
+      - "Slap_House"
+      - "Hyperpop"
+      - "Future_Bounce"
+      - "Melbourne_Bounce"
+      - "Future_Rave"
+    color: "#e67e22"  # Light orange
+    keywords:
+      - "festival"
+      - "mainstage"
+      - "edm"
+      - "anthem"
+      - "big room"
+      - "dance pop"
+    
+  - name: "Cinematic / Orchestral / SFX"
+    id: "cinematic"
+    styles:
+      - "Cinematic"
+      - "Orchestral"
+      - "Epic"
+      - "Film_Score"
+      - "Trailer"
+      - "SFX"
+      - "Foley"
+      - "Game_Audio"
+    color: "#8e44ad"  # Purple
+    
+  - name: "Ambient / Chill / Lo-Fi"
+    id: "ambient_chill"
+    styles:
+      - "Ambient"
+      - "Chillout"
+      - "Lo_Fi"
+      - "Downtempo"
+      - "New_Age"
+      - "Meditation"
+      - "Chillstep"
+      - "Drone"
+      - "Dark_Ambient"
+      - "Psybient"
+    color: "#27ae60"  # Green
+    
+  - name: "Breaks / Garage / UK Bass"
+    id: "breaks_uk"
+    styles:
+      - "Breaks"
+      - "Breakbeat"
+      - "UK_Garage"
+      - "2_Step"
+      - "Speed_Garage"
+      - "Bassline"
+      - "UK_Funky"
+      - "Footwork"
+      - "Juke"
+    color: "#34495e"  # Gray blue
+    
+  - name: "Latin / Global"
+    id: "latin_global"
+    styles:
+      - "Reggaeton"
+      - "Moombahton"
+      - "Baile_Funk"
+      - "Afrobeat"
+      - "Dancehall"
+      - "Latin_House"
+      - "Tropical"
+      - "Amapiano"
+      - "Dembow"
+      - "Guaracha"
+      - "Funk_Carioca"
+    color: "#d35400"  # Dark orange
+    
+  - name: "Rock / Metal / Live"
+    id: "rock_metal"
+    styles:
+      - "Rock"
+      - "Metal"
+      - "Punk"
+      - "Alternative"
+      - "Industrial"
+      - "Live_Drums"
+      - "Guitar"
+      - "Electronic_Rock"
+      - "Darkwave"
+      - "EBM"
+    color: "#7f8c8d"  # Gray
+    
+  - name: "Retro / Synthwave / 8-bit"
+    id: "retro"
+    styles:
+      - "Synthwave"
+      - "Retrowave"
+      - "Vaporwave"
+      - "8_Bit"
+      - "Chiptune"
+      - "Outrun"
+      - "Disco"
+      - "Funk"
+      - "Darksynth"
+      - "Nu_Disco"
+      - "Future_Funk"
+    color: "#ff6ec7"  # Pink
+    
+  - name: "Experimental / IDM / Noise"
+    id: "experimental"
+    styles:
+      - "IDM"
+      - "Experimental"
+      - "Glitch"
+      - "Noise"
+      - "Avant_Garde"
+      - "Abstract"
+      - "Modular"
+      - "Breakcore"
+      - "Deconstructed_Club"
+      - "Witch_House"
+    color: "#95a5a6"  # Light gray
+    
+  - name: "FX / Transitions / Impacts"
+    id: "fx"
+    styles:
+      - "Transition"
+      - "Impact"
+      - "Rise"
+      - "Fall" 
+      - "Sweep"
+      - "Build_Up"
+      - "Break"
+      - "Atmos"
+      - "Noise"
+      - "Reverse"
+      - "Hit"
+      - "Generic_FX"
+    color: "#e74c3c"  # Red
+    
+  - name: "Presets & VSTs"
+    id: "presets"
+    keywords:
+      - { term: "preset", weight: 1.0 }
+      - { term: "presets", weight: 1.0 }
+      - { term: "serum", weight: 0.95 }
+      - { term: "vital", weight: 0.95 }
+      - { term: "massive", weight: 0.9 }
+      - { term: "sylenth", weight: 0.9 }
+      - { term: "nexus", weight: 0.9 }
+      - { term: "omnisphere", weight: 0.9 }
+      - { term: "kontakt", weight: 0.85 }
+      - { term: ".fxp", weight: 0.95 }
+      - { term: ".nmsv", weight: 0.95 }
+      - { term: ".vital", weight: 0.95 }
+      - { term: ".fxb", weight: 0.95 }
+      - { term: "vst", weight: 0.8 }
+      - { term: "patch", weight: 0.7 }
+      - { term: "patches", weight: 0.7 }
+      - { term: "soundbank", weight: 0.75 }
+    styles:
+      - "Bass"
+      - "Lead"
+      - "Pad"
+      - "Pluck"
+      - "Arp"
+      - "Chord"
+      - "FX"
+      - "Sequence"
+      - "Key"
+      - "Vocal"
+      - "Other"
+    color: "#8e44ad"  # Purple
+
+# ==================================================================================
+# TOGGLES - Configuration switches for taxonomy behavior
+# ==================================================================================
+toggles:
+  flatten_dnb_into_bass_music: false       # Merge D&B into Bass Music family
+  treat_hard_techno_as_hard_music: false   # Move Hard Techno to Hard Dance
+  merge_uk_styles: false                    # Combine UK Garage variants
+  separate_psy_from_trance: false           # Split Psy into own family
+  
+# ==================================================================================
+# TYPES - Fixed list of sample types
+# ==================================================================================
+types:
+  primary:
+    - "KICKS"
+    - "BASS"
+    - "SYNTHS"
+    - "PERC"
+    - "FX"
+    - "VOCALS"
+    - "ACAPELLAS"
+    - "TEXTURES"
+    - "STEMS"
+    - "TOPS"
+    - "MIDI"
+    - "DRUM_LOOPS"
+    - "PRESETS"
+  secondary:
+    - "OTHER"
+    
+# ==================================================================================
+# FORMATS - Contextual per type
+# ==================================================================================
+formats:
+  KICKS:
+    - "Full_Kicks"
+    - "Tok"
+    - "Punch"
+    - "Tail"
+    - "Layer"
+    - "Loops"
+    
+  BASS:
+    - "One_Shot"
+    - "Loops"
+    - "808"
+    - "Reese"
+    - "Sustained"
+    - "Sub"
+    
+  SYNTHS:
+    - "One_Shot"
+    - "Loops"
+    - "Chords"
+    - "Lead"
+    - "Pad"
+    - "Arp"
+    - "Pluck"
+    
+  PERC:
+    - "One_Shot"
+    - "Loops"
+    - "Fills"
+    - "Tops"
+    - "Shakers"
+    - "Rides"
+    
+  FX:
+    - "Hit"
+    - "Rise"
+    - "Fall"
+    - "Sweep"
+    - "Atmos"
+    - "Impact"
+    - "Transition"
+    - "Noise"
+    - "Build_Up"
+    - "Break"
+    - "Reverse"
+    
+  VOCALS:
+    - "One_Shot"
+    - "Loop"
+    - "Phrase"
+    - "Chop"
+    - "FX"
+    - "Adlib"
+    - "Dry"
+    - "Wet"
+    - "Harmony"
+    - "Lead"
+    - "Spoken"
+    - "Rap"
+    
+  ACAPELLAS:
+    - "Full"
+    - "Verse"
+    - "Chorus"
+    - "Hook"
+    - "Bridge"
+    - "Dry"
+    - "Wet"
+    
+  TEXTURES:
+    - "Pad"
+    - "Atmosphere"
+    - "Drone"
+    - "Sweep"
+    - "Evolving"
+    - "Static"
+    
+  STEMS:
+    - "Drums"
+    - "Bass"
+    - "Lead"
+    - "Chords"
+    - "Vocal"
+    - "FX"
+    
+  TOPS:
+    - "Hat_Loop"
+    - "Perc_Loop"
+    - "Shaker_Loop"
+    - "Ride_Loop"
+    - "Cymbal_Loop"
+    
+  MIDI:
+    - "Chords"
+    - "Melody"
+    - "Bassline"
+    - "Drums"
+    - "Arp"
+    - "Full"
+    
+  DRUM_LOOPS:
+    - "Full"
+    - "Top"
+    - "Minimal"
+    - "Percussion"
+    - "Breakbeat"
+    - "Groove"
+    - "Fill"
+    - "Build"
+    - "Drop"
+    
+  PRESETS:
+    - "Serum"
+    - "Vital"
+    - "Spire"
+    - "Sylenth1"
+    - "Massive"
+    - "Massive_X"
+    - "Nexus"
+    - "Omnisphere"
+    - "Kontakt"
+    - "Diva"
+    - "Hive"
+    - "Pigments"
+    - "Phase_Plant"
+    - "Phaseplant"
+    - "Analog_Lab"
+    - "Zebra"
+    - "Repro"
+    - "Arturia_V"
+    - "Native_Instruments"
+    - "Ableton"
+    - "Wavetable"
+    - "Operator"
+    - "Analog"
+    - "FL_Studio"
+    - "Harmor"
+    - "Sytrus"
+    - "FM8"
+    - "Other"
+
+# ==================================================================================
+# STYLE SYNONYMS - Normalize variations
+# ==================================================================================
+style_synonyms:
+  # Drum & Bass variants
+  "dnb": "Drum&Bass"
+  "d&b": "Drum&Bass"
+  "drum and bass": "Drum&Bass"
+  "drumnbass": "Drum&Bass"
+  "neuro": "Neurofunk"
+  "liquid dnb": "Liquid"
+  "jump up": "Jump_Up"
+  "jumpup": "Jump_Up"
+  "heavy duty jump up": "Jump_Up"
+  "minimal dnb": "Minimal_DnB"
+  
+  # Bass Music variants
+  "future bass": "Future_Bass"
+  "melodic dubstep": "Melodic_Dubstep"
+  "future garage": "Future_Garage"
+  "trap bass": "Trap_Bass"
+  "metalstep": "Dubstep"
+  "metal step": "Dubstep"
+  "metal b2b dubstep": "Dubstep"
+  "funky bass": "Bass"
+  "funk bass": "Bass"
+  
+  # Hardcore variants
+  "raw style": "Rawstyle"
+  "raw": "Rawstyle"
+  "hardcorium": "Hardcore"
+  "happy hardcore": "Happy_Hardcore"
+  "euphoric hardstyle": "Euphoric_Hardstyle"
+  "uk hardcore": "UK_Hardcore"
+  "industrial hardcore": "Industrial_Hardcore"
+  
+  # House variants
+  "deep": "Deep_House"
+  "prog house": "Progressive_House"
+  "prog": "Progressive_House"
+  "techhouse": "Tech_House"
+  "tech house": "Tech_House"
+  "future house": "Future_House"
+  "electro house": "Electro_House"
+  "big room": "Big_Room"
+  "afro house": "Afro_House"
+  "bass house": "Bass_House"
+  "g house": "G_House"
+  "disco house": "Disco_House"
+  "jackin house": "Jackin_House"
+  "jackin": "Jackin_House"
+  "lo fi house": "Lo_Fi_House"
+  "lofi house": "Lo_Fi_House"
+  "french house": "French_House"
+  
+  # Techno variants
+  "minimal": "Minimal_Techno"
+  "acid": "Acid_Techno"
+  "detroit": "Detroit_Techno"
+  "hard techno": "Hard_Techno"
+  "melodic techno": "Melodic_Techno"
+  "dub techno": "Dub_Techno"
+  "industrial techno": "Industrial_Techno"
+  "driving techno": "Driving_Techno"
+  "peak time": "Peak_Time_Techno"
+  "hypnotic": "Hypnotic_Techno"
+  "warehouse techno": "Techno"
+  "dark warehouse techno": "Techno"
+  "warehouse": "Techno"
+  "dark warehouse": "Techno"
+  # Ensure warehouse patterns map to Techno, not House
+  "four4": "Techno"
+  "mind flux": "Techno"
+  
+  # Trap/Hip-Hop variants
+  "hiphop": "Hip_Hop"
+  "hip hop": "Hip_Hop"
+  "lofi": "Lo_Fi_Hip_Hop"
+  "lo fi": "Lo_Fi_Hip_Hop"
+  "lo fi hip hop": "Lo_Fi_Hip_Hop"
+  "rnb": "R&B"
+  "boom bap": "Boom_Bap"
+  "cloud rap": "Cloud_Rap"
+  "uk drill": "UK_Drill"
+  "west coast": "West_Coast"
+  "jersey club": "Jersey_Club"
+  "pluggnb": "PluggnB"
+  "plugg": "PluggnB"
+  
+  # Trance variants
+  "psy": "Psytrance"
+  "psychedelic": "Psytrance"
+  "goa trance": "Goa"
+  "progressive trance": "Progressive_Trance"
+  "uplifting trance": "Uplifting_Trance"
+  "hard trance": "Hard_Trance"
+  "full on": "Full_On"
+  "tech trance": "Tech_Trance"
+  "dark psy": "Dark_Psy"
+  "progressive psy": "Progressive_Psy"
+  "vocal trance": "Vocal_Trance"
+  
+  # Pop/EDM variants
+  "dance pop": "Dance_Pop"
+  "future pop": "Future_Pop"
+  "slap house": "Slap_House"
+  "future bounce": "Future_Bounce"
+  "melbourne bounce": "Melbourne_Bounce"
+  "future rave": "Future_Rave"
+  
+  # Latin/Global variants
+  "baile funk": "Baile_Funk"
+  "latin house": "Latin_House"
+  "funk carioca": "Funk_Carioca"
+  
+  # UK/Garage variants
+  "ukg": "UK_Garage"
+  "2step": "2_Step"
+  "two step": "2_Step"
+  "speed garage": "Speed_Garage"
+  "uk funky": "UK_Funky"
+  
+  # Ambient/Chill variants
+  "chillout": "Chillout"
+  "downtempo": "Downtempo"
+  "new age": "New_Age"
+  "dark ambient": "Dark_Ambient"
+  
+  # Retro variants
+  "8 bit": "8_Bit"
+  "8bit": "8_Bit"
+  "nu disco": "Nu_Disco"
+  "future funk": "Future_Funk"
+  
+  # Experimental variants
+  "deconstructed club": "Deconstructed_Club"
+  "witch house": "Witch_House"
+  
+  # Rock/Metal variants
+  "electronic rock": "Electronic_Rock"
+  "live drums": "Live_Drums"
+
+# ==================================================================================
+# DECISION BOUNDARIES - AI classification thresholds
+# ==================================================================================
+# INTELLIGENT CLASSIFICATION RULES - Advanced pattern matching for edge cases
+# ==================================================================================
+classification_rules:
+  # Priority patterns - these take precedence over style_synonyms
+  priority_patterns:
+    # Warehouse Techno should always be Techno, not House
+    - pattern: "(?i).*warehouse.*techno.*"
+      family: "Techno"
+      style: "Techno"
+      confidence: 0.85
+    - pattern: "(?i).*dark.*warehouse.*"
+      family: "Techno"
+      style: "Techno"
+      confidence: 0.85
+    
+    # Metalstep should always be Bass Music, not Metal
+    - pattern: "(?i).*metal.*step.*"
+      family: "Bass Music"
+      style: "Dubstep" 
+      confidence: 0.85
+    - pattern: "(?i).*metalstep.*"
+      family: "Bass Music"
+      style: "Dubstep"
+      confidence: 0.85
+    
+    # FX packs should go to FX family, not Presets or Cinematic
+    - pattern: "(?i).*fx.*toolkit.*"
+      family: "FX / Transitions / Impacts"
+      style: "Generic_FX"
+      type: "FX"
+      confidence: 0.85
+    - pattern: "(?i).*fx.*vol.*"
+      family: "FX / Transitions / Impacts"
+      style: "Generic_FX"
+      type: "FX"
+      confidence: 0.85
+    - pattern: "(?i).*transition.*toolkit.*"
+      family: "FX / Transitions / Impacts"
+      style: "Transition"
+      type: "FX"
+      confidence: 0.85
+    - pattern: "(?i).*impact.*toolkit.*"
+      family: "FX / Transitions / Impacts"
+      style: "Impact"
+      type: "FX"
+      confidence: 0.85
+      
+    # Jump Up classification - ensure it's Drum & Bass
+    - pattern: "(?i).*jump.*up.*"
+      family: "Drum & Bass"
+      style: "Jump_Up"
+      confidence: 0.88
+      
+      
+    # Generic packs that should ALWAYS go to quarantine for manual classification
+    # Basic volume/number patterns
+    - pattern: "(?i).*kicks.*vol.*"
+      quarantine: true
+      confidence: 0.35
+    - pattern: "(?i).*unleashed.*kick.*"
+      quarantine: true
+      confidence: 0.35
+    - pattern: "(?i).*sample.*pack.*vol.*"
+      quarantine: true
+      confidence: 0.35
+    - pattern: "(?i).*fmt.*kick.*"
+      quarantine: true
+      confidence: 0.35
+    - pattern: "(?i).*fmt.*unleashed.*"
+      quarantine: true
+      confidence: 0.35
+      
+    # Generic naming patterns that require manual classification
+    - pattern: "(?i)^[a-z0-9]+.*sample.*pack.*$"
+      quarantine: true
+      confidence: 0.30
+    - pattern: "(?i)^\\w+\\s*-\\s*sample.*pack"
+      quarantine: true
+      confidence: 0.30
+    - pattern: "(?i).*sample.*pack.*\\d+.*"
+      quarantine: true
+      confidence: 0.32
+      
+    # Artist/Label + generic instrument patterns
+    - pattern: "(?i)^\\w+.*unleashed.*samples?.*"
+      quarantine: true
+      confidence: 0.35
+    - pattern: "(?i)^[a-z_]+.*kick.*samples?.*"
+      quarantine: true
+      confidence: 0.35
+    - pattern: "(?i).*unleashed.*samples?$"
+      quarantine: true
+      confidence: 0.35
+      
+    # Generic construction patterns
+    - pattern: "(?i).*construction.*kit.*vol.*"
+      quarantine: true
+      confidence: 0.30
+    - pattern: "(?i).*sample.*construction.*"
+      quarantine: true
+      confidence: 0.30
+    - pattern: "(?i).*toolkit.*vol.*"
+      quarantine: true
+      confidence: 0.30
+      
+    # Ambiguous single-instrument packs
+    - pattern: "(?i)^\\w+.*_[a-z]+_samples?$"
+      quarantine: true
+      confidence: 0.28
+    - pattern: "(?i).*massive.*samples?$"
+      quarantine: true
+      confidence: 0.32
+    - pattern: "(?i).*essential.*samples?$"
+      quarantine: true
+      confidence: 0.32
+      
+  # Context-aware exclusions
+  family_exclusions:
+    # CRITICAL: Presets & VSTs should NEVER be used for audio sample packs at this stage
+    "Presets & VSTs":
+      - ".*"                     # UNIVERSAL EXCLUSION - No audio packs should go here
+      - "(?i).*\\.wav.*"         # WAV files shouldn't be in Presets
+      - "(?i).*sample.*pack.*"   # Sample packs shouldn't be presets
+      - "(?i).*wav.*sample.*"
+      - "(?i).*toolkit.*"        # Toolkits are sample packs, not presets
+      - "(?i).*vol.*"            # Volume series are sample packs
+      - "(?i).*kicks.*"          # Kick samples are audio, not presets
+    
+    "Rock / Metal / Live":
+      - "(?i).*step$"        # *step genres go to Bass Music
+      - "(?i).*bass.*step.*" # Bass step variants
+      
+  # Type overrides based on name patterns
+  type_overrides:
+    "FX":
+      patterns:
+        - "(?i).*fx.*toolkit.*"
+        - "(?i).*sound.*fx.*"
+        - "(?i).*effects.*"
+    "VOCALS":
+      patterns:
+        - "(?i).*vocal.*trap.*"
+        - "(?i).*vocals.*hardcore.*"
+        - "(?i).*acapellas?.*"
+
+# ==================================================================================
+decision_boundary:
+  min_conf_type: 0.60      # Minimum confidence for Type classification
+  min_conf_style: 0.55     # Minimum confidence for Style classification  
+  min_conf_format: 0.55    # Minimum confidence for Format classification
+  min_margin: 0.15         # Minimum margin between top 2 predictions
+  use_ai_threshold: 0.40   # Below this, always use AI assistance
+  
+# ==================================================================================
+# PATH TEMPLATES - Output structure patterns
+# ==================================================================================
+path_templates:
+  standard: "/{Family}/{Type}/{Style}/{Format}/{PackShort}/{LeafName}"
+  minimal: "/{Type}/{Style}/{Format}/{LeafName}"
+  by_family: "/{Family}/{Style}/{Type}/{Format}/{LeafName}"
+  flat: "/{Type}_{Style}/{Format}/{LeafName}"
+  
+  # Template variables:
+  # {Family} - Top-level family name
+  # {Type} - Sample type (KICKS, BASS, etc.)
+  # {Style} - Musical style
+  # {Format} - Format within type
+  # {PackShort} - Shortened pack name (max 20 chars)
+  # {LeafName} - Original folder name
+  # {Signature} - Optional subcategory
+  
+# ==================================================================================
+# SANITIZATION RULES
+# ==================================================================================
+sanitization:
+  max_path_length: 255
+  max_component_length: 64
+  illegal_chars: ['<', '>', ':', '"', '/', '\\', '|', '?', '*']
+  replacement_char: '_'
+  remove_double_underscores: true
+  trim_edges: true
+  
+# ==================================================================================
+# SCORING WEIGHTS - For classification confidence
+# ==================================================================================
+scoring_weights:
+  leaf: 5          # Leaf folder name weight
+  parent: 3        # Parent folder weight
+  sibling: 2       # Sibling folders weight
+  pack: 1          # Pack-level weight
+  metadata: 1      # BPM/other metadata weight
+  filename: 1      # Individual filename weight
+
+# ==================================================================================
+# GPT-5-NANO CONFIGURATION
+# ==================================================================================
+gpt_nano:
+  enabled: true
+  model: "gpt-5-nano"
+  temperature: 0
+  max_tokens: 100
+  timeout: 5000
+  retry_count: 2
+  batch_size: 10
+  cache_responses: true
+  
+  # Response format
+  expected_fields:
+    - "type"
+    - "style"
+    - "format"
+    - "confidence"
+    - "action"        # ACCEPT | UNKNOWN | NEEDS_WEB
+    - "reason_short"
+    
+# ==================================================================================
+# MIROIR PACKS CONFIGURATION (V2)
+# ==================================================================================
+mirror_packs:
+  enabled: false
+  base_path: "/PACKS"
+  use_symlinks: true      # false = virtual view in app
+  preserve_hierarchy: true
+  
+# ==================================================================================
+# EXPORT OPTIONS
+# ==================================================================================
+export:
+  csv:
+    include_confidence: true
+    include_margin: true
+    include_reasoning: true
+    include_collisions: true
+    delimiter: ","
+    encoding: "utf-8"
+    
+  html:
+    template: "default"
+    include_charts: true
+    include_preview: true
