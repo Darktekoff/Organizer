@@ -45,6 +45,19 @@ families:
       - "Rollers"
       - "Minimal_DnB"
     color: "#e74c3c"  # Red
+    keywords:
+      - { term: "drum bass", weight: 1.0 }
+      - { term: "drum and bass", weight: 1.0 }
+      - { term: "dnb", weight: 0.95 }
+      - { term: "d&b", weight: 0.9 }
+      - { term: "neurofunk", weight: 0.9 }
+      - { term: "liquid dnb", weight: 0.85 }
+      - { term: "liquid", weight: 0.8 }
+      - { term: "jump up", weight: 0.85 }
+      - { term: "jumpup", weight: 0.8 }
+      - { term: "jungle", weight: 0.8 }
+      - { term: "darkstep", weight: 0.8 }
+      - { term: "halftime", weight: 0.75 }
     
   - name: "Hard Dance"
     id: "hard_dance"
@@ -90,6 +103,21 @@ families:
       - "Lo_Fi_House"
       - "French_House"
     color: "#3498db"  # Blue
+    keywords:
+      - { term: "house", weight: 1.0 }
+      - { term: "deep house", weight: 0.95 }
+      - { term: "tech house", weight: 0.95 }
+      - { term: "progressive house", weight: 0.9 }
+      - { term: "future house", weight: 0.9 }
+      - { term: "electro house", weight: 0.85 }
+      - { term: "bass house", weight: 0.8 }
+      - { term: "afro house", weight: 0.8 }
+      - { term: "jackin house", weight: 0.75 }
+      - { term: "jackin", weight: 0.7 }
+      - { term: "french house", weight: 0.75 }
+      - { term: "disco house", weight: 0.75 }
+      - { term: "lo fi house", weight: 0.75 }
+      - { term: "g house", weight: 0.7 }
     
   - name: "Techno"
     id: "techno"
@@ -106,6 +134,20 @@ families:
       - "Peak_Time_Techno"
       - "Hypnotic_Techno"
     color: "#2c3e50"  # Dark blue
+    keywords:
+      - { term: "techno", weight: 1.0 }
+      - { term: "minimal techno", weight: 0.9 }
+      - { term: "minimal", weight: 0.8 }
+      - { term: "detroit techno", weight: 0.85 }
+      - { term: "detroit", weight: 0.75 }
+      - { term: "acid techno", weight: 0.85 }
+      - { term: "acid", weight: 0.7 }
+      - { term: "hard techno", weight: 0.9 }
+      - { term: "melodic techno", weight: 0.9 }
+      - { term: "industrial techno", weight: 0.8 }
+      - { term: "peak time", weight: 0.75 }
+      - { term: "warehouse", weight: 0.7 }
+      - { term: "underground", weight: 0.65 }
     
   - name: "Trance / Psy"
     id: "trance_psy"
@@ -122,6 +164,19 @@ families:
       - "Progressive_Psy"
       - "Vocal_Trance"
     color: "#16a085"  # Teal
+    keywords:
+      - { term: "trance", weight: 1.0 }
+      - { term: "psytrance", weight: 0.95 }
+      - { term: "psy", weight: 0.9 }
+      - { term: "goa", weight: 0.85 }
+      - { term: "progressive trance", weight: 0.85 }
+      - { term: "uplifting trance", weight: 0.8 }
+      - { term: "uplifting", weight: 0.75 }
+      - { term: "vocal trance", weight: 0.8 }
+      - { term: "psychedelic", weight: 0.75 }
+      - { term: "full on", weight: 0.7 }
+      - { term: "dark psy", weight: 0.7 }
+      - { term: "progressive psy", weight: 0.75 }
     
   - name: "Hip-Hop / Trap / R&B"
     id: "hip_hop_trap"
@@ -140,6 +195,21 @@ families:
       - "West_Coast"
       - "PluggnB"
     color: "#f39c12"  # Orange
+    keywords:
+      - { term: "hip hop", weight: 1.0 }
+      - { term: "hiphop", weight: 0.95 }
+      - { term: "trap", weight: 1.0 }
+      - { term: "r&b", weight: 0.95 }
+      - { term: "rnb", weight: 0.9 }
+      - { term: "boom bap", weight: 0.85 }
+      - { term: "drill", weight: 0.85 }
+      - { term: "phonk", weight: 0.8 }
+      - { term: "lo fi hip hop", weight: 0.8 }
+      - { term: "lofi hip hop", weight: 0.75 }
+      - { term: "cloud rap", weight: 0.75 }
+      - { term: "jersey club", weight: 0.7 }
+      - { term: "pluggnb", weight: 0.7 }
+      - { term: "808", weight: 0.6 }
     
   - name: "Pop / Mainstage / Dance"
     id: "pop_dance"

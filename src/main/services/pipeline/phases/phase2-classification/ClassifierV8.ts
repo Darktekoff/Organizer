@@ -112,36 +112,42 @@ export class ClassifierV8 {
     console.log(`[ClassifierV8] Phase 1: Classification individuelle des packs`);
 
     for (const pack of packs) {
-      const taxonomicResult = await this.classifyTaxonomic(pack);
+      try {
+        const taxonomicResult = await this.classifyTaxonomic(pack);
 
-      if (taxonomicResult && taxonomicResult.confidence >= this.config.skipConfidenceThreshold) {
-        // Succès taxonomique immédiat
-        result.classifiedPacks.set(pack.packId, {
-          classification: taxonomicResult,
-          needsManualReview: false,
-          processingSteps: [`✅ Taxonomique: ${taxonomicResult.family}/${taxonomicResult.style}`]
-        });
-        result.statistics.taxonomicSuccesses++;
-      } else {
-        // Échec taxonomique → Essayer héritage bundle
-        if (pack.bundleInfo?.bundleName) {
-          const bundleClassification = result.bundleClassifications.get(pack.bundleInfo.bundleName);
-          if (bundleClassification) {
-            // HÉRITAGE BUNDLE réussi
-            result.classifiedPacks.set(pack.packId, {
-              classification: bundleClassification,
-              needsManualReview: false,
-              processingSteps: [`📦 Hérité: ${pack.bundleInfo.bundleName} → ${bundleClassification.family}`]
-            });
-            result.statistics.bundleInherited++;
+        if (taxonomicResult && taxonomicResult.confidence >= this.config.skipConfidenceThreshold) {
+          // Succès taxonomique immédiat
+          result.classifiedPacks.set(pack.packId, {
+            classification: taxonomicResult,
+            needsManualReview: false,
+            processingSteps: [`✅ Taxonomique: ${taxonomicResult.family}/${taxonomicResult.style}`]
+          });
+          result.statistics.taxonomicSuccesses++;
+        } else {
+          // Échec taxonomique → Essayer héritage bundle
+          if (pack.bundleInfo?.bundleName) {
+            const bundleClassification = result.bundleClassifications.get(pack.bundleInfo.bundleName);
+            if (bundleClassification) {
+              // HÉRITAGE BUNDLE réussi
+              result.classifiedPacks.set(pack.packId, {
+                classification: bundleClassification,
+                needsManualReview: false,
+                processingSteps: [`📦 Hérité: ${pack.bundleInfo.bundleName} → ${bundleClassification.family}`]
+              });
+              result.statistics.bundleInherited++;
+            } else {
+              // Bundle non classifié → IA individuelle
+              packsNeedingAI.push(pack);
+            }
           } else {
-            // Bundle non classifié → IA individuelle
+            // Pack isolé → IA individuelle
             packsNeedingAI.push(pack);
           }
-        } else {
-          // Pack isolé → IA individuelle
-          packsNeedingAI.push(pack);
         }
+      } catch (error) {
+        console.error(`[ClassifierV8] ⚠️ Erreur classification taxonomique pour pack ${pack.packId}:`, error);
+        // En cas d'erreur, continuer avec les phases suivantes
+        packsNeedingAI.push(pack);
       }
     }
 
@@ -291,8 +297,20 @@ export class ClassifierV8 {
    */
   private async classifyPacksWithAIBatch(packs: EnrichedPack[], result: BatchClassificationResult): Promise<void> {
     try {
+      // Enrichir les packs avec le contexte bundle pour l'IA
+      const enrichedPacksForAI = packs.map(pack => {
+        if (pack.bundleInfo?.bundleName && (!pack.tags || pack.tags.length === 0)) {
+          // Ajouter le nom du bundle dans les tags pour donner du contexte à l'IA
+          return {
+            ...pack,
+            tags: [`bundle:${pack.bundleInfo.bundleName}`]
+          };
+        }
+        return pack;
+      });
+
       // Utiliser le système batch existant de GPT5NanoService
-      const aiResults = await this.gptService.classifyEnrichedPacks(packs);
+      const aiResults = await this.gptService.classifyEnrichedPacks(enrichedPacksForAI);
 
       result.statistics.aiRequestsUsed += Math.ceil(packs.length / 25); // Estimation basée sur maxBatchSize standard
 
