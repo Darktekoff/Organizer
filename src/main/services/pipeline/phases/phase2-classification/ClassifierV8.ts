@@ -39,6 +39,7 @@ export interface BatchClassificationResult {
   statistics: {
     taxonomicSuccesses: number;
     bundleInherited: number;
+    bundleTaxonomicSuccesses: number;
     aiClassified: number;
     quarantined: number;
     aiRequestsUsed: number;
@@ -86,6 +87,7 @@ export class ClassifierV8 {
       statistics: {
         taxonomicSuccesses: 0,
         bundleInherited: 0,
+        bundleTaxonomicSuccesses: 0,
         aiClassified: 0,
         quarantined: 0,
         aiRequestsUsed: 0
@@ -102,7 +104,7 @@ export class ClassifierV8 {
 
     if (uniqueBundles.size > 0) {
       console.log(`[ClassifierV8] Phase 0: PRÉ-CLASSIFICATION de ${uniqueBundles.size} bundles`);
-      await this.preClassifyBundlesBatch(Array.from(uniqueBundles), result);
+      await this.preClassifyBundlesBatch(Array.from(uniqueBundles), packs, result);
       console.log(`[ClassifierV8] ✅ ${result.bundleClassifications.size} bundles pré-classifiés`);
     }
 
@@ -127,14 +129,22 @@ export class ClassifierV8 {
           // Échec taxonomique → Essayer héritage bundle
           if (pack.bundleInfo?.bundleName) {
             const bundleClassification = result.bundleClassifications.get(pack.bundleInfo.bundleName);
-            if (bundleClassification) {
-              // HÉRITAGE BUNDLE réussi
+
+            // ✅ NOUVEAU: Vérifier que la confidence du bundle est suffisante pour héritage
+            const MIN_BUNDLE_INHERITANCE_CONFIDENCE = 0.70;
+
+            if (bundleClassification && bundleClassification.confidence >= MIN_BUNDLE_INHERITANCE_CONFIDENCE) {
+              // HÉRITAGE BUNDLE réussi (confidence suffisante)
               result.classifiedPacks.set(pack.packId, {
                 classification: bundleClassification,
                 needsManualReview: false,
-                processingSteps: [`📦 Hérité: ${pack.bundleInfo.bundleName} → ${bundleClassification.family}`]
+                processingSteps: [`📦 Hérité: ${pack.bundleInfo.bundleName} → ${bundleClassification.family} (${Math.round(bundleClassification.confidence * 100)}%)`]
               });
               result.statistics.bundleInherited++;
+            } else if (bundleClassification && bundleClassification.confidence < MIN_BUNDLE_INHERITANCE_CONFIDENCE) {
+              // Bundle classifié mais confidence trop faible → classifier individuellement
+              console.log(`[ClassifierV8] ⚠️ Bundle "${pack.bundleInfo.bundleName}" confidence trop faible (${Math.round(bundleClassification.confidence * 100)}%) → pack "${pack.packId}" classifié individuellement`);
+              packsNeedingAI.push(pack);
             } else {
               // Bundle non classifié → IA individuelle
               packsNeedingAI.push(pack);
@@ -187,110 +197,119 @@ export class ClassifierV8 {
 
   /**
    * NOUVEAU: PRÉ-CLASSIFICATION des bundles (Bundle-First Logic)
-   * Une seule requête IA pour classifier tous les bundles uniques
+   * Essaie taxonomie locale AVANT l'IA en utilisant UNIQUEMENT le nom du bundle
    */
-  private async preClassifyBundlesBatch(bundleNames: string[], result: BatchClassificationResult): Promise<void> {
+  private async preClassifyBundlesBatch(bundleNames: string[], packs: EnrichedPack[], result: BatchClassificationResult): Promise<void> {
     try {
-      console.log(`[ClassifierV8] 📦 PRÉ-CLASSIFICATION de ${bundleNames.length} bundles uniques...`);
+      console.log(`[ClassifierV8] 📦 PRÉ-CLASSIFICATION de ${bundleNames.length} bundles...`);
 
-      // Utiliser la méthode existante classifyEnrichedPacks avec des packs factices pour les bundles
-      const bundlePacks: EnrichedPack[] = bundleNames.map(name => ({
-        packId: name,
-        originalPack: { name },
-        tags: [],
-        taxonomyMatches: [],
-        fileCount: 0,
-        audioFiles: 0,
-        presetFiles: 0,
-        totalSize: 0,
-        pathSegments: [],
-        enrichedAt: new Date()
-      }));
+      const bundlesNeedingAI: string[] = [];
 
-      const classifications = await this.gptService.classifyEnrichedPacks(bundlePacks);
-      result.statistics.aiRequestsUsed++;
+      // ÉTAPE 1: Essayer taxonomie locale pour chaque bundle
+      for (const bundleName of bundleNames) {
+        // Récupérer les packs enfants de ce bundle
+        const childPacks = packs.filter(p => p.bundleInfo?.bundleName === bundleName);
+        const childPackNames = childPacks.map(p => p.originalPack?.name || p.packId);
 
-      if (classifications && classifications.length > 0) {
-        // Convertir les classifications en résultats de bundle
-        for (let i = 0; i < Math.min(classifications.length, bundleNames.length); i++) {
-          const bundleName = bundleNames[i];
-          const classificationDetail = classifications[i];
+        // Créer un EnrichedPack avec SEULEMENT le nom du bundle (pas les enfants)
+        const bundlePack: EnrichedPack = {
+          packId: bundleName,
+          originalPack: { name: bundleName } as any,  // Objet minimal pour classification
+          tags: [bundleName],  // ✅ SEULEMENT le nom du bundle pour éviter faux positifs
+          fileCount: 0,
+          audioFiles: childPacks.reduce((sum, p) => sum + p.audioFiles, 0),
+          presetFiles: childPacks.reduce((sum, p) => sum + p.presetFiles, 0),
+          totalSize: 0,
+          hasLoops: false,
+          hasOneShots: false,
+          hasPresets: false,
+          metadata: {
+            audioFormats: [],
+            presetFormats: []
+          }
+        };
 
-          // Convertir ClassificationDetails vers Classification
-          const classification: Classification = {
-            family: classificationDetail.family,
-            style: classificationDetail.style,
-            confidence: classificationDetail.confidence,
-            method: ClassificationMethod.AI_FALLBACK,
-            reasoning: classificationDetail.reasoning || [`IA Bundle: ${bundleName}`],
-            matchedKeywords: [],
-            appliedRules: ['bundle_pre_classification']
-          };
+        // Essayer classification taxonomique
+        const taxonomicResult = await this.classifyTaxonomic(bundlePack);
 
-          // Stocker la classification pour utilisation future
-          result.bundleClassifications.set(bundleName, classification);
-          console.log(`[ClassifierV8] 📦 "${bundleName}" → ${classification.family}/${classification.style} (${Math.round(classification.confidence * 100)}%)`);
+        if (taxonomicResult && taxonomicResult.confidence >= this.config.skipConfidenceThreshold) {
+          // ✅ SUCCÈS TAXONOMIQUE (bundle mono-genre avec forte confidence)
+          result.bundleClassifications.set(bundleName, taxonomicResult);
+          result.statistics.bundleTaxonomicSuccesses++;
+          console.log(`[ClassifierV8] ✅ Bundle mono-genre: "${bundleName}" → ${taxonomicResult.family}/${taxonomicResult.style} (${Math.round(taxonomicResult.confidence * 100)}%)`);
+        } else {
+          // ❌ Échec taxonomique ou confidence faible → skip héritage, enfants classifiés individuellement
+          console.log(`[ClassifierV8] ⚠️ Bundle incertain/multi-genre: "${bundleName}" - packs enfants seront classifiés individuellement`);
+          bundlesNeedingAI.push(bundleName);
         }
-
-        console.log(`[ClassifierV8] ✅ ${classifications.length} bundles pré-classifiés en 1 requête`);
       }
+
+      // ÉTAPE 2: Classifier les bundles restants avec IA (si nécessaire)
+      if (bundlesNeedingAI.length > 0) {
+        console.log(`[ClassifierV8] 🤖 ${bundlesNeedingAI.length} bundles nécessitent l'IA...`);
+
+        // Créer des EnrichedPacks enrichis avec contexte pour l'IA
+        const bundlePacksForAI: EnrichedPack[] = bundlesNeedingAI.map(bundleName => {
+          const childPacks = packs.filter(p => p.bundleInfo?.bundleName === bundleName);
+          const childPackNames = childPacks.map(p => p.originalPack?.name || p.packId);
+
+          return {
+            packId: bundleName,
+            originalPack: { name: bundleName } as any,  // Objet minimal pour classification
+            tags: [
+              bundleName,
+              ...childPackNames  // ✅ Contexte pour l'IA aussi
+            ],
+            fileCount: 0,
+            audioFiles: childPacks.reduce((sum, p) => sum + p.audioFiles, 0),
+            presetFiles: childPacks.reduce((sum, p) => sum + p.presetFiles, 0),
+            totalSize: 0,
+            hasLoops: false,
+            hasOneShots: false,
+            hasPresets: false,
+            metadata: {
+              audioFormats: [],
+              presetFormats: []
+            }
+          };
+        });
+
+        const classifications = await this.gptService.classifyEnrichedPacks(bundlePacksForAI);
+        result.statistics.aiRequestsUsed++;
+
+        if (classifications && classifications.length > 0) {
+          for (let i = 0; i < Math.min(classifications.length, bundlesNeedingAI.length); i++) {
+            const bundleName = bundlesNeedingAI[i];
+            const classificationDetail = classifications[i];
+
+            const classification: Classification = {
+              family: classificationDetail.family,
+              style: classificationDetail.style,
+              confidence: classificationDetail.confidence,
+              method: ClassificationMethod.AI_FALLBACK,
+              reasoning: classificationDetail.reasoning || [`IA Bundle: ${bundleName}`],
+              matchedKeywords: [],
+              appliedRules: ['bundle_ai_classification']
+            };
+
+            result.bundleClassifications.set(bundleName, classification);
+            console.log(`[ClassifierV8] 🤖 Bundle IA: "${bundleName}" → ${classification.family}/${classification.style} (${Math.round(classification.confidence * 100)}%)`);
+          }
+        }
+      }
+
+      // Statistiques finales
+      const totalBundles = bundleNames.length;
+      const taxonomicBundles = result.statistics.bundleTaxonomicSuccesses;
+      const aiBundles = bundlesNeedingAI.length;
+
+      console.log(`[ClassifierV8] ✅ Bundles: ${taxonomicBundles} taxonomique, ${aiBundles} IA (${totalBundles} total)`);
+
     } catch (error) {
       console.error(`[ClassifierV8] Erreur pré-classification bundles:`, error);
     }
   }
 
-  /**
-   * ANCIEN: Classification batch des bundles uniques (OBSOLÈTE)
-   */
-  private async classifyBundlesBatch(bundleNames: string[], result: BatchClassificationResult): Promise<void> {
-    try {
-      console.log(`[ClassifierV8] 📦 Classification de ${bundleNames.length} bundles uniques...`);
-
-      // Utiliser la méthode existante classifyEnrichedPacks avec des packs factices pour les bundles
-      const bundlePacks: EnrichedPack[] = bundleNames.map(name => ({
-        packId: name,
-        originalPack: { name },
-        tags: [],
-        taxonomyMatches: [],
-        fileCount: 0,
-        audioFiles: 0,
-        presetFiles: 0,
-        totalSize: 0,
-        pathSegments: [],
-        enrichedAt: new Date()
-      }));
-
-      const classifications = await this.gptService.classifyEnrichedPacks(bundlePacks);
-      result.statistics.aiRequestsUsed++;
-
-      if (classifications && classifications.length > 0) {
-        // Convertir les classifications en résultats de bundle
-        for (let i = 0; i < Math.min(classifications.length, bundleNames.length); i++) {
-          const bundleName = bundleNames[i];
-          const classificationDetail = classifications[i];
-
-          // Convertir ClassificationDetails vers Classification
-          const classification: Classification = {
-            family: classificationDetail.family,
-            style: classificationDetail.style,
-            confidence: classificationDetail.confidence,
-            method: ClassificationMethod.AI_FALLBACK,
-            reasoning: classificationDetail.reasoning || [`IA Bundle: ${bundleName}`],
-            matchedKeywords: [],
-            appliedRules: ['bundle_ai_classification']
-          };
-
-          // Cacher les résultats pour utilisation future
-          this.bundleClassificationCache.set(bundleName, classification);
-          result.bundleClassifications.set(bundleName, classification);
-        }
-
-        console.log(`[ClassifierV8] ✅ ${classifications.length} bundles classifiés en 1 requête`);
-      }
-    } catch (error) {
-      console.error(`[ClassifierV8] Erreur classification bundles:`, error);
-    }
-  }
 
   /**
    * NOUVEAU: Classification batch des packs isolés
@@ -485,7 +504,16 @@ Important:
       ...(pack.originalPack?.taxonomyMatches || [])
     ].filter(s => typeof s === 'string' && s.trim());
 
-    return segments.join(' ').toLowerCase();
+    let text = segments.join(' ').toLowerCase();
+
+    // Normaliser les caractères spéciaux pour améliorer le matching taxonomique
+    text = text
+      .replace(/\s*&\s*/g, ' and ')  // "Drum & Bass" → "Drum and Bass"
+      .replace(/[_\-]+/g, ' ')        // "Lo-Fi" → "Lo Fi", "drum_bass" → "drum bass"
+      .replace(/\s+/g, ' ')           // Nettoyer espaces multiples
+      .trim();
+
+    return text;
   }
 
   private generateQuarantineReason(pack: EnrichedPack): string {

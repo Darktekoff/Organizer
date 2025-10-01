@@ -301,18 +301,30 @@ export class PackDetectorV7 implements IPackDetector {
       if (child.type === 'directory') {
         console.log(`      ❓ Test: "${child.name}"`);
 
-        const detection = this.evaluateDirectory(child);
         const isRealPackResult = this.isRealPack(child);
+        const detection = this.evaluateDirectory(child);
 
-        console.log(`        Score: ${detection ? detection.score : 'FAIL'} | isRealPack: ${isRealPackResult}`);
+        console.log(`        isRealPack: ${isRealPackResult} | Score: ${detection ? detection.score : 'FAIL'}`);
 
-        if (detection && isRealPackResult) {
-          detection.reasoning.push(`Extrait du bundle: ${bundle.name}`);
-          packs.push(detection);
-          console.log(`        ✅ ACCEPTÉ`);
+        // PRIORITÉ À LA TAXONOMIE : Si isRealPack() dit TRUE, on accepte même avec score faible
+        if (isRealPackResult) {
+          // Utiliser le pack détecté OU créer un pack minimal
+          const pack = detection || {
+            name: child.name,
+            path: child.path,
+            type: 'pack' as const,
+            score: 60, // Score par défaut pour packs validés par taxonomie
+            audioFiles: child.audioFileCount || 0,
+            presetFiles: child.presetFileCount || 0,
+            totalSize: child.totalSize || 0,
+            reasoning: ['Structure taxonomique valide']
+          };
+
+          pack.reasoning.push(`Extrait du bundle: ${bundle.name}`);
+          packs.push(pack);
+          console.log(`        ✅ ACCEPTÉ (taxonomie valide)`);
         } else {
-          if (!detection) console.log(`        ❌ REJECTÉ: score < 50`);
-          if (!isRealPackResult) console.log(`        ❌ REJECTÉ: pas un vrai pack`);
+          console.log(`        ❌ REJECTÉ: pas une structure de pack valide`);
         }
       }
     }
@@ -392,54 +404,49 @@ export class PackDetectorV7 implements IPackDetector {
 
   /**
    * Helper: déterminer si c'est un vrai pack ou un sous-dossier technique
+   * REFACTORISÉ : Utilise la taxonomie comme source de vérité unique
    */
   private isRealPack(node: DirectoryNode): boolean {
-    const name = node.name.toLowerCase();
+    const lowerName = node.name.toLowerCase();
 
-    // Sous-dossiers techniques à ignorer (NOMS EXACTS SEULEMENT!)
-    const technicalFolders = [
-      'one_shots', 'oneshots', 'one shots',
-      'sfx', 'fx', 'effects',
-      'drums', 'synths', 'bass', 'vocals', 'leads',
-      'loops', 'midi', 'samples',
-      'kicks', 'snares', 'hihats', 'percussion',
-      'presets'
-    ];
+    // 1. PRIORITÉ : Vérifier si c'est un pack avec structure taxonomique
+    // Un vrai pack contient des catégories (Drums, Kicks, FX, etc.)
+    // FLEXIBLE : accepte match partiel (ex: "Euphoric Kicks" → "kicks")
+    if (this.containsExactCategories(node, true)) {
+      return true;
+    }
 
-    // Vérifier le nom EXACT (pas juste "contient")
-    const isExactTechnical = technicalFolders.some(tech =>
-      name === tech ||
-      name === tech.replace(' ', '_') ||
-      name === tech.replace(' ', '-')
-    );
+    // 2. Vérifier si c'est un pack spécial (MIDI, Presets, Templates)
+    // Ces packs n'ont pas forcément de sous-catégories
+    if (this.isSpecialPack(node)) {
+      return true;
+    }
 
-    if (isExactTechnical) {
+    // 2b. Détecter les construction kits
+    // Pattern: "Kit 1", "Kit 2 - 150 BPM", "Construction Kit 01", etc.
+    const isConstructionKit = /kit\s*\d+/i.test(node.name) ||
+                               /\d+\s*(bpm|hz)/i.test(node.name) ||
+                               /construction\s*kit/i.test(node.name);
+
+    if (isConstructionKit && (node.audioFileCount || 0) >= 5) {
+      return true;
+    }
+
+    // 3. Rejeter si c'est une catégorie taxonomique pure
+    // Ex: un dossier nommé exactement "Drums" ou "Kicks"
+    if (this.taxonomyCategories.has(lowerName)) {
       return false;
     }
 
-    // Patterns de vrais packs
-    const isPackPattern =
-      /^.+\s+-\s+.+$/.test(node.name) ||  // Artist - Title
-      /\(Vol\.?\s*\d+\)/.test(node.name) || // (Vol. 1)
-      /\[.+\]/.test(node.name) ||          // [Label]
-      node.name.includes(' Pack') ||
-      node.name.includes(' Kit') ||
-      node.name.includes(' Expansion') ||
-      node.name.includes(' Suite') ||
-      node.name.includes(' Essentials') ||
-      node.name.includes(' Vocals') ||
-      node.name.includes(' Melody') ||
-      node.name.includes(' Presets') ||
-      node.name.includes('Preset Pack');
+    // 4. Rejeter si pas assez de contenu
+    // Un pack doit avoir au minimum du contenu substantiel
+    if ((node.audioFileCount || 0) < 5) {
+      return false;
+    }
 
-    // Cas spéciaux : _BONUS, MIDI, Templates, Presets
-    const specialPack = this.isSpecialPack(node);
-    const isSpecialPackResult = specialPack !== null || node.name.startsWith('_BONUS');
-
-    // Au moins 5 fichiers audio (ou pack spécial sans audio)
-    const hasEnoughContent = (node.audioFileCount || 0) >= 5 || isSpecialPackResult;
-
-    return (isPackPattern || isSpecialPackResult) && hasEnoughContent;
+    // 5. Si arrive ici : dossier avec contenu mais sans structure claire
+    // Dans le contexte d'un bundle, on est prudent et on rejette
+    return false;
   }
 
 
@@ -609,91 +616,121 @@ export class PackDetectorV7 implements IPackDetector {
 
 
     // 1. Si contient des catégories exactes de la taxonomie → PACK obligatoirement
-    if (this.containsExactCategories(node)) {
+    // STRICT : pas de match partiel ici pour éviter de confondre bundles et packs
+    if (this.containsExactCategories(node, false)) {
       return 'pack';
     }
 
-    // 2. Sinon, logique bundle normale
+    // 2. Vérifier présence keyword bundle
     const hasBundleKeyword = this.bundleKeywords.some(keyword =>
       name.toLowerCase().includes(keyword.toLowerCase())
     );
 
-    const isLargeSize = totalSize > 1 * PackDetectorV7.GB || audioFiles > 1000;
-    const hasPackNames = this.containsPackNames(node);
+    // Si pas de keyword bundle, c'est un pack
+    if (!hasBundleKeyword) {
+      return 'pack';
+    }
 
-    // Bundle si: mot-clé + grande taille + contient des packs nommés
-    const isBundle = hasBundleKeyword && isLargeSize && hasPackNames;
+    // 3. Vérifier structure : au moins 3 sous-dossiers requis pour un bundle
+    if (!node.children) return 'pack';
+    const subfolders = node.children.filter(c => c.type === 'directory');
+    if (subfolders.length < 3) {
+      return 'pack'; // Trop peu de sous-dossiers pour être un bundle
+    }
+
+    // 4. Bundle si SOIT très gros, SOIT a une structure de bundle évidente
+    const isVeryLarge = totalSize > 1 * PackDetectorV7.GB || audioFiles > 1000;
+    const hasBundleStructure = this.hasBundleStructure(node);
+
+    const isBundle = hasBundleKeyword && (isVeryLarge || hasBundleStructure);
 
     return isBundle ? 'bundle' : 'pack';
   }
 
   /**
-   * Vérifier si le dossier contient des catégories exactes de la taxonomie
+   * Vérifier si le dossier contient des catégories exactes ou partielles de la taxonomie
+   * AMÉLIORÉ : Accepte aussi les sous-catégories spécialisées (ex: "Euphoric Kicks" → "kicks")
+   * @param node - Le nœud de répertoire à analyser
+   * @param allowPartialMatch - Si true, accepte les matchs partiels (ex: "Euphoric Kicks" → "kicks")
    */
-  private containsExactCategories(node: DirectoryNode): boolean {
+  private containsExactCategories(node: DirectoryNode, allowPartialMatch: boolean = true): boolean {
     if (!node.children) return false;
 
     const subfolders = node.children.filter(c => c.type === 'directory');
     const exactMatches: string[] = [];
+    const partialMatches: string[] = [];
 
     for (const subfolder of subfolders) {
       const subname = subfolder.name;
       const lowerName = subname.toLowerCase();
 
-      // Vérifier match avec taxonomie (qui stocke tout en lowercase)
+      // 1. Vérifier match exact avec taxonomie
       if (this.taxonomyCategories.has(lowerName)) {
         exactMatches.push(subname);
+        continue;
+      }
+
+      // 2. Vérifier match partiel SEULEMENT si autorisé
+      // Ex: "Euphoric Kicks" contient "kicks"
+      if (allowPartialMatch) {
+        let foundPartialMatch = false;
+        for (const category of this.taxonomyCategories) {
+          // Chercher la catégorie comme mot dans le nom
+          // Utiliser des boundaries pour éviter faux positifs
+          const categoryWords = category.split(/[\s_-]+/);
+
+          for (const word of categoryWords) {
+            // Ignorer les mots trop courts (< 4 lettres) pour éviter faux positifs
+            if (word.length < 4) continue;
+
+            if (lowerName.includes(word)) {
+              partialMatches.push(`${subname} (→ ${category})`);
+              foundPartialMatch = true;
+              break;
+            }
+          }
+
+          if (foundPartialMatch) break;
+        }
       }
     }
 
-    const hasEnoughMatches = exactMatches.length >= 2;
+    const totalMatches = exactMatches.length + partialMatches.length;
+    const hasEnoughMatches = totalMatches >= 1;  // ⬅️ CHANGÉ: 1 au lieu de 2
 
     if (hasEnoughMatches) {
-      console.log(`✅ [${node.name}] PACK détecté (${exactMatches.length} catégories): ${exactMatches.join(', ')}`);
-    } else if (exactMatches.length === 1) {
-      console.log(`⚠️ [${node.name}] 1 seule catégorie: ${exactMatches[0]} (pas assez)`);
+      const allMatches = [...exactMatches, ...partialMatches.map(m => m.split(' (→')[0])];
+      console.log(`✅ [${node.name}] PACK détecté (${totalMatches} catégorie${totalMatches > 1 ? 's' : ''}): ${allMatches.join(', ')}`);
+      if (partialMatches.length > 0 && allowPartialMatch) {
+        console.log(`   ℹ️  Dont ${partialMatches.length} match(s) partiel(s): ${partialMatches.join(', ')}`);
+      }
     }
 
     return hasEnoughMatches;
   }
 
   /**
-   * Vérifier si le dossier contient des packs nommés (pas juste des catégories)
+   * Vérifier si le dossier a une structure typique de bundle
+   * REFACTORISÉ : Version simplifiée utilisant la taxonomie
    */
-  private containsPackNames(node: DirectoryNode): boolean {
+  private hasBundleStructure(node: DirectoryNode): boolean {
     if (!node.children) return false;
 
     const subfolders = node.children.filter(c => c.type === 'directory');
-    if (subfolders.length < 3) return false; // Un bundle doit avoir au moins 3 sous-éléments
+    if (subfolders.length < 3) return false; // Un bundle doit avoir au moins 3 sous-dossiers
 
-    let packNameCount = 0;
+    // Compter combien de sous-dossiers sont des packs structurés
+    // Un pack structuré = contient des catégories taxonomiques (Drums, FX, etc.)
+    // FLEXIBLE : accepte match partiel pour détecter sous-catégories spécialisées
+    const structuredPacks = subfolders.filter(subfolder => {
+      // Vérifier si ce sous-dossier a une structure de pack
+      return this.containsExactCategories(subfolder, true) || this.isSpecialPack(subfolder);
+    });
 
-    for (const subfolder of subfolders) {
-      const subname = subfolder.name;
-
-      // Pattern pack commercial: "Artist - Title" ou "Title (Vol. X)" ou "[Label] Title"
-      const isPackPattern = /^.+\s+-\s+.+$/.test(subname) || // Artist - Title
-                           /\(Vol\.?\s*\d+\)/.test(subname) || // (Vol. 1)
-                           /\[.+\]/.test(subname) || // [Label]
-                           /\(.+\)$/.test(subname); // (Label/Year)
-
-      // Pas une catégorie générique de la taxonomie
-      const isNotGenericCategory = !this.taxonomyCategories.has(subname.toLowerCase());
-
-      // Pack substantiel (au moins 5 fichiers audio)
-      const hasSubstantialContent = (subfolder.audioFileCount || 0) >= 5;
-
-      if (isPackPattern && isNotGenericCategory && hasSubstantialContent) {
-        packNameCount++;
-      }
-    }
-
-    // Au moins 50% des sous-dossiers doivent être des packs nommés
-    const packRatio = packNameCount / subfolders.length;
+    // Si au moins 50% des sous-dossiers sont des packs structurés → c'est un bundle
+    const packRatio = structuredPacks.length / subfolders.length;
     return packRatio >= 0.5;
   }
-
-
 
   /**
    * Résoudre les conflits parent/enfant (version améliorée)

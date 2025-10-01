@@ -13,6 +13,8 @@
     "test-gpt5-nano": "tsx scripts/test-gpt5-nano.ts",
     "test-classifier": "tsx src/main/services/classifier/test-classifier.ts",
     "generate-test-data": "node scripts/generate-test-data.js",
+    "analyze-results": "node scripts/analyze-test-results.js",
+    "run-pipeline-backend": "npx tsx scripts/run-pipeline-backend.ts",
     "data": "node scripts/generate-test-data.js"
   },
   "keywords": [],

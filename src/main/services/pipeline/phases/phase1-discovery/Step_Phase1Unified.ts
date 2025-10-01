@@ -75,22 +75,26 @@ export class Step_Phase1Unified implements StepExecutor<Phase1UnifiedInput, Phas
       onProgress?.(10, 'Chargement du snapshot...');
       console.log('📂 Loading enriched snapshot from:', snapshotPath);
 
+      // ✅ OPTIMISATION: Utilise directement l'index créé par Phase 0
+      // Pas de re-scan filesystem, juste lecture des données pré-calculées
       const snapshotContent = await fs.readFile(snapshotPath, 'utf-8');
       const snapshot = JSON.parse(snapshotContent);
 
-      console.log(`✅ Snapshot loaded: ${snapshot.fileIndex?.length || 0} files indexed`);
+      console.log(`✅ Snapshot loaded: ${snapshot.fileIndex?.length || 0} files indexed (from Phase 0)`);
 
-      // 1.1. Charger la hiérarchie des bundles depuis structure-detection.json
+      // 1.1. Charger la hiérarchie des bundles depuis packMapping dans le snapshot
       onProgress?.(15, 'Chargement de la hiérarchie des bundles...');
-      const bundleMap = await this.loadBundleHierarchy(input.workingPath);
+      const bundleMap = this.loadBundleHierarchyFromPackMapping(snapshot.metadata?.packMapping || []);
       console.log(`📦 Bundle hierarchy loaded: ${bundleMap.size} bundles detected`);
 
       // 2. Extraire et convertir les données
       onProgress?.(30, 'Conversion vers EnrichedPacks...');
 
-      // Convertir fileIndex en FileEntry[]
+      // ✅ OPTIMISATION: Conversion légère, pas de re-scan
+      // L'index complet a déjà été créé par Phase 0 (createCompleteFileIndex)
+      // On fait juste un mapping de format snapshot → FileEntry
       const fileEntries = this.convertSnapshotToFileEntries(snapshot.fileIndex || []);
-      console.log(`🔄 Converted ${fileEntries.length} files to FileEntry format`);
+      console.log(`🔄 Converted ${fileEntries.length} files to FileEntry format (lightweight mapping)`);
 
       // Créer packIndex depuis les fichiers
       const packIndex = this.createPackIndexFromFiles(fileEntries);
@@ -118,9 +122,10 @@ export class Step_Phase1Unified implements StepExecutor<Phase1UnifiedInput, Phas
 
       onProgress?.(70, 'Extraction des doublons...');
 
-      // 3. Extraire les doublons pour l'UI
+      // ✅ OPTIMISATION: Utilise directement l'analyse de doublons de Phase 0
+      // Phase 0 a déjà fait detectDuplicatesInIndex() - on réutilise les résultats
       const duplicates = this.extractDuplicates(snapshot.duplicates || {});
-      console.log(`🔍 Found ${duplicates.length} duplicate groups`);
+      console.log(`🔍 Found ${duplicates.length} duplicate groups (pre-analyzed by Phase 0)`);
 
       onProgress?.(90, 'Finalisation...');
 
@@ -614,7 +619,64 @@ export class Step_Phase1Unified implements StepExecutor<Phase1UnifiedInput, Phas
   }
 
   /**
-   * Charge la hiérarchie des bundles depuis structure-detection.json
+   * NOUVEAU: Charge la hiérarchie des bundles depuis packMapping
+   * (plus fiable que structure-detection.json car contient les types exacts de Phase0)
+   */
+  private loadBundleHierarchyFromPackMapping(packMapping: any[]): Map<string, BundleInfo> {
+    const bundleMap = new Map<string, BundleInfo>();
+
+    if (!packMapping || packMapping.length === 0) {
+      console.warn('⚠️ packMapping empty, bundle context unavailable');
+      return bundleMap;
+    }
+
+    // Étape 1: Identifier les bundles
+    const bundles = packMapping.filter((pack: any) => pack.type === 'BUNDLE_CONTAINER');
+
+    if (bundles.length === 0) {
+      console.warn('⚠️ No bundles found in packMapping');
+      return bundleMap;
+    }
+
+    console.log(`🔍 Found ${bundles.length} bundles in packMapping`);
+
+    // Étape 2: Pour chaque bundle, trouver ses packs enfants
+    for (const bundle of bundles) {
+      const bundleName = bundle.originalName;
+      const bundlePath = bundle.originalPath;
+
+      // Trouver les packs qui étaient à l'intérieur de ce bundle
+      // (ceux dont le originalPath commence par le bundlePath)
+      const siblingPacks = packMapping
+        .filter((pack: any) =>
+          pack.type !== 'BUNDLE_CONTAINER' &&
+          pack.originalPath.startsWith(bundlePath + path.sep) &&
+          pack.originalPath !== bundlePath
+        )
+        .map((pack: any) => pack.newName || pack.originalName);
+
+      if (siblingPacks.length > 0) {
+        const bundleInfo: BundleInfo = {
+          bundleName,
+          bundlePath,
+          siblingPacks,
+          bundleKeywords: this.extractKeywordsFromName(bundleName)
+        };
+
+        // Associer chaque pack enfant au bundle
+        for (const packName of siblingPacks) {
+          bundleMap.set(packName, bundleInfo);
+        }
+
+        console.log(`📦 Bundle: "${bundleName}" with ${siblingPacks.length} packs`);
+      }
+    }
+
+    return bundleMap;
+  }
+
+  /**
+   * ANCIENNE MÉTHODE: Charge la hiérarchie des bundles depuis structure-detection.json
    * Pour la classification contextuelle
    */
   private async loadBundleHierarchy(workingPath: string): Promise<Map<string, BundleInfo>> {
@@ -655,10 +717,14 @@ export class Step_Phase1Unified implements StepExecutor<Phase1UnifiedInput, Phas
       const childName = child.name;
 
       // Si c'est marqué comme BUNDLE dans la Phase 0
-      if (child.packType === 'BUNDLE' || child.packType === 'COMMERCIAL_BUNDLE') {
+      if (child.packType === 'BUNDLE' || child.packType === 'COMMERCIAL_BUNDLE' || child.packType === 'BUNDLE_CONTAINER') {
         // Récupérer tous les packs enfants déjà détectés par Phase 0
         const siblingPacks = child.children
-          ?.filter((subChild: any) => subChild.packType === 'COMMERCIAL_PACK' || subChild.packType === 'PACK')
+          ?.filter((subChild: any) =>
+            subChild.packType === 'COMMERCIAL_PACK' ||
+            subChild.packType === 'PACK' ||
+            subChild.type === 'directory' // Accepter aussi les dossiers non-typés
+          )
           ?.map((pack: any) => pack.name) || [];
 
         if (siblingPacks.length > 0) {
@@ -679,7 +745,8 @@ export class Step_Phase1Unified implements StepExecutor<Phase1UnifiedInput, Phas
       }
 
       // Récursion dans tous les cas
-      this.extractBundleHierarchy(child, bundleMap, child.packType === 'BUNDLE' ? childName : parentBundleName);
+      const isBundleType = child.packType === 'BUNDLE' || child.packType === 'BUNDLE_CONTAINER' || child.packType === 'COMMERCIAL_BUNDLE';
+      this.extractBundleHierarchy(child, bundleMap, isBundleType ? childName : parentBundleName);
     }
   }
 

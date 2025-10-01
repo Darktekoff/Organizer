@@ -487,6 +487,12 @@ export class Phase0Controller implements PhaseController<Phase0Input, Phase0Data
       // 1. Capturer la structure de base
       const postSnapshot = DirectorySnapshot.captureLightweight(normalizedPath, 10);
 
+      // 1b. Nettoyer les suffixes de déduplication (_1, _2, etc.) dans les noms
+      this.cleanDeduplicationSuffixesInSnapshot(postSnapshot);
+
+      // 1c. Enrichir avec les packType depuis la détection Phase 0
+      this.enrichSnapshotWithPackTypes(postSnapshot, phase0Data.quickScanResult.detectedPacks);
+
       // 2. NOUVEAU: Créer l'index complet de tous les fichiers
       console.log('[Phase0] Creating complete file index...');
       const fileIndex = this.createCompleteFileIndex(normalizedPath);
@@ -757,6 +763,68 @@ export class Phase0Controller implements PhaseController<Phase0Input, Phase0Data
 
     scanDir(packPath);
     return totalSize;
+  }
+
+  /**
+   * Nettoie récursivement les suffixes de déduplication (_1, _2, etc.) dans un snapshot
+   */
+  private cleanDeduplicationSuffixesInSnapshot(snapshot: any): void {
+    if (!snapshot) return;
+
+    // Nettoyer le nom actuel si c'est un dossier
+    if (snapshot.name && snapshot.type === 'directory') {
+      const cleanedName = snapshot.name.replace(/_\d+$/, '');
+      if (cleanedName !== snapshot.name) {
+        console.log(`  🧹 Cleaning: "${snapshot.name}" → "${cleanedName}"`);
+        snapshot.name = cleanedName;
+      }
+    }
+
+    // Nettoyer récursivement les enfants
+    if (snapshot.children && Array.isArray(snapshot.children)) {
+      for (const child of snapshot.children) {
+        this.cleanDeduplicationSuffixesInSnapshot(child);
+      }
+    }
+  }
+
+  /**
+   * Enrichit le snapshot avec les packType depuis detectedPacks
+   */
+  private enrichSnapshotWithPackTypes(snapshot: any, detectedPacks: any[]): void {
+    if (!snapshot || !detectedPacks) return;
+
+    // Créer un mapping nom → packType
+    const packTypeMap = new Map<string, string>();
+    for (const pack of detectedPacks) {
+      const cleanName = pack.name.replace(/_\d+$/, '').trim();
+      packTypeMap.set(cleanName, pack.type);
+    }
+
+    // Enrichir récursivement
+    this.enrichSnapshotNode(snapshot, packTypeMap);
+
+    console.log(`  ✅ Enriched snapshot with packType metadata from ${detectedPacks.length} detected packs`);
+  }
+
+  /**
+   * Enrichit un nœud du snapshot avec packType
+   */
+  private enrichSnapshotNode(node: any, packTypeMap: Map<string, string>): void {
+    if (!node || node.type !== 'directory') return;
+
+    // Ajouter packType si disponible
+    const packType = packTypeMap.get(node.name);
+    if (packType) {
+      node.packType = packType;
+    }
+
+    // Enrichir récursivement les enfants
+    if (node.children && Array.isArray(node.children)) {
+      for (const child of node.children) {
+        this.enrichSnapshotNode(child, packTypeMap);
+      }
+    }
   }
 
 }

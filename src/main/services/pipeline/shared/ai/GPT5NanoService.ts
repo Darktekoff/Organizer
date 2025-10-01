@@ -20,6 +20,7 @@ export interface PackClassification {
   family: string;
   style: string;
   confidence: number;
+  reason?: string;
   gptNanoReason?: string;
 }
 
@@ -181,7 +182,7 @@ export class GPT5NanoService {
       style: classification.style,
       confidence: classification.confidence,
       method: ClassificationMethod.AI_FALLBACK,
-      reasoning: classification.gptNanoReason ? [classification.gptNanoReason] : ['GPT-5 Nano classification'],
+      reasoning: classification.reason ? [classification.reason] : (classification.gptNanoReason ? [classification.gptNanoReason] : ['GPT-5 Nano classification']),
       matchedKeywords: [],
       appliedRules: ['gpt5_nano_ai_classification']
     }));
@@ -237,6 +238,11 @@ export class GPT5NanoService {
     const userPrompt = this.buildContextUserPrompt(packs);
 
     console.log('[GPT5Nano] Sending request to GPT-5 Nano...');
+    console.log('[GPT5Nano] ========== SYSTEM PROMPT ==========');
+    console.log(systemPrompt);
+    console.log('[GPT5Nano] ========== USER PROMPT ==========');
+    console.log(userPrompt);
+    console.log('[GPT5Nano] =====================================');
 
     try {
       const response = await this.openai.chat.completions.create({
@@ -268,9 +274,18 @@ export class GPT5NanoService {
         throw new Error('No response from GPT-5 Nano');
       }
 
+      console.log('[GPT5Nano] ========== AI RESPONSE ==========');
+      console.log(result);
+      console.log('[GPT5Nano] ====================================');
+
       try {
         const parsed = JSON.parse(result) as GPT5NanoResponse;
         console.log('[GPT5Nano] Classifications found:', parsed.classifications?.length || 0);
+
+        // Log chaque classification avec son reason
+        parsed.classifications?.forEach((c: any) => {
+          console.log(`[GPT5Nano]   - "${c.name}" → ${c.family}/${c.style} (${Math.round(c.confidence * 100)}%) | Reason: ${c.reason || 'N/A'}`);
+        });
 
         return parsed.classifications || [];
       } catch (error) {
@@ -324,25 +339,37 @@ CLASSIFICATION RULES:
 - For obvious styles in pack names, use confidence >= 0.8
 - For FX/Toolkit packs, use "Cinematic / Orchestral / SFX" family
 
-AMBIGUITY DETECTION (CRITICAL - MUST FOLLOW):
-- If NEITHER pack name NOR subfolders provide CLEAR MUSICAL STYLE indicators → confidence MUST BE ≤ 0.45
-- Generic instrument terms like "Kicks", "Samples", "Drums", "Loops" alone provide ZERO style information
-- Acronyms like "FMT", "VOL", "PACK", brand codes provide NO musical genre context
-- Unknown artist names with ONLY generic instrument terms → confidence MUST BE ≤ 0.35
-- MANDATORY: Packs with ONLY generic descriptors MUST get confidence ≤ 0.45 for quarantine
-- NEVER GUESS: If you cannot identify a clear musical style, confidence MUST BE ≤ 0.45
+INTELLIGENT STYLE MATCHING (FOLLOW THESE RULES):
 
-CRITICAL EXAMPLES of packs that MUST get LOW confidence (≤ 0.45):
-  * "FMT_Unleashed_Kick_Samples" → confidence: 0.35 (FMT meaningless, only generic "Kicks")
-  * "Sunhiausa Kicks" → confidence: 0.40 (Unknown artist, only generic "Kicks")
-  * "Samples Vol 2" → confidence: 0.30 (Too generic, no style info)
-  * "Producer_Name_Massive_Samples" → confidence: 0.35 (No style, just "massive")
-  * "Brand_Code_Unleashed_Bass" → confidence: 0.35 (No style context)
+1. EXACT MATCH (confidence 0.85-0.95):
+   - Style appears exactly in taxonomy → use it with high confidence
+   - Example: "Hardstyle Kicks" → Hard Dance/Hardstyle (0.95)
 
-DO NOT INVENT GENRES: If unsure about musical style, use confidence ≤ 0.45 to force manual review
+2. FUZZY MATCH (confidence 0.65-0.80):
+   - Style variant exists in taxonomy → map to closest match
+   - Example: "Brazilian Funk" → Retro / Synthwave / 8-bit/Funk (0.70)
+   - Example: "Afrobeat" → World & Folk/Afrobeat (0.75) OR World & Folk/World (0.70)
+   - Example: "Melodic Dubstep" → Bass Music/Melodic_Dubstep (0.80)
+   - Use your knowledge to find the BEST matching family + style
+
+3. GENRE FAMILY CLEAR (confidence 0.55-0.70):
+   - Musical genre is obvious but exact style not listed → use closest style in that family
+   - Example: "Deep Tech House" → House/Tech_House (0.65)
+   - Example: "Orchestral Strings" → Cinematic / Orchestral / SFX/Orchestral (0.70)
+
+4. QUARANTINE ONLY (confidence ≤ 0.45):
+   - ONLY generic instrument terms with NO musical context
+   - Example: "Kicks Vol 2" → confidence ≤ 0.40 (no genre info)
+   - Example: "Samples Pack" → confidence ≤ 0.30 (too generic)
+   - Example: "Producer_Name_Unleashed" → confidence ≤ 0.35 (no style)
+
+CRITICAL: Brazilian Funk, Afrobeat, Jazz, etc. ARE musical genres → find best match with confidence 0.65-0.80!
+DO NOT reject valid musical genres just because they're not exact matches in the taxonomy!
 
 RESPONSE FORMAT (CRITICAL):
-{"classifications": [{"name": "original_pack_name", "family": "exact_family_name", "style": "style_name", "confidence": 0.85}]}
+{"classifications": [{"name": "original_pack_name", "family": "exact_family_name", "style": "style_name", "confidence": 0.85, "reason": "why this classification was chosen"}]}
+
+IMPORTANT: Add a "reason" field explaining your classification decision (e.g., "matched Brazilian Funk to Funk_Carioca", "contains hardstyle keywords", "generic name with no style indicators")
 
 CRITICAL: Use ONLY exact family names from the list. NO ambiguous formats like "FX (generic) or Other" or "Style1/Style2". Pick ONE clear family and ONE clear style.`;
   }

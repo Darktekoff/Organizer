@@ -247,6 +247,26 @@ families:
       - "Foley"
       - "Game_Audio"
     color: "#8e44ad"  # Purple
+    keywords:
+      - { term: "cinematic", weight: 1.0 }
+      - { term: "orchestral", weight: 1.0 }
+      - { term: "orchestra", weight: 0.95 }
+      - { term: "epic", weight: 0.95 }
+      - { term: "film score", weight: 0.9 }
+      - { term: "film", weight: 0.75 }
+      - { term: "trailer", weight: 0.9 }
+      - { term: "sfx", weight: 0.95 }
+      - { term: "sound effects", weight: 0.9 }
+      - { term: "foley", weight: 0.9 }
+      - { term: "game audio", weight: 0.85 }
+      - { term: "game", weight: 0.7 }
+      - { term: "strings", weight: 1.0 }
+      - { term: "string theory", weight: 1.0 }
+      - { term: "string", weight: 0.95 }
+      - { term: "symphony", weight: 0.95 }
+      - { term: "symphonic", weight: 0.95 }
+      - { term: "chamber", weight: 0.9 }
+      - { term: "classical", weight: 0.9 }
     
   - name: "Ambient / Chill / Lo-Fi"
     id: "ambient_chill"
@@ -262,7 +282,58 @@ families:
       - "Dark_Ambient"
       - "Psybient"
     color: "#27ae60"  # Green
-    
+    keywords:
+      - { term: "ambient", weight: 1.0 }
+      - { term: "chill", weight: 0.95 }
+      - { term: "chillout", weight: 0.95 }
+      - { term: "lo-fi", weight: 0.95 }
+      - { term: "lofi", weight: 0.95 }
+      - { term: "downtempo", weight: 0.9 }
+      - { term: "meditation", weight: 0.85 }
+      - { term: "relaxation", weight: 0.85 }
+      - { term: "calm", weight: 0.8 }
+      - { term: "peaceful", weight: 0.8 }
+      - { term: "atmospheric", weight: 0.75 }
+      - { term: "drone", weight: 0.9 }
+      - { term: "psybient", weight: 0.9 }
+
+  - name: "Jazz & Soul & Blues"
+    id: "jazz_soul_blues"
+    styles:
+      - "Jazz"
+      - "Smooth_Jazz"
+      - "Bebop"
+      - "Fusion"
+      - "Swing"
+      - "Nu_Jazz"
+      - "Soul"
+      - "Neo_Soul"
+      - "Motown"
+      - "Blues"
+      - "Delta_Blues"
+      - "Electric_Blues"
+      - "Gospel"
+    color: "#d4af37"  # Gold
+    keywords:
+      - { term: "jazz", weight: 1.0 }
+      - { term: "smooth jazz", weight: 0.95 }
+      - { term: "bebop", weight: 0.9 }
+      - { term: "fusion", weight: 0.85 }
+      - { term: "jazz fusion", weight: 0.9 }
+      - { term: "swing", weight: 0.85 }
+      - { term: "nu jazz", weight: 0.85 }
+      - { term: "nu-jazz", weight: 0.85 }
+      - { term: "soul", weight: 1.0 }
+      - { term: "neo soul", weight: 0.95 }
+      - { term: "neo-soul", weight: 0.95 }
+      - { term: "motown", weight: 0.9 }
+      - { term: "blues", weight: 1.0 }
+      - { term: "delta blues", weight: 0.9 }
+      - { term: "electric blues", weight: 0.9 }
+      - { term: "gospel", weight: 0.95 }
+      - { term: "soulful", weight: 0.8 }
+      - { term: "jazzy", weight: 0.75 }
+
   - name: "Breaks / Garage / UK Bass"
     id: "breaks_uk"
     styles:
@@ -276,9 +347,25 @@ families:
       - "Footwork"
       - "Juke"
     color: "#34495e"  # Gray blue
+    keywords:
+      - { term: "breaks", weight: 1.0 }
+      - { term: "breakbeat", weight: 0.95 }
+      - { term: "breakbeats", weight: 0.9 }
+      - { term: "amen", weight: 0.85 }
+      - { term: "uk garage", weight: 1.0 }
+      - { term: "ukg", weight: 0.95 }
+      - { term: "garage", weight: 0.85 }
+      - { term: "2 step", weight: 0.9 }
+      - { term: "2step", weight: 0.9 }
+      - { term: "speed garage", weight: 0.85 }
+      - { term: "bassline", weight: 0.85 }
+      - { term: "uk funky", weight: 0.9 }
+      - { term: "funky", weight: 0.7 }
+      - { term: "footwork", weight: 0.85 }
+      - { term: "juke", weight: 0.85 }
     
-  - name: "Latin / Global"
-    id: "latin_global"
+  - name: "World & Folk"
+    id: "world_folk"
     styles:
       - "Reggaeton"
       - "Moombahton"
@@ -291,7 +378,41 @@ families:
       - "Dembow"
       - "Guaracha"
       - "Funk_Carioca"
+      - "Reggae"
+      - "Dub"
+      - "Roots_Reggae"
+      - "Steppers"
+      - "World"
+      - "Folk"
+      - "Ethnic"
     color: "#d35400"  # Dark orange
+    keywords:
+      - { term: "reggaeton", weight: 1.0 }
+      - { term: "moombahton", weight: 0.95 }
+      - { term: "baile funk", weight: 0.95 }
+      - { term: "baile", weight: 0.85 }
+      - { term: "afrobeat", weight: 1.0 }
+      - { term: "afro beat", weight: 0.95 }
+      - { term: "african", weight: 0.75 }
+      - { term: "dancehall", weight: 0.95 }
+      - { term: "latin house", weight: 0.9 }
+      - { term: "latin", weight: 0.8 }
+      - { term: "tropical", weight: 0.85 }
+      - { term: "amapiano", weight: 0.95 }
+      - { term: "dembow", weight: 0.9 }
+      - { term: "guaracha", weight: 0.9 }
+      - { term: "funk carioca", weight: 0.95 }
+      - { term: "brazilian funk", weight: 0.95 }
+      - { term: "brazilian", weight: 0.75 }
+      - { term: "reggae", weight: 1.0 }
+      - { term: "dub", weight: 0.95 }
+      - { term: "roots reggae", weight: 0.9 }
+      - { term: "roots", weight: 0.75 }
+      - { term: "steppers", weight: 0.85 }
+      - { term: "world", weight: 0.8 }
+      - { term: "folk", weight: 0.85 }
+      - { term: "ethnic", weight: 0.8 }
+      - { term: "tribal", weight: 0.75 }
     
   - name: "Rock / Metal / Live"
     id: "rock_metal"
@@ -675,10 +796,23 @@ style_synonyms:
   "melbourne bounce": "Melbourne_Bounce"
   "future rave": "Future_Rave"
   
-  # Latin/Global variants
+  # World & Folk variants
   "baile funk": "Baile_Funk"
   "latin house": "Latin_House"
   "funk carioca": "Funk_Carioca"
+  "brazilian funk": "Funk_Carioca"
+  "roots reggae": "Roots_Reggae"
+  "roots": "Roots_Reggae"
+
+  # Jazz & Soul & Blues variants
+  "smooth jazz": "Smooth_Jazz"
+  "jazz fusion": "Fusion"
+  "nu jazz": "Nu_Jazz"
+  "nu-jazz": "Nu_Jazz"
+  "neo soul": "Neo_Soul"
+  "neo-soul": "Neo_Soul"
+  "delta blues": "Delta_Blues"
+  "electric blues": "Electric_Blues"
   
   # UK/Garage variants
   "ukg": "UK_Garage"

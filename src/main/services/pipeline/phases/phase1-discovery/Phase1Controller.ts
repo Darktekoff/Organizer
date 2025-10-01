@@ -188,6 +188,14 @@ export class Phase1Controller implements PhaseController<Phase0Data, Phase1Data>
       errors.push('Le chemin de travail est requis après Phase 0');
     }
 
+    // ✅ NOUVEAU: Validation filesystem - vérifier que workingPath existe vraiment
+    if (input.reorganizationResult?.workingPath) {
+      const fs = require('fs');
+      if (!fs.existsSync(input.reorganizationResult.workingPath)) {
+        errors.push(`Le chemin de travail n'existe pas sur le système de fichiers: ${input.reorganizationResult.workingPath}`);
+      }
+    }
+
     return {
       valid: errors.length === 0,
       errors
